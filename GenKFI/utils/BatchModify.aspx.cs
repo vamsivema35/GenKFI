@@ -156,15 +156,15 @@ namespace GenKFI.utils
 						}
 
 					}
-                    if (ImageSource.Value == "MAVRO")
-                    {
-                        ShowMavroImageLIT.Visible = true;
-                        ShowMavroImageLIT.Text = "<a href=MavImgView.aspx?Batch=" + BatchNo.Text + ";" + BatchDt.Text + ";" + ImgSrc.Text + ";" + strProgCode + "> View Mavro Image </a>";
-                    }
-                    else
-                    {
-                        ShowMavroImageLIT.Visible = false;
-                    }
+                    //if (ImageSource.Value == "MAVRO")
+                    //{
+                    //    ShowMavroImageLIT.Visible = true;
+                    //    ShowMavroImageLIT.Text = "<a href=MavImgView.aspx?Batch=" + BatchNo.Text + ";" + BatchDt.Text + ";" + ImgSrc.Text + ";" + strProgCode + "> View Mavro Image </a>";
+                    //}
+                    //else
+                    //{
+                    //    ShowMavroImageLIT.Visible = false;
+                    //}
 
 
 					/*

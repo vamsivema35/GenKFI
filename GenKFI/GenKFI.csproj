@@ -123,7 +123,6 @@
     <Content Include="utils\batchInquire.aspx" />
     <Content Include="utils\BatchModify.aspx" />
     <Content Include="utils\closedBatches.aspx" />
-    <Content Include="noFront\imageLoad.aspx" />
     <Content Include="utils\editPCodes.aspx" />
     <Content Include="utils\errView.aspx" />
     <Content Include="utils\formBuilder\blockBatch.aspx" />
@@ -132,11 +131,9 @@
     <Content Include="utils\formBuilder\formBuild.aspx" />
     <Content Include="utils\formBuilder\formTest.aspx" />
     <Content Include="utils\formBuilder\needSql.aspx" />
-    <Content Include="utils\MavImgView.aspx" />
     <Content Include="utils\reassignBatches.aspx" />
     <Content Include="utils\unassignedBatches.aspx" />
     <Content Include="utils\userStats.aspx" />
-    <Content Include="utils\ViewMavImg.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -310,13 +307,6 @@
     <Compile Include="error.aspx.designer.cs">
       <DependentUpon>error.aspx</DependentUpon>
     </Compile>
-    <Compile Include="noFront\imageLoad.aspx.cs">
-      <DependentUpon>imageLoad.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="noFront\imageLoad.aspx.designer.cs">
-      <DependentUpon>imageLoad.aspx</DependentUpon>
-    </Compile>
     <Compile Include="utils\editPCodes.aspx.cs">
       <DependentUpon>editPCodes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -373,13 +363,6 @@
     <Compile Include="utils\formBuilder\needSql.aspx.designer.cs">
       <DependentUpon>needSql.aspx</DependentUpon>
     </Compile>
-    <Compile Include="utils\MavImgView.aspx.cs">
-      <DependentUpon>MavImgView.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="utils\MavImgView.aspx.designer.cs">
-      <DependentUpon>MavImgView.aspx</DependentUpon>
-    </Compile>
     <Compile Include="utils\OpenBatches.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>OpenBatches.aspx</DependentUpon>
@@ -407,13 +390,6 @@
     </Compile>
     <Compile Include="utils\userStats.aspx.designer.cs">
       <DependentUpon>userStats.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="utils\ViewMavImg.aspx.cs">
-      <DependentUpon>ViewMavImg.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="utils\ViewMavImg.aspx.designer.cs">
-      <DependentUpon>ViewMavImg.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

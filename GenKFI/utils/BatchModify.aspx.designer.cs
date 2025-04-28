@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GenKFI.utils {
-    
-    
-    public partial class BatchModify {
-        
+namespace GenKFI.utils
+{
+
+
+    public partial class BatchModify
+    {
+
         /// <summary>
         /// BatchNo control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox BatchNo;
-        
+
         /// <summary>
         /// BatchDt control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox BatchDt;
-        
+
         /// <summary>
         /// ImgSrc control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox ImgSrc;
-        
+
         /// <summary>
         /// userCMB control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList userCMB;
-        
+
         /// <summary>
         /// batchownerREQ control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator batchownerREQ;
-        
+
         /// <summary>
         /// CreateDate control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox CreateDate;
-        
+
         /// <summary>
         /// ReceivedDate control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox ReceivedDate;
-        
+
         /// <summary>
         /// ReceivedDateREQ control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator ReceivedDateREQ;
-        
+
         /// <summary>
         /// ReceivedDateREGEX control.
         /// </summary>
@@ -92,7 +94,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator ReceivedDateREGEX;
-        
+
         /// <summary>
         /// PostmarkDate control.
         /// </summary>
@@ -101,7 +103,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox PostmarkDate;
-        
+
         /// <summary>
         /// PostmarkDateREQ control.
         /// </summary>
@@ -110,7 +112,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator PostmarkDateREQ;
-        
+
         /// <summary>
         /// PostmarkDateREGEX control.
         /// </summary>
@@ -119,7 +121,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator PostmarkDateREGEX;
-        
+
         /// <summary>
         /// DepositDate control.
         /// </summary>
@@ -128,7 +130,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox DepositDate;
-        
+
         /// <summary>
         /// DepositDateREQ control.
         /// </summary>
@@ -137,7 +139,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator DepositDateREQ;
-        
+
         /// <summary>
         /// DepositDateREGEX control.
         /// </summary>
@@ -146,7 +148,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator DepositDateREGEX;
-        
+
         /// <summary>
         /// BatchCount control.
         /// </summary>
@@ -155,7 +157,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox BatchCount;
-        
+
         /// <summary>
         /// BatchCountREQ control.
         /// </summary>
@@ -164,7 +166,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator BatchCountREQ;
-        
+
         /// <summary>
         /// BatchAmount control.
         /// </summary>
@@ -173,7 +175,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox BatchAmount;
-        
+
         /// <summary>
         /// BatchAmountREQ control.
         /// </summary>
@@ -182,7 +184,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator BatchAmountREQ;
-        
+
         /// <summary>
         /// ItemCount control.
         /// </summary>
@@ -191,7 +193,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox ItemCount;
-        
+
         /// <summary>
         /// ItemAmount control.
         /// </summary>
@@ -200,7 +202,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox ItemAmount;
-        
+
         /// <summary>
         /// BatchType control.
         /// </summary>
@@ -209,7 +211,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox BatchType;
-        
+
         /// <summary>
         /// BatchTypeREQ control.
         /// </summary>
@@ -218,7 +220,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator BatchTypeREQ;
-        
+
         /// <summary>
         /// FormType control.
         /// </summary>
@@ -227,7 +229,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox FormType;
-        
+
         /// <summary>
         /// FormTypeREQ control.
         /// </summary>
@@ -236,7 +238,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator FormTypeREQ;
-        
+
         /// <summary>
         /// DLN control.
         /// </summary>
@@ -245,7 +247,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox DLN;
-        
+
         /// <summary>
         /// TimelyBatch control.
         /// </summary>
@@ -254,7 +256,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TimelyBatch;
-        
+
         /// <summary>
         /// TimelyBatchREQ control.
         /// </summary>
@@ -263,7 +265,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator TimelyBatchREQ;
-        
+
         /// <summary>
         /// BatchStatus control.
         /// </summary>
@@ -272,7 +274,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox BatchStatus;
-        
+
         /// <summary>
         /// BatchStatusREQ control.
         /// </summary>
@@ -281,7 +283,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator BatchStatusREQ;
-        
+
         /// <summary>
         /// LastOwner control.
         /// </summary>
@@ -290,7 +292,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField LastOwner;
-        
+
         /// <summary>
         /// BatchID control.
         /// </summary>
@@ -299,7 +301,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField BatchID;
-        
+
         /// <summary>
         /// BatchDate control.
         /// </summary>
@@ -308,7 +310,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField BatchDate;
-        
+
         /// <summary>
         /// ImageSource control.
         /// </summary>
@@ -317,7 +319,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField ImageSource;
-        
+
         /// <summary>
         /// ProgCode control.
         /// </summary>
@@ -326,7 +328,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField ProgCode;
-        
+
         /// <summary>
         /// ReadStatus control.
         /// </summary>
@@ -335,7 +337,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField ReadStatus;
-        
+
         /// <summary>
         /// BatchInfo control.
         /// </summary>
@@ -344,7 +346,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField BatchInfo;
-        
+
         /// <summary>
         /// WhereFrom control.
         /// </summary>
@@ -353,7 +355,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField WhereFrom;
-        
+
         /// <summary>
         /// BatchNext control.
         /// </summary>
@@ -362,7 +364,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField BatchNext;
-        
+
         /// <summary>
         /// batchModPNL control.
         /// </summary>
@@ -371,7 +373,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel batchModPNL;
-        
+
         /// <summary>
         /// subBTN control.
         /// </summary>
@@ -380,7 +382,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button subBTN;
-        
+
         /// <summary>
         /// valSumm control.
         /// </summary>
@@ -389,7 +391,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ValidationSummary valSumm;
-        
+
         /// <summary>
         /// infoLIT control.
         /// </summary>
@@ -398,43 +400,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal infoLIT;
-        
-        /// <summary>
-        /// ShowMavroImageLIT control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ShowMavroImageLIT;
-        
-        /// <summary>
-        /// toggleBTN control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button toggleBTN;
-        
-        /// <summary>
-        /// otherBTN control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button otherBTN;
-        
-        /// <summary>
-        /// blankBTN control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button blankBTN;
-        
+
         /// <summary>
         /// batchRPT control.
         /// </summary>
@@ -443,7 +409,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater batchRPT;
-        
+
         /// <summary>
         /// noItemsPNL control.
         /// </summary>

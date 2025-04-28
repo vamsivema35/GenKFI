@@ -1794,10 +1794,10 @@ namespace GenKFI.utils.entry
                 string chkpath = Session["kestrImagePath"].ToString();
 
                 // check if it can load it
-                if (TryLoad())
-                    ((Image)Master.FindControl("imgImage")).ImageUrl = "noFront/imageLoad.aspx";
-                else
-                    ((Image)Master.FindControl("imgImage")).ImageUrl = "images/imgError.jpg";
+                //if (TryLoad())
+                //    ((Image)Master.FindControl("imgImage")).ImageUrl = "noFront/imageLoad.aspx";
+                //else
+                //    ((Image)Master.FindControl("imgImage")).ImageUrl = "images/imgError.jpg";
 
 
                 // Get Entry Queue for Form Pick
@@ -2385,7 +2385,7 @@ namespace GenKFI.utils.entry
                                 ctrlBuff = ctrlBuff.Replace(btnSubID, firstCtrl + (lt + 1).ToString());
                             // also set the auto scripts, they need to be registered with the ID names, set in the value loop above
                             maxScrl = ((Forms)Master).RegisterAutoJavaScripts(gc, chID, useRepNum.ToString());
-                            ((Forms)Master).SetZoomFactor(chID, ((Image)((Forms)Master).FindControl("imgImage")).ClientID, gc);
+                            //((Forms)Master).SetZoomFactor(chID, ((Image)((Forms)Master).FindControl("imgImage")).ClientID, gc);
 //
 //
 
@@ -2398,7 +2398,7 @@ namespace GenKFI.utils.entry
                         {
                             // register the auto scripts, only once here since we aren't repeating we don't need the ID numbers on the names
                             maxScrl = ((Forms)Master).RegisterAutoJavaScripts(gc, chID);
-                            ((Forms)Master).SetZoomFactor(chID, ((Image)((Forms)Master).FindControl("imgImage")).ClientID, gc);
+                            //((Forms)Master).SetZoomFactor(chID, ((Image)((Forms)Master).FindControl("imgImage")).ClientID, gc);
                             // and make the final controls string
                             ctrlBuff = ctrlBuff.Replace("~@TI@~", "");
                             ctrlBuff = ctrlBuff.Replace("~@TB@~", "0");

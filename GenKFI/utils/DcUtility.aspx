@@ -127,7 +127,7 @@
             <asp:Button runat="server" ID="ClearTxtBTN" Text="Clear Choices" style="left:548px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;" OnClick="OnClick_ClearChoice" />
             <asp:Button runat="server" ID="DeleteBatchBTN" Text="Delete Batch" style="left:715px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;" OnClick="OnClick_DeleteBatch" />
             <asp:Button runat="server" ID="UnDel" Text="Un-Delete" style="left:860px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;" OnClick="OnClick_UnDelete" />
-        	<asp:Button runat="server" ID="GetImageBTN" Text="Get Images" style="left:990px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;"  OnClick="OnClick_GetImages" />
+        	<%--<asp:Button runat="server" ID="GetImageBTN" Text="Get Images" style="left:990px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;"  OnClick="OnClick_GetImages" />--%>
             <asp:Button runat="server" ID="ClearForm" Text="Clear Form" style="left:1122px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;" OnClick="OnClick_ClearForm" />
             <asp:Button runat="server" ID="BlankSheet" Text="Blank" style="left:1253px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;" OnClick="OnClick_BlankForm" />
  			 <input id="BtnPick" tabindex="95" type="button" name="btnPick" value="Pick Form"

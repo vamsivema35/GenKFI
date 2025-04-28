@@ -54,15 +54,6 @@
             To modify move field declaration from designer file to code-behind file.
             </remarks>
         </member>
-        <member name="F:GenKFI.Forms.imgImage">
-            <summary>
-            imgImage control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
         <member name="F:GenKFI.Forms.scriptingHolder">
             <summary>
             scriptingHolder control.
@@ -473,15 +464,6 @@
             <summary>
             Summary description for <see cref="T:GenKFI.noFront.DoLookup"/>
             </summary>
-        </member>
-        <member name="F:GenKFI.noFront.imageLoad.form1">
-            <summary>
-            form1 control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
         </member>
         <member name="F:GenKFI.Default.tasksTBL">
             <summary>
@@ -976,15 +958,6 @@
         <member name="F:GenKFI.utils.DcUtility.UnDel">
             <summary>
             UnDel control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.DcUtility.GetImageBTN">
-            <summary>
-            GetImageBTN control.
             </summary>
             <remarks>
             Auto-generated field.
@@ -1990,15 +1963,6 @@
             To modify move field declaration from designer file to code-behind file.
             </remarks>
         </member>
-        <member name="F:GenKFI.utils.formBuilder.UtilDev.GetImageBTN">
-            <summary>
-            GetImageBTN control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
         <member name="F:GenKFI.utils.formBuilder.UtilDev.ClearForm">
             <summary>
             ClearForm control.
@@ -2758,33 +2722,6 @@
         <member name="F:GenKFI.utils.formBuilder.FormBuild.OasBtn">
             <summary>
             OasBtn control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.formBuilder.FormBuild.loadTemplateBTN">
-            <summary>
-            loadTemplateBTN control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.formBuilder.FormBuild.pathLBL">
-            <summary>
-            pathLBL control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.formBuilder.FormBuild.pathTXT">
-            <summary>
-            pathTXT control.
             </summary>
             <remarks>
             Auto-generated field.
@@ -4564,42 +4501,6 @@
             To modify move field declaration from designer file to code-behind file.
             </remarks>
         </member>
-        <member name="F:GenKFI.utils.BatchModify.ShowMavroImageLIT">
-            <summary>
-            ShowMavroImageLIT control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.BatchModify.toggleBTN">
-            <summary>
-            toggleBTN control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.BatchModify.otherBTN">
-            <summary>
-            otherBTN control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.BatchModify.blankBTN">
-            <summary>
-            blankBTN control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
         <member name="F:GenKFI.utils.BatchModify.batchRPT">
             <summary>
             batchRPT control.
@@ -4774,240 +4675,6 @@
         <member name="F:GenKFI.utils.ErrView.errListRPT">
             <summary>
             errListRPT control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.btnMavImg">
-            <summary>
-            btnMavImg control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.batchCntTBL">
-            <summary>
-            batchCntTBL control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.BatchId">
-            <summary>
-            BatchId control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.BatchDate">
-            <summary>
-            BatchDate control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.ImageSource">
-            <summary>
-            ImageSource control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.TaxPgm">
-            <summary>
-            TaxPgm control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.HdrCount">
-            <summary>
-            HdrCount control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.ItemCount">
-            <summary>
-            ItemCount control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.ItemAmount">
-            <summary>
-            ItemAmount control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.PymAmount">
-            <summary>
-            PymAmount control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.PymTbl">
-            <summary>
-            PymTbl control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.SeqTop">
-            <summary>
-            SeqTop control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.SeqBot">
-            <summary>
-            SeqBot control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.btnMavPrv">
-            <summary>
-            btnMavPrv control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.lblInfo">
-            <summary>
-            lblInfo control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.btnMavNxt">
-            <summary>
-            btnMavNxt control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.RtnModify">
-            <summary>
-            RtnModify control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.lblEnter">
-            <summary>
-            lblEnter control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.ToEntry">
-            <summary>
-            ToEntry control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.Table1">
-            <summary>
-            Table1 control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.Label2">
-            <summary>
-            Label2 control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.MavImgAmt">
-            <summary>
-            MavImgAmt control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.Label1">
-            <summary>
-            Label1 control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.MavImgStub">
-            <summary>
-            MavImgStub control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.SeqHld">
-            <summary>
-            SeqHld control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.MavImgView.MavImgDetail">
-            <summary>
-            MavImgDetail control.
             </summary>
             <remarks>
             Auto-generated field.
@@ -5332,15 +4999,6 @@
         <member name="F:GenKFI.utils.userStats.noBatchLBL">
             <summary>
             noBatchLBL control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.ViewMavImg.form1">
-            <summary>
-            form1 control.
             </summary>
             <remarks>
             Auto-generated field.

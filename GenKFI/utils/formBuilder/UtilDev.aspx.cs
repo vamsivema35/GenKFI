@@ -771,157 +771,157 @@ namespace GenKFI.utils.formBuilder
                 gc.Disconnect();
             }
         }
-        protected void OnClick_GetImages(object sender, EventArgs e)
-        {
-            // Get Images for the Batch /Sequence
-            GoodConn gc = new GoodConn();
-            DataTable dt = new DataTable();
-            int numRows = 0;
-            string strBatchTaxPgm = "";
-            string strSQL = "";
-            string strFile1 = "";
-            bool blnUpd = true;
-            string strFormPick = "";
-            OpStatus.Text = "";
+//        protected void OnClick_GetImages(object sender, EventArgs e)
+//        {
+//            // Get Images for the Batch /Sequence
+//            GoodConn gc = new GoodConn();
+//            DataTable dt = new DataTable();
+//            int numRows = 0;
+//            string strBatchTaxPgm = "";
+//            string strSQL = "";
+//            string strFile1 = "";
+//            bool blnUpd = true;
+//            string strFormPick = "";
+//            OpStatus.Text = "";
 
-            // same connection for all the select below
-            try
-            {
-#if DEBUG
-                gc.Connect(Resources.connString);
-#else
-					gc.Connect( Resources.prodConnString );
-#endif
+//            // same connection for all the select below
+//            try
+//            {
+//#if DEBUG
+//                gc.Connect(Resources.connString);
+//#else
+//					gc.Connect( Resources.prodConnString );
+//#endif
 
-                // Get Batch
-                strSQL = "SELECT fstrTaxProgram, ";
-                strSQL += "fstrFormName, ";
-                strSQL += "fstrDLN, ";
-                strSQL += "flngPosInBatch, ";
-                strSQL += "flngCamera, ";
-                strSQL += "fstrFormCode, ";
-                strSQL += "fblnImageBlankSizeCheck, ";
-                strSQL += "fstrFile, ";
-                strSQL += "fstrImgSrc ";
-                strSQL += "FROM " + ImgTable.Text + " ";
-                strSQL += "WHERE fstrBatchId = '" + BatchId.Text + "' ";
-                strSQL += "AND fdtmScanDate = '" + BatchDate.Text + "' ";
-                strSQL += "AND flngSequence = '" + SeqNbr.Text + "' ";
-                strSQL += "ORDER BY flngPosInBatch, flngCamera ";
+//                // Get Batch
+//                strSQL = "SELECT fstrTaxProgram, ";
+//                strSQL += "fstrFormName, ";
+//                strSQL += "fstrDLN, ";
+//                strSQL += "flngPosInBatch, ";
+//                strSQL += "flngCamera, ";
+//                strSQL += "fstrFormCode, ";
+//                strSQL += "fblnImageBlankSizeCheck, ";
+//                strSQL += "fstrFile, ";
+//                strSQL += "fstrImgSrc ";
+//                strSQL += "FROM " + ImgTable.Text + " ";
+//                strSQL += "WHERE fstrBatchId = '" + BatchId.Text + "' ";
+//                strSQL += "AND fdtmScanDate = '" + BatchDate.Text + "' ";
+//                strSQL += "AND flngSequence = '" + SeqNbr.Text + "' ";
+//                strSQL += "ORDER BY flngPosInBatch, flngCamera ";
 
-                gc.DoSelect(strSQL);
-                dt = new DataTable();
-                numRows = gc.ReadSelect(out dt);
-                if (numRows > 0)
-                {
-                    strBatchTaxPgm = dt.Rows[0]["fstrTaxProgram"].ToString();
-                    strFile1 = dt.Rows[0]["fstrFile"].ToString();
-                }
-                if (numRows == 0)
-                {
-                    OpStatus.Text = "Batch/Sequence Not Found";
-                    blnUpd = false;
-                }
-                if (strBatchTaxPgm != DdTaxPgm.Text)
-                {
-                    OpStatus.Text = "Tax Pgm for Batch is '" + strBatchTaxPgm + "'";
-                    blnUpd = false;
-                }
-                if (blnUpd)
-                {
-                    // Load Possible Form Names for Batch
-                    ImgSrctxt.Text = dt.Rows[0]["fstrImgSrc"].ToString();
+//                gc.DoSelect(strSQL);
+//                dt = new DataTable();
+//                numRows = gc.ReadSelect(out dt);
+//                if (numRows > 0)
+//                {
+//                    strBatchTaxPgm = dt.Rows[0]["fstrTaxProgram"].ToString();
+//                    strFile1 = dt.Rows[0]["fstrFile"].ToString();
+//                }
+//                if (numRows == 0)
+//                {
+//                    OpStatus.Text = "Batch/Sequence Not Found";
+//                    blnUpd = false;
+//                }
+//                if (strBatchTaxPgm != DdTaxPgm.Text)
+//                {
+//                    OpStatus.Text = "Tax Pgm for Batch is '" + strBatchTaxPgm + "'";
+//                    blnUpd = false;
+//                }
+//                if (blnUpd)
+//                {
+//                    // Load Possible Form Names for Batch
+//                    ImgSrctxt.Text = dt.Rows[0]["fstrImgSrc"].ToString();
 
-                    strFormPick = "<table id=\"tableCtrl\" cellspacing=\"0\" cellpadding=\"0\" style=\"margin: auto; width: 90%;\">";
-                    strFormPick += "<tr style=\"background: lime;\">";
-                    strFormPick += "<td> FormName </td>";
-                    strFormPick += "<td> DLN </td>";
-                    strFormPick += "<td> Position </td>";
-                    strFormPick += "<td> Camera </td>";
-                    strFormPick += "<td> FormCode </td>";
-                    strFormPick += "<td> Blank </td>";
-                    strFormPick += "</tr>";
+//                    strFormPick = "<table id=\"tableCtrl\" cellspacing=\"0\" cellpadding=\"0\" style=\"margin: auto; width: 90%;\">";
+//                    strFormPick += "<tr style=\"background: lime;\">";
+//                    strFormPick += "<td> FormName </td>";
+//                    strFormPick += "<td> DLN </td>";
+//                    strFormPick += "<td> Position </td>";
+//                    strFormPick += "<td> Camera </td>";
+//                    strFormPick += "<td> FormCode </td>";
+//                    strFormPick += "<td> Blank </td>";
+//                    strFormPick += "</tr>";
 
 
 
-                    foreach (DataRow row in dt.Rows)
-                    {
-                        strFormPick += "<tr @@@ >";
-                        strFormPick += "<td>" + row["fstrFormName"] + "   </td>";
-                        strFormPick += "<td>" + row["fstrDLN"] + "   </td>";
-                        strFormPick += "<td>" + row["flngPosInBatch"].ToString() + "   </td>";
-                        strFormPick += "<td>" + row["flngCamera"].ToString() + "   </td>";
-                        strFormPick += "<td>" + row["fstrFormCode"].ToString() + "   </td>";
-                        strFormPick += "<td>" + row["fblnImageBlankSizeCheck"].ToString() + "   </td>";
-                        strFormPick += "</tr>";
-                        //      
-                        if ((row["flngPosinBatch"].ToString() == Positiontxt.Text) && (row["flngCamera"].ToString() == Cameratxt.Text))
-                        {
-                            strFormPick = strFormPick.Replace("@@@", "style=\"background: olive;\"onclick=\"ChgColor(this,true);RegImg(" + "'" + row["fstrFormName"].ToString() + "', '" + row["flngPosInBatch"].ToString() + "', '" + row["flngCamera"].ToString() + "');\"");
-                        }
-                        else
-                        {
-                            strFormPick = strFormPick.Replace("@@@", "style=\"background: aqua;\"onclick=\"ChgColor(this,true);RegImg(" + "'" + row["fstrFormName"].ToString() + "', '" + row["flngPosInBatch"].ToString() + "', '" + row["flngCamera"].ToString() + "');\"");
-                        }
-                    }
-                    strFormPick += "</table>";
-                    controlsLIT.Text = strFormPick;
-                    // Mavro - Get Offset and Size (Stub front)
-                    if (ImgSrctxt.Text == "MAVRO")
-                    {
-//                        MavFile.Text = strFile1;               // Current File Name
-                        strSQL = "SELECT flngFrontOffset, ";
-                        strSQL += "flngFrontSize ";
-                        strSQL += "FROM tblNM_MavroOffset ";
-                        strSQL += "WHERE fstrBatchId = '" + BatchId.Text + "' ";
-                        strSQL += "AND flngSequence = '" + SeqNbr.Text + "' ";
-                        strSQL += "ORDER BY flngDocNumber ";
-                        gc.DoSelect(strSQL);
-                        dt = new DataTable();
-                        numRows = gc.ReadSelect(out dt);
-                        if (numRows > 0)
-                        {
-                            Offsettxt.Text = dt.Rows[0]["flngFrontOffset"].ToString();
-                            Sizetxt.Text = dt.Rows[0]["flngFrontSize"].ToString();
-                        }
+//                    foreach (DataRow row in dt.Rows)
+//                    {
+//                        strFormPick += "<tr @@@ >";
+//                        strFormPick += "<td>" + row["fstrFormName"] + "   </td>";
+//                        strFormPick += "<td>" + row["fstrDLN"] + "   </td>";
+//                        strFormPick += "<td>" + row["flngPosInBatch"].ToString() + "   </td>";
+//                        strFormPick += "<td>" + row["flngCamera"].ToString() + "   </td>";
+//                        strFormPick += "<td>" + row["fstrFormCode"].ToString() + "   </td>";
+//                        strFormPick += "<td>" + row["fblnImageBlankSizeCheck"].ToString() + "   </td>";
+//                        strFormPick += "</tr>";
+//                        //      
+//                        if ((row["flngPosinBatch"].ToString() == Positiontxt.Text) && (row["flngCamera"].ToString() == Cameratxt.Text))
+//                        {
+//                            strFormPick = strFormPick.Replace("@@@", "style=\"background: olive;\"onclick=\"ChgColor(this,true);RegImg(" + "'" + row["fstrFormName"].ToString() + "', '" + row["flngPosInBatch"].ToString() + "', '" + row["flngCamera"].ToString() + "');\"");
+//                        }
+//                        else
+//                        {
+//                            strFormPick = strFormPick.Replace("@@@", "style=\"background: aqua;\"onclick=\"ChgColor(this,true);RegImg(" + "'" + row["fstrFormName"].ToString() + "', '" + row["flngPosInBatch"].ToString() + "', '" + row["flngCamera"].ToString() + "');\"");
+//                        }
+//                    }
+//                    strFormPick += "</table>";
+//                    controlsLIT.Text = strFormPick;
+//                    // Mavro - Get Offset and Size (Stub front)
+//                    if (ImgSrctxt.Text == "MAVRO")
+//                    {
+////                        MavFile.Text = strFile1;               // Current File Name
+//                        strSQL = "SELECT flngFrontOffset, ";
+//                        strSQL += "flngFrontSize ";
+//                        strSQL += "FROM tblNM_MavroOffset ";
+//                        strSQL += "WHERE fstrBatchId = '" + BatchId.Text + "' ";
+//                        strSQL += "AND flngSequence = '" + SeqNbr.Text + "' ";
+//                        strSQL += "ORDER BY flngDocNumber ";
+//                        gc.DoSelect(strSQL);
+//                        dt = new DataTable();
+//                        numRows = gc.ReadSelect(out dt);
+//                        if (numRows > 0)
+//                        {
+//                            Offsettxt.Text = dt.Rows[0]["flngFrontOffset"].ToString();
+//                            Sizetxt.Text = dt.Rows[0]["flngFrontSize"].ToString();
+//                        }
 
-                    }
+//                    }
 
-                    strSQL = "SELECT fstrTaxForm ";
-                    strSQL += "FROM rfrControlHeaders ";
-                    strSQL += "WHERE fstrTaxProgram = '" + DdTaxPgm.Text + "' ";
-                    strSQL += "AND flngTaxYear = '" + TaxYear.Text + "' ";
-                    strSQL += "AND flngBlock = 0 ";
-                    strSQL += "ORDER BY fstrTaxForm ";
+//                    strSQL = "SELECT fstrTaxForm ";
+//                    strSQL += "FROM rfrControlHeaders ";
+//                    strSQL += "WHERE fstrTaxProgram = '" + DdTaxPgm.Text + "' ";
+//                    strSQL += "AND flngTaxYear = '" + TaxYear.Text + "' ";
+//                    strSQL += "AND flngBlock = 0 ";
+//                    strSQL += "ORDER BY fstrTaxForm ";
 
-                    gc.DoSelect(strSQL);
-                    dt = new DataTable();
-                    numRows = gc.ReadSelect(out dt);
-                    // put form list in here, from strFormPick
-                    // be sure to include all <td></td> elements needed for each part
-                    // formListLIT
-                    strFormPick = "";
-                    if (numRows > 0)
-                    {
-                        foreach (DataRow row in dt.Rows)
-                        {
-                            strFormPick += "<tr @@@ >";
-                            strFormPick += "<td>" + row["fstrTaxForm"] + "</td>";
-                            strFormPick += "</tr>";
-                            strFormPick = strFormPick.Replace("@@@", "onmouseover=\"ChgColor(this,true);\" onmouseout=\"ChgColor(this,false);\" onclick=\"SelectPickRow(" + "'" + row["fstrTaxForm"].ToString() + "');\"");
-                        }
-                        formListLIT.Text = strFormPick;
-                    }
+//                    gc.DoSelect(strSQL);
+//                    dt = new DataTable();
+//                    numRows = gc.ReadSelect(out dt);
+//                    // put form list in here, from strFormPick
+//                    // be sure to include all <td></td> elements needed for each part
+//                    // formListLIT
+//                    strFormPick = "";
+//                    if (numRows > 0)
+//                    {
+//                        foreach (DataRow row in dt.Rows)
+//                        {
+//                            strFormPick += "<tr @@@ >";
+//                            strFormPick += "<td>" + row["fstrTaxForm"] + "</td>";
+//                            strFormPick += "</tr>";
+//                            strFormPick = strFormPick.Replace("@@@", "onmouseover=\"ChgColor(this,true);\" onmouseout=\"ChgColor(this,false);\" onclick=\"SelectPickRow(" + "'" + row["fstrTaxForm"].ToString() + "');\"");
+//                        }
+//                        formListLIT.Text = strFormPick;
+//                    }
 
-                }
-            }
-            catch (Exception ex)
-            {
-                UtilClass.RecordError(gc, ex);
-                gc.Disconnect();
-            }
+//                }
+//            }
+//            catch (Exception ex)
+//            {
+//                UtilClass.RecordError(gc, ex);
+//                gc.Disconnect();
+//            }
 
-        }
+//        }
         protected void OnClick_homeBTN(object sender, EventArgs e)
         {
             // Home Button Click

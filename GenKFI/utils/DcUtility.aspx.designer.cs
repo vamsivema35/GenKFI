@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GenKFI.utils {
-    
-    
-    public partial class DcUtility {
-        
+namespace GenKFI.utils
+{
+
+
+    public partial class DcUtility
+    {
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// divHeaderBackground control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divHeaderBackground;
-        
+
         /// <summary>
         /// Formnamelbl control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Formnamelbl;
-        
+
         /// <summary>
         /// Formnametxt control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Formnametxt;
-        
+
         /// <summary>
         /// Positionlbl control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Positionlbl;
-        
+
         /// <summary>
         /// Positiontxt control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Positiontxt;
-        
+
         /// <summary>
         /// Cameralbl control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Cameralbl;
-        
+
         /// <summary>
         /// Cameratxt control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Cameratxt;
-        
+
         /// <summary>
         /// ImgSrclbl control.
         /// </summary>
@@ -92,7 +94,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label ImgSrclbl;
-        
+
         /// <summary>
         /// ImgSrctxt control.
         /// </summary>
@@ -101,7 +103,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label ImgSrctxt;
-        
+
         /// <summary>
         /// Offsetlbl control.
         /// </summary>
@@ -110,7 +112,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Offsetlbl;
-        
+
         /// <summary>
         /// Offsettxt control.
         /// </summary>
@@ -119,7 +121,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Offsettxt;
-        
+
         /// <summary>
         /// Sizelbl control.
         /// </summary>
@@ -128,7 +130,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Sizelbl;
-        
+
         /// <summary>
         /// Sizetxt control.
         /// </summary>
@@ -137,7 +139,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Sizetxt;
-        
+
         /// <summary>
         /// ShowImg control.
         /// </summary>
@@ -146,7 +148,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ShowImg;
-        
+
         /// <summary>
         /// PickForm control.
         /// </summary>
@@ -155,7 +157,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button PickForm;
-        
+
         /// <summary>
         /// ClearTxtBTN control.
         /// </summary>
@@ -164,7 +166,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ClearTxtBTN;
-        
+
         /// <summary>
         /// DeleteBatchBTN control.
         /// </summary>
@@ -173,7 +175,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button DeleteBatchBTN;
-        
+
         /// <summary>
         /// UnDel control.
         /// </summary>
@@ -182,16 +184,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button UnDel;
-        
-        /// <summary>
-        /// GetImageBTN control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button GetImageBTN;
-        
+
         /// <summary>
         /// ClearForm control.
         /// </summary>
@@ -200,7 +193,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ClearForm;
-        
+
         /// <summary>
         /// BlankSheet control.
         /// </summary>
@@ -209,7 +202,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BlankSheet;
-        
+
         /// <summary>
         /// MavroBTN control.
         /// </summary>
@@ -218,7 +211,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button MavroBTN;
-        
+
         /// <summary>
         /// homeBTN control.
         /// </summary>
@@ -227,7 +220,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button homeBTN;
-        
+
         /// <summary>
         /// formListLIT control.
         /// </summary>
@@ -236,7 +229,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal formListLIT;
-        
+
         /// <summary>
         /// DcImage control.
         /// </summary>
@@ -245,7 +238,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image DcImage;
-        
+
         /// <summary>
         /// maxScrl control.
         /// </summary>
@@ -254,7 +247,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField maxScrl;
-        
+
         /// <summary>
         /// controlsLIT control.
         /// </summary>
@@ -263,7 +256,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal controlsLIT;
-        
+
         /// <summary>
         /// DdTaxPgm control.
         /// </summary>
@@ -272,7 +265,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DdTaxPgm;
-        
+
         /// <summary>
         /// BatchId control.
         /// </summary>
@@ -281,7 +274,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox BatchId;
-        
+
         /// <summary>
         /// SeqNbr control.
         /// </summary>
@@ -290,7 +283,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox SeqNbr;
-        
+
         /// <summary>
         /// MavFile control.
         /// </summary>
@@ -299,7 +292,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox MavFile;
-        
+
         /// <summary>
         /// MavPrev control.
         /// </summary>
@@ -308,7 +301,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox MavPrev;
-        
+
         /// <summary>
         /// OpStatus control.
         /// </summary>
@@ -317,7 +310,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox OpStatus;
-        
+
         /// <summary>
         /// formPickClick control.
         /// </summary>
@@ -326,7 +319,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField formPickClick;
-        
+
         /// <summary>
         /// hidFormName control.
         /// </summary>
@@ -335,7 +328,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hidFormName;
-        
+
         /// <summary>
         /// hidYYear control.
         /// </summary>
@@ -344,7 +337,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hidYYear;
-        
+
         /// <summary>
         /// hidPosition control.
         /// </summary>
@@ -353,7 +346,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hidPosition;
-        
+
         /// <summary>
         /// hidCamera control.
         /// </summary>
@@ -362,7 +355,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hidCamera;
-        
+
         /// <summary>
         /// hidFormType control.
         /// </summary>
@@ -371,7 +364,7 @@ namespace GenKFI.utils {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hidFormType;
-        
+
         /// <summary>
         /// hidPick control.
         /// </summary>

@@ -74,9 +74,9 @@
 			<asp:button runat="server" id="OsrBtn" TabIndex="96" text="StmRec" Visible="false" style="left:1120px; top:50px; position:absolute; height:17px; font-size:13px; font-weight:bold;" OnClick="OnClick_OsrBtn" />
            	<asp:button runat="server" id="OasBtn" TabIndex="97" text="AnnSum" Visible="false" style="left:1220px; top:8px; position:absolute; height:17px; font-size:13px; font-weight:bold;" OnClick="OnClick_OasBtn" />
 
-			<asp:Button runat="server" ID="loadTemplateBTN" Text="Load/Save Template" style="left:1325px; top:10px; position:absolute; font-size:12px; font-weight:bold;" OnClick="OnClick_loadTemplateBTN" />
+			<%--<asp:Button runat="server" ID="loadTemplateBTN" Text="Load/Save Template" style="left:1325px; top:10px; position:absolute; font-size:12px; font-weight:bold;" OnClick="OnClick_loadTemplateBTN" />
 			<asp:Label runat="server" ID="pathLBL" Width="20" style="left:1325px;color:Black;background-color:#F0E7BB;top:36px;position:absolute;height:20px;width:50px;font-weight:bold;" Text="Path:"></asp:Label>
-			<asp:TextBox runat="server" ID="pathTXT" style="left:1375px;color:Black;top:36px;position:absolute;" Text=""></asp:TextBox>
+			<asp:TextBox runat="server" ID="pathTXT" style="left:1375px;color:Black;top:36px;position:absolute;" Text=""></asp:TextBox>--%>
 		</div>
 	</asp:Content>
 
@@ -94,7 +94,7 @@
 			$(document).ready(function()
 			{
 				// image drag and marker functions
-				$('#divImageDrag').draggable();
+				<%--$('#divImageDrag').draggable();
 
 				$('#divImageDrag').mousedown(function()
 				{
@@ -126,7 +126,7 @@
 				{
 					$("#<%= markerXTXT.ClientID%>").val($('#divMarker').css("left").replace("px", ""));
 					$("#<%= markerYTXT.ClientID%>").val($('#divMarker').css("top").replace("px", ""));
-				});
+				});--%>
 
 				$('#divControls').scroll(function()
 				{
@@ -134,7 +134,7 @@
 				});
 
 				// clip area functions
-				$("#<%= clipDIV.ClientID%>").resizable().draggable();
+				<%--$("#<%= clipDIV.ClientID%>").resizable().draggable();
 
 				$("#<%= clipDIV.ClientID%>").on("drag", function(event, ui)
 				{
@@ -155,7 +155,7 @@
 					left: parseInt($("#<%= clipLeftTXT.ClientID%>").val()) + parseInt($('#divImageDrag').offset().left),
 					height: parseInt($("#<%= clipBotTXT.ClientID%>").val()) - parseInt($("#<%= clipTopTXT.ClientID%>").val()),
 					width: parseInt($("#<%= clipRightTXT.ClientID%>").val()) - parseInt($("#<%= clipLeftTXT.ClientID%>").val())
-				});
+				});--%>
 
 				$(function()
 				{
@@ -195,8 +195,8 @@
 		<asp:ScriptManager runat="server" ID="ScriptManager1"></asp:ScriptManager>
 
 		<div id="menubar" style="position: absolute;
-									top: 72px;
-									right: 0px;
+									top: 50px;
+									left: 1%;
 									width: 100px;
 									background: lightgrey;
 									margin: auto;
@@ -212,9 +212,10 @@
 							overflow:hidden; 
 							position:absolute; 
 							border:1px solid #ccc;
-							width:50%;
+							width:25%;
 							bottom: 0%;
-							left: 50%;
+							left: 1%;
+							top: 8%;
 							z-index: 99;">
 				<div id="controlEdit">
 					<h3>Block Options</h3>

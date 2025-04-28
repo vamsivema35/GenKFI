@@ -159,14 +159,14 @@
 
 	<asp:Literal runat="server" ID="infoLIT" Mode="PassThrough"></asp:Literal>
 
-	<table>
+	<%--<table>
 		<tr>
-			<td><asp:Literal runat="server" ID="ShowMavroImageLIT" Mode="PassThrough"></asp:Literal></td>
-<!--			<td colspan="3"><asp:Button runat="server" ID="toggleBTN" Text="Toggle Other Forms"></asp:Button></td>
+			<!--<td><asp:Literal runat="server" ID="ShowMavroImageLIT" Mode="PassThrough"></asp:Literal></td>
+			<td colspan="3"><asp:Button runat="server" ID="toggleBTN" Text="Toggle Other Forms"></asp:Button></td>
 			<td colspan="3"><asp:Button runat="server" ID="otherBTN" Text="Toggle Other Images"></asp:Button></td>
 			<td colspan="3"><asp:Button runat="server" ID="blankBTN" Text="Toggle Blank Images"></asp:Button></td>   -->
 		</tr>
-	</table>
+	</table>--%>
 
 
 
@@ -194,9 +194,9 @@
 					<td><%#Eval( "PaymentAmount" ).ToString() %></td>
 					<td><%#Eval( "DLN" ).ToString() %></td>
 					<td><%#Eval( "fstrFormName" ).ToString() %>
-						<span id="popup" title="<%= ResolveClientUrl("~/noFront/imageLoad.aspx") %>?fName=<%#Eval( "popupImage" ).ToString() %>" >
+						<%--<span id="popup" title="<%= ResolveClientUrl("~/noFront/imageLoad.aspx") %>?fName=<%#Eval( "popupImage" ).ToString() %>" >
 							<img id="thumbnail" alt="" width="15" height="15" src="<%= ResolveClientUrl("~/images/MagnifyingGlass.png") %>">
-						</span></td>
+						</span>--%></td>
 					<td><%#Eval( "lastWho" ).ToString() %></td>
 					<td><%#Eval( "BatchStatus" ).ToString() %></td>
 				</tr>

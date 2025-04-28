@@ -127,7 +127,7 @@
             <asp:Button runat="server" ID="ClearTxtBTN" Text="Clear Choices" style="left:548px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;" OnClick="OnClick_ClearChoice" />
             <asp:Button runat="server" ID="GetRecBTN" Text="Get Rec" style="left:715px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;" OnClick="OnClick_GetRec" />
             <asp:Button runat="server" ID="UpdRecBTN" Text="Upd Rec" style="left:860px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;" OnClick="OnClick_UpdRec" />
-        	<asp:Button runat="server" ID="GetImageBTN" Text="Get Images" style="left:990px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;"  OnClick="OnClick_GetImages" />
+        	<%--<asp:Button runat="server" ID="GetImageBTN" Text="Get Images" style="left:990px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;"  OnClick="OnClick_GetImages" />--%>
             <asp:Button runat="server" ID="ClearForm" Text="Clear Form" style="left:1122px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;" OnClick="OnClick_ClearForm" />
  			 <input id="BtnPick" tabindex="95" type="button" name="btnPick" value="Pick Form"
 				 style="left:1332px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;"
