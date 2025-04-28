@@ -1,0 +1,507 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="forms.master.cs" Inherits="GenKFI.Forms" %>
+
+
+<!DOCTYPE html>
+ 
+<head runat="server">
+	<title><%= GenKFI.UtilClass.NormalizeUN( HttpContext.Current.User.Identity.Name ) %> : Key Entry - <% if( Request.QueryString[ "TP" ] != null ) { Response.Write( Request.QueryString[ "TP" ].ToString() + " : " ); } %><% Roles.GetRolesForUser( GenKFI.UtilClass.NormalizeUN( HttpContext.Current.User.Identity.Name ) ).ToString(); %></title>
+
+	<script type="text/javascript" src="<%= ResolveClientUrl( "~/scripts/jquery-1.8.2.min.js" ) %>"></script>
+	<script type="text/javascript" src="<%= ResolveClientUrl( "~/scripts/jquery-ui.min.js" ) %>"></script>
+	<script type="text/javascript" src="<%= ResolveClientUrl( "~/scripts/moment.min.js" ) %>"></script>
+	<script type="text/javascript" src="<%= ResolveClientUrl( "~/scripts/formattingDB.js" ) %>"></script>
+	<script type="text/javascript" src="<%= ResolveClientUrl( "~/scripts/divMove.js" ) %>"></script>
+	<link rel="stylesheet" href="<%= ResolveClientUrl( "~/css/smoothness/jquery-ui-1.10.3.custom.css" ) %>"/>
+	<link rel="Stylesheet" type="text/css" href="<%= ResolveClientUrl( "~/css/footer.css" ) %>" />
+	<script type="text/javascript">
+        //Rotate the image 90 degrees
+        // grabbed from here
+        // https://code.google.com/p/jqueryrotate/
+        $.getScript("<%= ResolveClientUrl( "~/scripts/jQueryRotate.2.2.js" ) %>");
+    </script>
+
+	<script type="text/javascript" >
+
+        $(window).load( function()
+		{
+			if(document.getElementById(document.getElementById("<%= keFocusHID.ClientID %>").value) != null)
+			{
+				document.getElementById(document.getElementById("<%= keFocusHID.ClientID %>").value).select();
+				document.getElementById(document.getElementById("<%= keFocusHID.ClientID %>").value).focus();
+			}
+			// if there is a footer, we need to move the controls table up a bit
+			if( "<%= Session["impersonating"].ToString() %>" != "" )
+				$("#tableCtrl").css("padding-bottom", "80px");
+
+            $("#hidRotate").val("0");
+            // Check if LandScape
+			if (document.getElementById("<%= hidLand.ClientID %>").value == "1")
+			{
+				$("#hidRotate").val("2");
+
+                    $("#divImageDrag").css({
+                        '-webkit-transform': 'rotate(' + 270 + 'deg)',
+                        'transform': 'rotate(' + 270 + 'deg)'
+                    });
+
+			}
+			// Drop Down Pick of Country
+			if (document.getElementById("<%= hidCCode.ClientID %>").value > "  ") { 
+				document.getElementById(document.getElementById("<%= keCountryHID.ClientID %>").value).value = document.getElementById("<%= hidCCode.ClientID %>").value;
+				document.getElementById(document.getElementById("<%= keCountryHID.ClientID %>").value).focus();
+				document.getElementById("<%= hidCCode.ClientID %>").value = null;
+				var names = document.getElementById("<%= hidTouchName.ClientID %>").value.split(';');
+				if (names.length > 1) {
+                    for (var i = 0; i < names.length - 1; i++) {
+                        $.trim($('#' + names[i]).val('1'));
+                    }
+                }
+			}
+		});
+
+		intZoom = 0;
+		foomZactor = 1;
+		origFoomZactor = -1;
+		function startZoom( dir )
+		{
+			intZoom = setInterval("doZoom('" + dir + "')", 10);
+		}
+		function stopZoom()
+		{
+			window.clearInterval(intZoom);
+		}
+		function doZoom( strDirection )
+		{
+			switch(strDirection)
+			{
+				case "in":
+				{
+					foomZactor = 1.001 * foomZactor;
+					$("#divImageDrag").css("top", $("#dragTHID").val().replace("px", "") * foomZactor + (1 - foomZactor) * $("#divMarker").css("top").replace("px", ""));
+					$("#divImageDrag").css("left", $("#dragLHID").val().replace("px", "") * foomZactor + (1 - foomZactor) * $("#divMarker").css("left").replace("px", ""));
+					break;
+				}
+				case "out":
+				{
+					foomZactor = 0.999 * foomZactor;
+					$("#divImageDrag").css("top", $("#dragTHID").val().replace("px", "") * foomZactor + (1 - foomZactor) * $("#divMarker").css("top").replace("px", ""));
+					$("#divImageDrag").css("left", $("#dragLHID").val().replace("px", "") * foomZactor + (1 - foomZactor) * $("#divMarker").css("left").replace("px", ""));
+					break;
+				}
+
+				default:
+				{
+					break;
+				}
+			}
+			$("#<%= imgImage.ClientID %>").width($("#imgWHID").val() * foomZactor);
+			$("#<%= imgImage.ClientID %>").height($("#imgHHID").val() * foomZactor);
+        }
+
+
+        function ImgCheck()
+        {
+            $("#divImageDrag").offset({ top: 0});
+			$("#hidTop").val("0");
+
+
+//            $("#divImageDrag").offset({ top: $("#divImageDrag").offset().top + 750 });
+//			$("#hidTop").val(parseInt($("#hidTop").val()) + 750);
+    		$("#dragTHID").val($("#divImageDrag").css("top").replace("px", ""));
+    		$("#dragLHID").val($("#divImageDrag").css("left").replace("px", ""));
+            document.getElementById("imgScroll").style.visibility = "visible";
+//   			if(document.getElementById(document.getElementById("<%= keFocusHID.ClientID %>").value) != null)
+//			{
+//				document.getElementById(document.getElementById("<%= keFocusHID.ClientID %>").value).select();
+//				document.getElementById(document.getElementById("<%= keFocusHID.ClientID %>").value).focus();
+//			}
+
+
+        }
+
+		function resetXforms()
+		{
+			foomZactor = origFoomZactor;
+			$("#<%= imgImage.ClientID %>").width($("#imgWHID").val() * foomZactor);
+			$("#<%= imgImage.ClientID %>").height($("#imgHHID").val() * foomZactor);
+			$("#divImageDrag").css("top", $("#dragTHID").val() * foomZactor);
+			$("#divImageDrag").css("left", $("#dragLHID").val() * foomZactor);
+			$("#dragToffsetHID").val("0");
+			$("#dragLoffsetHID").val("0");
+			intLeft = 0;
+			intTop = 0;
+		}
+
+		function setOriginals()
+		{
+//				fncImageRotate();
+//				fncImageRotate();
+//				fncImageRotate();
+//            foomZactor = (int.parsefloat(document.getElementById("<%= hidZoom.ClientID %>").value / 100.0)
+//            $("#imgWHID").val($("#<%= imgImage.ClientID %>").width());
+//            $("#imgHHID").val($("#<%= imgImage.ClientID %>").height());
+//            $("#<%= imgImage.ClientID %>").width($("#imgWHID").val() * foomZactor);
+//            $("#<%= imgImage.ClientID %>").height($("#imgHHID").val() * foomZactor);
+			// save values for later, yummm
+			    $("#imgWHID").val($("#<%= imgImage.ClientID %>").width());
+			    $("#imgHHID").val($("#<%= imgImage.ClientID %>").height());
+			    $("#dragTHID").val($("#divImageDrag").css("top").replace("px", ""));
+				$("#dragLHID").val($("#divImageDrag").css("left").replace("px", ""));
+		}
+
+		// get and put for dummy placeholders
+		function d_GET(num)
+		{
+			// this is hacky, but it works
+			if(num == 0)
+				return $("#<%= dummy0HID.ClientID %>").val();
+			else if(num == 1)
+				return $("#<%= dummy1HID.ClientID %>").val();
+			else if(num == 2)
+				return $("#<%= dummy2HID.ClientID %>").val();
+			else if(num == 3)
+				return $("#<%= dummy3HID.ClientID %>").val();
+			else if(num == 4)
+				return $("#<%= dummy4HID.ClientID %>").val();
+			else if(num == 5)
+				return $("#<%= dummy5HID.ClientID %>").val();
+			else if(num == 6)
+				return $("#<%= dummy6HID.ClientID %>").val();
+			else if(num == 7)
+				return $("#<%= dummy7HID.ClientID %>").val();
+			else if(num == 8)
+				return $("#<%= dummy8HID.ClientID %>").val();
+			else if(num == 9)
+				return $("#<%= dummy9HID.ClientID %>").val();
+		}
+		function d_PUT( value, num )
+		{
+			// if negative, also store in mine
+			if(num < 0)
+				$("#<%= dummyMineHID.ClientID %>").val(value.replace(/,/g, ''));
+			// this is for the repeater forms (pit dependents)
+			// the pit dependents also needs the filing status, see PutValInfo.xlsx in the notes folder for the dummy HID control where this is stored
+			// don't change that value!
+
+			if(Math.abs(num) == 0)
+				$("#<%= dummy0HID.ClientID %>").val(value.replace(/,/g,''));
+			else if(Math.abs(num) == 1)
+				$("#<%= dummy1HID.ClientID %>").val(value.replace(/,/g, ''));
+			else if(Math.abs(num) == 2)
+				$("#<%= dummy2HID.ClientID %>").val(value.replace(/,/g, ''));
+			else if(Math.abs(num) == 3)
+				$("#<%= dummy3HID.ClientID %>").val(value.replace(/,/g, ''));
+			else if(Math.abs(num) == 4)
+				$("#<%= dummy4HID.ClientID %>").val(value.replace(/,/g, ''));
+			else if(Math.abs(num) == 5)
+				$("#<%= dummy5HID.ClientID %>").val(value.replace(/,/g, ''));
+			else if(Math.abs(num) == 6)
+				$("#<%= dummy6HID.ClientID %>").val(value.replace(/,/g, ''));
+			else if(Math.abs(num) == 7)
+				$("#<%= dummy7HID.ClientID %>").val(value.replace(/,/g, ''));
+			else if(Math.abs(num) == 8)
+				$("#<%= dummy8HID.ClientID %>").val(value.replace(/,/g, ''));
+			else if(Math.abs(num) == 9)
+				$("#<%= dummy9HID.ClientID %>").val(value.replace(/,/g, ''));
+			return value;
+		}
+		
+		function myParseFloat(val)
+		{
+			return parseFloat((val == "" ? 0 : val));
+		}
+
+		function isKey()
+		{
+			return $('#<%=typeHID.ClientID %>').val() == "key";
+		}
+
+		//Rotate the image 90 degrees
+		// grabbed from here
+		// https://code.google.com/p/jqueryrotate/
+		// $.getScript("<%= ResolveClientUrl( "~/scripts/jQueryRotate.2.2.js" ) %>");
+    </script>
+
+	<style type="text/css">
+		.headerInput {
+			font-size: 13px;
+			color: Black;
+			background-color: #F0E7BB;
+			position: relative;
+		}
+		body {
+			overflow: hidden;
+		}
+	</style>
+
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
+</head>
+<body>
+	<form id="form1" runat="server" >
+		<div id="content" >
+			<!-- ************************************************** -->
+			<!-- Header Background -->
+			<!-- ************************************************** -->
+
+			<div id="divHeaderBackground" runat="server" 
+				style="position:absolute;
+					   top:0px;
+					   left:0px;
+					   height:72px;
+					   width:100%;
+					   background-color:#F0E7BB;
+					   border:solid 1px black;" > 
+			</div>
+
+			<input type="button" id="btnRotate" onclick="fncImageRotate();"
+			style="left:75px;
+					top:3px;
+					width: 120px;
+					position:absolute;
+					font-size:20px;
+					z-index:3;
+					font-weight:bold;" value="Rotate 90" />  
+			<input type="button" id="zoomInBTN"
+				onmousedown="startZoom('in');"
+				onmouseup="stopZoom();"
+				style="left:75px;
+					top:33px;
+					width: 60px;
+					position:absolute;
+					font-size:20px;
+					z-index:3;
+					font-weight:bold;" value="+" />  
+			<input type="button" id="zoomOutBTN" 
+				onmousedown="startZoom('out');"
+				onmouseup="stopZoom();"
+				style="left:135px;
+					top:33px;
+					width: 60px;
+					position:absolute;
+					font-size:20px;
+					z-index:3;
+					font-weight:bold;" value="-" />  
+
+			<input type="button" id="resetBTN" name="Reject" value="Reset X-Form"
+				 style="left: 200px; 
+					top: 3px; 
+					position: absolute; 
+					width: 120px; 
+					font-size: 14px; 
+					font-weight: bold;
+					z-index:3;"
+				 onclick="resetXforms();" />
+			<input type="button" id="ImgChk" name="ImgChk1" value="Image Top"
+				 style="left: 200px; 
+					top: 23px; 
+					position: absolute; 
+					width: 120px; 
+					font-size: 14px; 
+					font-weight: bold;
+					z-index:3;"
+				 onclick="ImgCheck();" />
+
+
+			<asp:ContentPlaceHolder runat="server" ID="headerHolder">
+
+			</asp:ContentPlaceHolder>
+<!--
+	<asp:ContentPlaceHolder ID="DropDownHolder" runat="server">
+	</asp:ContentPlaceHolder>
+	-->
+	
+
+
+			<!-- ************************************************** -->
+			<!-- Image Position -->
+			<!-- ************************************************** -->
+
+			<div id="divScroll" style="position:absolute;top:0px;left:0px;">
+			<img id="imgScroll" src="<%= ResolveClientUrl( "~/images/ImgScroll.png" ) %>" usemap="#Image-Map" width="57" height="53" alt="" />
+			<map id="_Image-Map" name="Image-Map">
+			<area shape="rect" coords="20,0,37,20" alt="Up" title="Up"
+				href="javascript:"
+				onmousedown="startMove('up', false);"
+				onmouseup="stopMove();"
+				onmouseout="stopMove();this.blur();" />
+			<area shape="rect" coords="20,32,35,50" alt="Down" title="Down"
+				href="javascript:"
+				onmousedown="startMove('down', false);"
+				onmouseup="stopMove();"
+				onmouseout="stopMove();this.blur();" />
+			<area shape="rect" coords="37,20,54,34" alt="Right" title="Right"
+				href="javascript:"
+				onmousedown="startMove('right', false);"
+				onmouseup="stopMove();"
+				onmouseout="stopMove();this.blur();" />
+			<area shape="rect" coords="0,20,18,34"alt="Left" title="Left"
+				href="javascript:"
+				onmousedown="startMove('left', false);"
+				onmouseup="stopMove();"
+				onmouseout="stopMove();this.blur();" />
+			</map>
+			</div>
+
+			<!-- ************************************************** -->
+			<!-- Image      
+                        -webkit-transform: translateZ(0);
+                 --> 
+			<!-- ************************************************** -->
+
+			<div 
+				 id="divImage"
+				 style="float:left;
+						overflow:hidden;        
+						position:absolute;
+                        -webkit-transform: translateZ(0);
+						top:73px;
+						left:0px;
+						height:92%;
+						width:50%;">
+
+				<div id="divImageDrag" style="top:0px; left:0px;" >
+					<asp:Image runat="server" ID="imgImage" Width="960px" />
+				</div>
+
+			</div>
+			 
+			<asp:ContentPlaceHolder runat="server" ID="scriptingHolder">
+			</asp:ContentPlaceHolder>
+
+			<asp:ContentPlaceHolder runat="server" ID="rightHolder">
+			</asp:ContentPlaceHolder>
+		
+			<!-- ************************************************** -->
+			<!-- Control Marker -->
+			<!-- ************************************************** -->
+
+			<div id="divMarker" 
+				 style="position:absolute;
+						background-color:#19D658;
+						visibility:visible;
+						height:35px;
+						width:20px;
+						top:105px;
+						left:10px;
+						opacity: 0.50;" >
+				<!--		filter:alpha(opacity=50)"   -->
+			</div>
+
+			<div id="repeaterMarker" 
+				 style="position:absolute;
+						background-color:yellow;
+						visibility:hidden;
+						height:35px;
+						width:20px;
+						top:155px;
+						left:10px;
+						opacity: 0.35;" >
+			</div>
+
+			           <table>
+				<tr>
+					<td>
+			<asp:DropDownList runat="server" ID="CountryDDL" width="20%" Visible = "false" 
+				style="left: 25%; top: 100px; height: 40px; position: absolute;"
+				 AutoPostBack="true" OnSelectedIndexChanged="OnSelectedIndexChanged_CountryDDL">
+            </asp:DropDownList>
+					</td>
+				</tr>
+			</table>
+
+			<asp:ContentPlaceHolder runat="server" ID="controlsHolder">
+			</asp:ContentPlaceHolder>
+		
+			<!-- ************************************************** -->
+			<!-- Controls 
+						overflow-x:hidden;
+						overflow-y:scroll; 
+                -->
+			<!-- ************************************************** -->
+
+			<div id="divControls"  
+				 style="position:absolute; 
+						overflow-x:hidden;
+						overflow-y:scroll; 
+						visibility:visible;
+                        -webkit-transform: translateZ(0);
+						border:1px solid #ccc;
+						top:73px;
+						left:50%;
+						height:92%;
+						width:50%;" 
+				         >
+
+				<asp:HiddenField runat="server" ID="maxScrl" Value="0" />
+				<div id="ctrlSizer">
+					<asp:Literal runat="server" ID="controlsLIT" Mode="PassThrough" ></asp:Literal>
+					<asp:Panel runat="server" ID="repeaterPNL">Press Tab to Select 'Submit' button.</asp:Panel>
+				</div>
+			<!--	Table is Placed here for Controls / Entry  -->
+
+			  
+			</div>
+
+
+			<!-- ************************************************** -->
+			<!-- Hidden Inputs -->
+			<!-- ************************************************** -->
+
+			<asp:ContentPlaceHolder runat="server" ID="hiddenHolder">
+			</asp:ContentPlaceHolder>
+		
+			<input type="hidden" id="hidLeft" value="0" />
+			<input type="hidden" id="hidTop" value="0" />
+			<input type="hidden" id="hidRotate" value="0" />
+         <!-- <input type="hidden" id="hidTouchName" /  -->
+
+			<asp:HiddenField runat="server" ID="hidTouchName" EnableViewState="true" />
+			<asp:HiddenField runat="server" ID="hidSavFoc" />
+			<asp:HiddenField runat="server" ID="keFocusHID" />
+			<asp:HiddenField runat="server" ID="keCountryHID" />
+			<asp:HiddenField runat="server" ID="hidCCode" />
+
+			<input type="hidden" id="imgWHID" value="0" />
+			<input type="hidden" id="imgHHID" value="0" />
+			<input type="hidden" id="dragTHID" value="0" />
+			<input type="hidden" id="dragLHID" value="0" />
+			<input type="hidden" id="dragToffsetHID" value="0" />
+			<input type="hidden" id="dragLoffsetHID" value="0" />
+			<asp:HiddenField runat="server" ID="typeHID" EnableViewState="true" />
+
+			<asp:HiddenField runat="server" ID="hidLand" EnableViewState="true" />
+			<asp:HiddenField runat="server" ID="hidZoom" EnableViewState="true" />
+
+			<asp:HiddenField runat="server" ID="dummy0HID" EnableViewState="true" />
+			<asp:HiddenField runat="server" ID="dummy1HID" EnableViewState="true" />
+			<asp:HiddenField runat="server" ID="dummy2HID" EnableViewState="true" />
+			<asp:HiddenField runat="server" ID="dummy3HID" EnableViewState="true" />
+			<asp:HiddenField runat="server" ID="dummy4HID" EnableViewState="true" />
+			<asp:HiddenField runat="server" ID="dummy5HID" EnableViewState="true" />
+			<asp:HiddenField runat="server" ID="dummy6HID" EnableViewState="true" />
+			<asp:HiddenField runat="server" ID="dummy7HID" EnableViewState="true" />
+			<asp:HiddenField runat="server" ID="dummy8HID" EnableViewState="true" />
+			<asp:HiddenField runat="server" ID="dummy9HID" EnableViewState="true" />
+			<asp:HiddenField runat="server" ID="dummyMineHID" EnableViewState="true" />
+
+    		<asp:HiddenField runat="server" ID="hidmvBatchId" EnableViewState="true" />
+	    	<asp:HiddenField runat="server" ID="hidmvBatchDate" EnableViewState="true" />
+		    <asp:HiddenField runat="server" ID="hidmvSequence" EnableViewState="true" />
+		    <asp:HiddenField runat="server" ID="hidmvTaxPgm" EnableViewState="true" />
+		    <asp:HiddenField runat="server" ID="hidmvImgSrc" EnableViewState="true" />
+		    <asp:HiddenField runat="server" ID="hidmvDocNbr" EnableViewState="true" />
+		    <asp:HiddenField runat="server" ID="hidmvOffset" EnableViewState="true" />
+		    <asp:HiddenField runat="server" ID="hidmvSize" EnableViewState="true" />
+		    <asp:HiddenField runat="server" ID="hidMavKey" EnableViewState="true" />
+		    <asp:HiddenField runat="server" ID="hidSaveFocus" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="hidOgdForm" EnableViewState="true" />
+
+        </div>
+		<asp:Panel runat="server" ID="footerPNL" Visible="false">
+			<div id="footer">
+			</div>
+		</asp:Panel>
+	</form>
+</body>
+

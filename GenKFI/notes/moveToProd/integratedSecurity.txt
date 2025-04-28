@@ -1,0 +1,8 @@
+Setting up Integrated Security to connect to DB server.
+based on this http://msdn.microsoft.com/en-us/library/ff647396.aspx
+
+When testing Integrated Security=true in the DB connection string, it errored out giving 'user "TRD_MASTER\TRDPIPELINEDEV" cannot logon' when running on TRDPIPELINEDEV. This was expected, since the machine account doesn't have access to the database server. There were two ways to fix this. Either give the machine account access, which is a bad idea. Or make a new user for the application to use.
+
+After making the new user, it needs to be registered with IIS, and a new app pool should be created. The new app pool is then run under the new user, and the new web application is set to run in this app pool. This effective makes the application run under the new user. The new user is then given needed rights to the database server and database (read/write on the database and all the aspnet_* roles, for user/role management). 
+
+This should work!

@@ -1,0 +1,18 @@
+Need to determine correct resolution for all machines to be set on, alignment still not correct. Phyllis changed to 1920 X 1080 and it was still off but wording was no longer skewed. Attempted 2560 X 1440 and font was too small  for her monitor size.
+Remove TRD Master from the user selection listings
+PIT X and PIT 1:  
+	(line 18A) should default to R and allow user to override.  
+	(line 14) PIT X – why are we allowing the calculation in this field and can users override.  Please get approval from Charlene that they can accept the calculation or should they still key this field?  
+Address Validation: In current system there is a yes and no check box if the address is new or not. If it is marked as yes, then they can edit the address.  If it is marked no, (and no changes are needed) then the cursor will skip of over address fields.  Can this happen for PIT and PIT X on populated addresses?  
+User stat reports:  Need by tax program and by user.  
+Request user security to include new group:
+	User – Key only
+	Supervisor – Assign new only or reassign untouched new batches only
+	Admin – All function
+	Developer – Admin plus error links
+Under Admin Security request the ability to hide users that are no longer employed in key entry.  Please show only active users.
+Reports to be created:  (examples printed and given to Joe)
+	Inquiry report  
+	Unassigned Queue         
+Reports need breakdown of year for PIT account.  All other accounts no year necessary.
+

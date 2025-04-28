@@ -1,0 +1,15 @@
+Questions/Features on GenKFI
+- Should batches be able to be assigned to multiple users?
+- Should users still have the ability to choose the batch and return to key, or simply force them to continue to the next one queued?
+- How should the users batches and queues be ordered? Currently it's by Batch Date, BatchID, and Return
+
+Verify Changes
+- Unified interface, one can now view multiple tax programs at once
+- Users are now taken to a page with a "Begin!" link, which then takes them to their first form to key. Once done with that form, they are simply taken to the next form in the return or the next batch, regardless of tax program
+- ADMINS now have the ability to impersonate a USER, viewing the application as that user would see it
+- Default layout is now portrait (side-by-side)
+- Image can now be zoomed in or out, in addition to dragging
+- Checkbox groups can now be entered by number, translated to GenTax values later
+- Default button on stats pages has been moved away from the "Home" button
+- Key Form table can now be dismissed by clicking outside, rather than using the button again
+

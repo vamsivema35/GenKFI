@@ -1,0 +1,76 @@
+﻿input:focus
+{ 
+	background-color:#33FF99; 
+}
+input
+{
+	font-family:Courier New;
+	font-weight:bold;
+	z-index:1;
+}
+span
+{
+	font-family:Courier New;
+	font-size:20px;
+	font-weight:bold;
+}
+body
+{
+	font-family:Courier New;
+	background-image:url(Images/Body1.png);
+	background-repeat:no-repeat;	
+}
+a
+{
+	color:Blue;
+	font-weight:bold;
+}
+a:hover
+{
+	color:#FF0066;
+	font-weight:bold;	
+}
+.tblHeader
+{
+	background-image:url(Images/Header4.png);
+	background-repeat:no-repeat;		
+}
+.tblMenu
+{
+	background-image:url(Images/Menu1.png);
+	background-repeat:no-repeat;		
+	border:solid 1px black;
+}
+.tblBorder
+{
+	border:solid 1px black;
+}
+.bodyNewReturn
+{
+	background-image:url(Images/Background5.png);	
+}
+.divMenu
+{
+	background-image:url(Images/Menu3.png);
+	background-repeat:no-repeat;		
+	border:solid 1px black;
+	
+	position:absolute;
+	top:50px;
+	left:10px;
+	width:200px;
+	height:780px;
+	padding:10px;
+}
+.divContent
+{
+	position:absolute;
+	left:250px;
+	width:70%;
+}
+.gdvErrorsPath
+{
+	visibility:hidden;
+	position:absolute;
+	width:0px;
+}

@@ -1,0 +1,77 @@
+** block/batch edit page:
+start on a block and page list edit page
+	find how the batches get the page sequences and block values
+the normal add/edit/remove/edit control buttons
+we will probably need to set this up before anything is in the batch
+	so we need to know what tblBatchImage.fstrTaxProgram and tblBatchImage.fstrFormName will be, since that is what we will be using to relate to the controls
+	each block will have those values, plus the fileType and taxYear (set by batch? set here for all the forms)
+		and then table and block set here, same for all controls by block number
+	when adding a new tax form, flngOrder and flngBlock are both 0
+	NEW when adding a new block, add another declaration row with flngOrder = 0 and flngBlock incremented
+		changed BatchModify.aspx added fnlgBlock = 0 in the WHERE clause, it shouldn't affect anything
+		might have to add declaration rows for all the blocks for this to work with the old form control data
+
+** control edit page
+each page has a "Developer Comment" as the first control, where is this used and where is it set?
+	used on BatchModify, clips image to ID location, so they can set it on that page for each sequence
+	set this on block/batch edit page, load the blank image to get coords off first page
+	not incredibly important, never set in old version (where would we save this info, if anywhere)
+
+load a template image
+change the header from KFI controls to control buttons:
+	control type DDL
+	add control
+	save edits
+	remove control
+	move control up in sequence
+	move control down in sequence
+	move control right (vert skip)
+	move control vertical (no vert skip)
+	test controls button (go to text page)
+	
+find out how one of the forms shows two columns of controls:
+	~E1 added to end of one of the controls
+	E1 control is the left side control, there is a replace that remove the row end tag, thus making the right side control the second control in the list
+	via fblnVertSkip column in rfrControls
+	flgs that NEXT control is horizontal, not vertical (vertical skip)
+
+add check boxes to each control for selection
+each control also has:
+	textbox for label
+	textbox for gentax field
+	two text boxes for marker coordinates (JS to drag it around?)
+	two text boxes for image scroll coordinates
+	dropdown for type of data and formatting if necessary (string, money, ssn, fein, etc)
+	a dropdown for which control to move to next (also add "finish image" to this selection list)
+put them all in an update panel for speed and postback awareness
+
+each control needs to fill these columns
+2	fstrGenTaxFieldName
+3	fstrInputID
+7	flngOrder
+9	fstrColumn
+10	fstrFormat
+11	flngDispLength
+12	flngMaxLength
+13	flngVBVarType
+15	fblnPostBack	(not currently used, but is sometimes filled, not consistent)
+16	fblnVertSkip
+17	fstrLabel
+18	fstrOnFocus
+19	fstrOnKeyDown
+20	fblnActive	(always 1?)
+
+these columns are for the form, all the same for each control (tax program, table, block)
+1	fstrFileType
+4	fstrTaxProgram
+5	flngTaxYear
+6	fstrTaxForm
+8	fstrTable
+14	flngBlock
+
+
+
+** test page
+just load up the test scan image and run through the controls
+don't need to enter data, just tab through them to make sure all the marker and image scrolling works
+

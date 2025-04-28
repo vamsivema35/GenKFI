@@ -1,0 +1,106 @@
+/* @#@#@#@#@#@#@#@#@#@#@#@#@# */
+/* @#@#    TEST ONLY!    @#@# */
+/* @#@# production below @#@# */
+/* @#@#@#@#@#@#@#@#@#@#@#@#@# */
+
+To clean the ASPNET generated member tables, delete from these tables at least
+
+DELETE FROM userProgCode;
+DELETE FROM userExpires;
+DELETE FROM progCodes;
+
+DELETE FROM aspnet_UsersInRoles;
+DELETE FROM aspnet_Roles;
+DELETE FROM aspnet_Users;
+DELETE FROM aspnet_Applications;
+
+UPDATE tblKeQMast SET fstrUserID = REPLACE( fstrUserID, 'TRD_MASTER\', '' )
+UPDATE tblKeQueue SET fstrUserID = REPLACE( fstrUserID, 'TRD_MASTER\', '' )
+UPDATE tblBatchInfo SET fstrBatchUser = REPLACE( fstrBatchUser, 'TRD_MASTER\', '' );
+UPDATE tblDependents SET fstrWho = REPLACE( fstrWho, 'TRD_MASTER\', '' );
+UPDATE tblPIT11 SET fstrWho = REPLACE( fstrWho, 'TRD_MASTER\', '' );
+UPDATE tblPIT12 SET fstrWho = REPLACE( fstrWho, 'TRD_MASTER\', '' );
+UPDATE tblPITADJ SET fstrWho = REPLACE( fstrWho, 'TRD_MASTER\', '' );
+UPDATE tblPITB1 SET fstrWho = REPLACE( fstrWho, 'TRD_MASTER\', '' );
+UPDATE tblPITB2 SET fstrWho = REPLACE( fstrWho, 'TRD_MASTER\', '' );
+UPDATE tblPITCR SET fstrWho = REPLACE( fstrWho, 'TRD_MASTER\', '' );
+UPDATE tblPITD SET fstrWho = REPLACE( fstrWho, 'TRD_MASTER\', '' );
+UPDATE tblPITRC1 SET fstrWho = REPLACE( fstrWho, 'TRD_MASTER\', '' );
+UPDATE tblPITRC2 SET fstrWho = REPLACE( fstrWho, 'TRD_MASTER\', '' );
+UPDATE tblSCorp SET fstrWho = REPLACE( fstrWho, 'TRD_MASTER\', '' );
+UPDATE tblSCorp1 SET fstrWho = REPLACE( fstrWho, 'TRD_MASTER\', '' );
+UPDATE tblSCorpA SET fstrWho = REPLACE( fstrWho, 'TRD_MASTER\', '' );
+UPDATE tblSCorpB SET fstrWho = REPLACE( fstrWho, 'TRD_MASTER\', '' );
+UPDATE tblSCorpC SET fstrWho = REPLACE( fstrWho, 'TRD_MASTER\', '' );
+UPDATE tblSCorpCR SET fstrWho = REPLACE( fstrWho, 'TRD_MASTER\', '' );
+
+
+Then run "aspnet_regsql.exe" found in "C:\Windows\Microsoft.NET\Framework64\v2.0*\". It will start a wizard where you can either install or remove the membership and role table to a specified database.
+
+Before running the SQL statements below to conform the old test data to the new system, all reference columns (all the 'who' columns) will need to be made bigger to accomodate the domain name as well. Makeing them a VARCHAR(256) should be enough (the same as the aspnet_Users.UserName column).
+
+
+Once the membership/roles tables are added, permission will need to be given to the user the application is using (in this case gentax) to the aspnet_* permissions. This will allow that connection to build the roles it needs, and apply roles to new users using the system.
+
+For testing, need to add the current user list to new ASP .NET user list, as below.
+
+First add the following tables:
+Table Name: progCodes
+Table Cols: idProgCodes		int			PK, NOT NULL, IDENTITY( 1, 1 )
+	    progCode		nchar(10)		NOT NULL
+
+Table Name: userExpires
+Table Cols: idUserExpires	int			PK, NOT NULL, IDENTITY( 1, 1 )
+	    userIDFK		uniqueidentifier	FK [aspnet_Users].[UserID]
+	    expires		datetime		NOT NULL
+
+Table Name: userProgCode
+Table Cols: idUserProgCode	int			PK, NOT NULL, IDENTITY( 1, 1 )
+	    progCodeIDFK	int			FK [progCodes].[idProgCodes]
+	    userIDFK		uniqueidentifier	FK [aspnet_Users].[UserID]
+
+// Roles
+SELECT fstruserID, fstrSecurityCode FROM tblUsers;
+Loop through returns and add user ID if not there, then add user to role (fstrSecurityCode)
+
+// Prog Codes
+SELECT DISTINCT fstrTaxProgram FROM tblUsers;
+Loop through returns
+	INSERT INTO progCodes ( progCode ) VALUES ( return[fstrTaxProgram] );
+SELECT fstrUserID, fstrTaxProgram FROM tblUsers;
+Loop over returns
+	INSERT INTO userProgCode ( progCodeIDFK, userIDFK ) VALUES ( ( SELECT idProgCodes FROM progCodese WHERE progCode = return[fstrTaxProgram] ), ( SELECT UserID FROM aspnet_Users WHERE UserName = return[fstrUserID] ) );
+
+// Expires
+SELECT UserID, fdtmEnd FROM tblUsers, aspnet_Users WHERE fstrUserID = UserName;
+Loop over returns
+	INSERT INTO userExpires ( userIDFK, expires ) VALUES ( UserID, fdtmEnd );
+
+// then update any reference to the original userID to include the domain, in this case "TRD_MASTER\"
+UPDATE tblKeQMast SET fstrUserID = CONCAT( 'TRD_MASTER\', fstrUserID ) WHERE CHARINDEX( 'TRD_MASTER', fstrUserID ) = 0;
+UPDATE tblKeQueue SET fstrUserID = CONCAT( 'TRD_MASTER\', fstrUserID ) WHERE CHARINDEX( 'TRD_MASTER', fstrUserID ) = 0;
+UPDATE tblBatchInfo SET fstrBatchUser = CONCAT( 'TRD_MASTER\', fstrBatchUser ) WHERE CHARINDEX( 'TRD_MASTER', fstrBatchUser ) = 0;
+
+UPDATE tblDependents SET fstrWho = CONCAT( 'TRD_MASTER\', fstrWho ) WHERE CHARINDEX( 'TRD_MASTER', fstrWho ) = 0;
+UPDATE tblPIT11 SET fstrWho = CONCAT( 'TRD_MASTER\', fstrWho ) WHERE CHARINDEX( 'TRD_MASTER', fstrWho ) = 0;
+UPDATE tblPIT12 SET fstrWho = CONCAT( 'TRD_MASTER\', fstrWho ) WHERE CHARINDEX( 'TRD_MASTER', fstrWho ) = 0;
+UPDATE tblPITADJ SET fstrWho = CONCAT( 'TRD_MASTER\', fstrWho ) WHERE CHARINDEX( 'TRD_MASTER', fstrWho ) = 0;
+UPDATE tblPITB1 SET fstrWho = CONCAT( 'TRD_MASTER\', fstrWho ) WHERE CHARINDEX( 'TRD_MASTER', fstrWho ) = 0;
+UPDATE tblPITB2 SET fstrWho = CONCAT( 'TRD_MASTER\', fstrWho ) WHERE CHARINDEX( 'TRD_MASTER', fstrWho ) = 0;
+UPDATE tblPITCR SET fstrWho = CONCAT( 'TRD_MASTER\', fstrWho ) WHERE CHARINDEX( 'TRD_MASTER', fstrWho ) = 0;
+UPDATE tblPITD SET fstrWho = CONCAT( 'TRD_MASTER\', fstrWho ) WHERE CHARINDEX( 'TRD_MASTER', fstrWho ) = 0;
+UPDATE tblPITRC1 SET fstrWho = CONCAT( 'TRD_MASTER\', fstrWho ) WHERE CHARINDEX( 'TRD_MASTER', fstrWho ) = 0;
+UPDATE tblPITRC2 SET fstrWho = CONCAT( 'TRD_MASTER\', fstrWho ) WHERE CHARINDEX( 'TRD_MASTER', fstrWho ) = 0;
+UPDATE tblSCorp SET fstrWho = CONCAT( 'TRD_MASTER\', fstrWho ) WHERE CHARINDEX( 'TRD_MASTER', fstrWho ) = 0;
+UPDATE tblSCorp1 SET fstrWho = CONCAT( 'TRD_MASTER\', fstrWho ) WHERE CHARINDEX( 'TRD_MASTER', fstrWho ) = 0;
+UPDATE tblSCorpA SET fstrWho = CONCAT( 'TRD_MASTER\', fstrWho ) WHERE CHARINDEX( 'TRD_MASTER', fstrWho ) = 0;
+UPDATE tblSCorpB SET fstrWho = CONCAT( 'TRD_MASTER\', fstrWho ) WHERE CHARINDEX( 'TRD_MASTER', fstrWho ) = 0;
+UPDATE tblSCorpC SET fstrWho = CONCAT( 'TRD_MASTER\', fstrWho ) WHERE CHARINDEX( 'TRD_MASTER', fstrWho ) = 0;
+UPDATE tblSCorpCR SET fstrWho = CONCAT( 'TRD_MASTER\', fstrWho ) WHERE CHARINDEX( 'TRD_MASTER', fstrWho ) = 0;
+
+
+/* @#@#@#@#@#@#@#@#@#@#@#@#@# */
+/* @#@#    Production    @#@# */
+/* @#@#                  @#@# */
+/* @#@#@#@#@#@#@#@#@#@#@#@#@# */
+

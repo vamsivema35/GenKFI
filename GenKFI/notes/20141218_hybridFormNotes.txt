@@ -1,0 +1,15 @@
+1) Added columns fcurTotalAmount and fcurRefundableAmount to tblPitCRS
+2) Add column in rfrControlHeaders, fblnHybridForm
+3) Add a checkbox on form builder for "hybrid form"
+4) If a form is a hybrid, get the blockNum + 1 and build that form also and tack on the end of the current form.
+	a) how do we know not to use the next block and just continue on
+	b) when building the queues, which is where the block and form and order info is taken, exclude any form after a hybrid form
+	c) The alignment is going to be off
+		i) We might be able to get the offset of the control, and add that to the stored alignment numbers?
+
+This is getting complex, to get around a simple two field block
+Do we really want to do all this? It's won't really be used much
+
+Is there another way around this? To get extra non-repeated fields on a repeater form?
+
+

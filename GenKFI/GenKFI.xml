@@ -1,0 +1,5351 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GenKFI</name>
+    </assembly>
+    <members>
+        <member name="T:GenKFI.BreadCrumbNode">
+            <summary>
+            Just a class to hold a complete URI and a title or name
+            </summary>
+        </member>
+        <member name="F:GenKFI.Forms.head">
+            <summary>
+            head control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.divHeaderBackground">
+            <summary>
+            divHeaderBackground control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.headerHolder">
+            <summary>
+            headerHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.DropDownHolder">
+            <summary>
+            DropDownHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.imgImage">
+            <summary>
+            imgImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.scriptingHolder">
+            <summary>
+            scriptingHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.rightHolder">
+            <summary>
+            rightHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.CountryDDL">
+            <summary>
+            CountryDDL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.controlsHolder">
+            <summary>
+            controlsHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.maxScrl">
+            <summary>
+            maxScrl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.controlsLIT">
+            <summary>
+            controlsLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.repeaterPNL">
+            <summary>
+            repeaterPNL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.hiddenHolder">
+            <summary>
+            hiddenHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.hidTouchName">
+            <summary>
+            hidTouchName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.hidSavFoc">
+            <summary>
+            hidSavFoc control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.keFocusHID">
+            <summary>
+            keFocusHID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.keCountryHID">
+            <summary>
+            keCountryHID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.hidCCode">
+            <summary>
+            hidCCode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.typeHID">
+            <summary>
+            typeHID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.hidLand">
+            <summary>
+            hidLand control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.hidZoom">
+            <summary>
+            hidZoom control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.dummy0HID">
+            <summary>
+            dummy0HID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.dummy1HID">
+            <summary>
+            dummy1HID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.dummy2HID">
+            <summary>
+            dummy2HID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.dummy3HID">
+            <summary>
+            dummy3HID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.dummy4HID">
+            <summary>
+            dummy4HID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.dummy5HID">
+            <summary>
+            dummy5HID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.dummy6HID">
+            <summary>
+            dummy6HID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.dummy7HID">
+            <summary>
+            dummy7HID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.dummy8HID">
+            <summary>
+            dummy8HID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.dummy9HID">
+            <summary>
+            dummy9HID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.dummyMineHID">
+            <summary>
+            dummyMineHID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.hidmvBatchId">
+            <summary>
+            hidmvBatchId control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.hidmvBatchDate">
+            <summary>
+            hidmvBatchDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.hidmvSequence">
+            <summary>
+            hidmvSequence control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.hidmvTaxPgm">
+            <summary>
+            hidmvTaxPgm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.hidmvImgSrc">
+            <summary>
+            hidmvImgSrc control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.hidmvDocNbr">
+            <summary>
+            hidmvDocNbr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.hidmvOffset">
+            <summary>
+            hidmvOffset control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.hidmvSize">
+            <summary>
+            hidmvSize control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.hidMavKey">
+            <summary>
+            hidMavKey control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.hidSaveFocus">
+            <summary>
+            hidSaveFocus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.hidOgdForm">
+            <summary>
+            hidOgdForm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Forms.footerPNL">
+            <summary>
+            footerPNL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:GenKFI.noFront.CMPRateLookup">
+            <summary>
+            Summary description for CMPRateLookup
+            </summary>
+        </member>
+        <member name="T:GenKFI.noFront.CountryLookUp">
+            <summary>
+            Summary description for CountryLookUp
+            </summary>
+        </member>
+        <member name="T:GenKFI.noFront.CRSLocationLookup">
+            <summary>
+            Summary description for CRSLocationLookup
+            </summary>
+        </member>
+        <member name="T:GenKFI.noFront.CRSRateLookup">
+            <summary>
+            Summary description for CRSRateLookup
+            </summary>
+        </member>
+        <member name="T:GenKFI.noFront.GRTRateLookup">
+            <summary>
+            Summary description for GRTRateLookup
+            </summary>
+        </member>
+        <member name="T:GenKFI.noFront.LowIncTableLookup">
+            <summary>
+            Summary description for <see cref="T:GenKFI.noFront.LowIncTableLookup"/>
+            </summary>
+        </member>
+        <member name="T:GenKFI.noFront.NewBlock">
+            <summary>
+            Summary description for newBlock
+            </summary>
+        </member>
+        <member name="T:GenKFI.noFront.RateTableLookup">
+            <summary>
+            Summary description for <see cref="T:GenKFI.noFront.RateTableLookup"/>
+            </summary>
+        </member>
+        <member name="T:GenKFI.noFront.RemBlock">
+            <summary>
+            Summary description for <see cref="T:GenKFI.noFront.RemBlock"/>
+            </summary>
+        </member>
+        <member name="T:GenKFI.noFront.STPRateLookup">
+            <summary>
+            Summary description for StpRateLookup
+            </summary>
+        </member>
+        <member name="T:GenKFI.noFront.WDTRateLookup">
+            <summary>
+            Summary description for WDTRateLookup
+            </summary>
+        </member>
+        <member name="T:GenKFI.noFront.DoLookup">
+            <summary>
+            Summary description for <see cref="T:GenKFI.noFront.DoLookup"/>
+            </summary>
+        </member>
+        <member name="F:GenKFI.noFront.imageLoad.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Default.tasksTBL">
+            <summary>
+            tasksTBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Default.keyModeROW">
+            <summary>
+            keyModeROW control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Default.keyModeBTN">
+            <summary>
+            keyModeBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Default.blankROW">
+            <summary>
+            blankROW control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Default.openBatchesROW">
+            <summary>
+            openBatchesROW control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Default.unassignedBatchesROW">
+            <summary>
+            unassignedBatchesROW control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Default.reassignBatchesROW">
+            <summary>
+            reassignBatchesROW control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Default.closedBatchesROW">
+            <summary>
+            closedBatchesROW control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Default.batchInquireROW">
+            <summary>
+            batchInquireROW control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Default.adminHeadROW">
+            <summary>
+            adminHeadROW control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Default.userStatsROW">
+            <summary>
+            userStatsROW control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Default.manageUsersROW">
+            <summary>
+            manageUsersROW control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Default.DcUtilityROW">
+            <summary>
+            DcUtilityROW control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Default.devHeadROW">
+            <summary>
+            devHeadROW control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Default.ICToolsROW">
+            <summary>
+            ICToolsROW control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Default.jsEditROW">
+            <summary>
+            jsEditROW control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Default.errorROW">
+            <summary>
+            errorROW control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Default.formTemplatesROW">
+            <summary>
+            formTemplatesROW control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.Default.editLNK">
+            <summary>
+            editLNK control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.GenKFI.titleLIT">
+            <summary>
+            titleLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.GenKFI.headHolder">
+            <summary>
+            headHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.GenKFI.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.GenKFI.headerLIT">
+            <summary>
+            headerLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.GenKFI.bc1">
+            <summary>
+            bc1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.GenKFI.tpSELPNL">
+            <summary>
+            tpSELPNL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.GenKFI.tpSEL">
+            <summary>
+            tpSEL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.GenKFI.tpSelHID">
+            <summary>
+            tpSelHID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.GenKFI.homeBTN">
+            <summary>
+            homeBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.GenKFI.userNoticeLBL">
+            <summary>
+            userNoticeLBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.GenKFI.hidSeqKey">
+            <summary>
+            hidSeqKey control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.GenKFI.bodyHolder">
+            <summary>
+            bodyHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.GenKFI.footerPNL">
+            <summary>
+            footerPNL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:GenKFI.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:GenKFI.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:GenKFI.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:GenKFI.Properties.Resources.connString">
+            <summary>
+              Looks up a localized string similar to Data Source=InfSqlDev1,2180;Integrated Security=SSPI;Persist Security Info=True;Initial Catalog=GenKFI;.
+            </summary>
+        </member>
+        <member name="P:GenKFI.Properties.Resources.lookupConnString">
+            <summary>
+              Looks up a localized string similar to Data Source=GenSqlReport,2187;Integrated Security=SSPI;Persist Security Info=True;Initial Catalog=NMP_GTRDE;.
+            </summary>
+        </member>
+        <member name="P:GenKFI.Properties.Resources.prodConnString">
+            <summary>
+              Looks up a localized string similar to Data Source=InfSqlProd,2180;Integrated Security=SSPI;Persist Security Info=True;Initial Catalog=GenKFI_Prd;.
+            </summary>
+        </member>
+        <member name="F:GenKFI.utils.DcImgLoad.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.divHeaderBackground">
+            <summary>
+            divHeaderBackground control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.Formnamelbl">
+            <summary>
+            Formnamelbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.Formnametxt">
+            <summary>
+            Formnametxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.Positionlbl">
+            <summary>
+            Positionlbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.Positiontxt">
+            <summary>
+            Positiontxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.Cameralbl">
+            <summary>
+            Cameralbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.Cameratxt">
+            <summary>
+            Cameratxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.ImgSrclbl">
+            <summary>
+            ImgSrclbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.ImgSrctxt">
+            <summary>
+            ImgSrctxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.Offsetlbl">
+            <summary>
+            Offsetlbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.Offsettxt">
+            <summary>
+            Offsettxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.Sizelbl">
+            <summary>
+            Sizelbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.Sizetxt">
+            <summary>
+            Sizetxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.ShowImg">
+            <summary>
+            ShowImg control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.PickForm">
+            <summary>
+            PickForm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.ClearTxtBTN">
+            <summary>
+            ClearTxtBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.DeleteBatchBTN">
+            <summary>
+            DeleteBatchBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.UnDel">
+            <summary>
+            UnDel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.GetImageBTN">
+            <summary>
+            GetImageBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.ClearForm">
+            <summary>
+            ClearForm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.BlankSheet">
+            <summary>
+            BlankSheet control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.MavroBTN">
+            <summary>
+            MavroBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.homeBTN">
+            <summary>
+            homeBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.formListLIT">
+            <summary>
+            formListLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.DcImage">
+            <summary>
+            DcImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.maxScrl">
+            <summary>
+            maxScrl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.controlsLIT">
+            <summary>
+            controlsLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.DdTaxPgm">
+            <summary>
+            DdTaxPgm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.BatchId">
+            <summary>
+            BatchId control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.SeqNbr">
+            <summary>
+            SeqNbr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.MavFile">
+            <summary>
+            MavFile control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.MavPrev">
+            <summary>
+            MavPrev control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.OpStatus">
+            <summary>
+            OpStatus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.formPickClick">
+            <summary>
+            formPickClick control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.hidFormName">
+            <summary>
+            hidFormName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.hidYYear">
+            <summary>
+            hidYYear control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.hidPosition">
+            <summary>
+            hidPosition control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.hidCamera">
+            <summary>
+            hidCamera control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.hidFormType">
+            <summary>
+            hidFormType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.DcUtility.hidPick">
+            <summary>
+            hidPick control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.lblInstName">
+            <summary>
+            lblInstName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.txtInstName">
+            <summary>
+            txtInstName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.lblCmd">
+            <summary>
+            lblCmd control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.txtCmd">
+            <summary>
+            txtCmd control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.lblFileType">
+            <summary>
+            lblFileType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.txtFileType">
+            <summary>
+            txtFileType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.lblTable">
+            <summary>
+            lblTable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.txtTable">
+            <summary>
+            txtTable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.lblColumn">
+            <summary>
+            lblColumn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.txtColumn">
+            <summary>
+            txtColumn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.lblDataType">
+            <summary>
+            lblDataType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.txtDataType">
+            <summary>
+            txtDataType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.lblNull">
+            <summary>
+            lblNull control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.txtNull">
+            <summary>
+            txtNull control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.lblDefault">
+            <summary>
+            lblDefault control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.txtDefault">
+            <summary>
+            txtDefault control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.lblFilter">
+            <summary>
+            lblFilter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.txtFilter">
+            <summary>
+            txtFilter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.lblOrderBy">
+            <summary>
+            lblOrderBy control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.txtOrderBy">
+            <summary>
+            txtOrderBy control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.btnAdd">
+            <summary>
+            btnAdd control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.btnTechTeam">
+            <summary>
+            btnTechTeam control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.btnScript">
+            <summary>
+            btnScript control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.btnInstall">
+            <summary>
+            btnInstall control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.btnClear">
+            <summary>
+            btnClear control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.btnReLink">
+            <summary>
+            btnReLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.btnNameLink">
+            <summary>
+            btnNameLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.LblPBatchId">
+            <summary>
+            LblPBatchId control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.TxtPBatchId">
+            <summary>
+            TxtPBatchId control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.BtnPBatchId">
+            <summary>
+            BtnPBatchId control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.lblStatus">
+            <summary>
+            lblStatus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.GkInstall.lblOpStatus">
+            <summary>
+            lblOpStatus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.lblProgCode">
+            <summary>
+            lblProgCode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.txtProgCode">
+            <summary>
+            txtProgCode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.lblDesc">
+            <summary>
+            lblDesc control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.txtDesc">
+            <summary>
+            txtDesc control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.btnProgCode">
+            <summary>
+            btnProgCode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.olblFileType">
+            <summary>
+            olblFileType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.oFileType">
+            <summary>
+            oFileType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.olblTaxYear">
+            <summary>
+            olblTaxYear control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.oTaxYear">
+            <summary>
+            oTaxYear control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.nlblFileType">
+            <summary>
+            nlblFileType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.nFileType">
+            <summary>
+            nFileType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.nlblTaxYear">
+            <summary>
+            nlblTaxYear control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.nTaxYear">
+            <summary>
+            nTaxYear control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.btnCopyNew">
+            <summary>
+            btnCopyNew control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.tplblFileType">
+            <summary>
+            tplblFileType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.tptxtFileType">
+            <summary>
+            tptxtFileType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.getTaxPgm">
+            <summary>
+            getTaxPgm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.saveTaxPgm">
+            <summary>
+            saveTaxPgm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.TaxPgmGDV">
+            <summary>
+            TaxPgmGDV control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.adlblFileType">
+            <summary>
+            adlblFileType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.adtxtFileType">
+            <summary>
+            adtxtFileType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.adgetAddDoc">
+            <summary>
+            adgetAddDoc control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.adsaveAddDoc">
+            <summary>
+            adsaveAddDoc control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.AddDocGDV">
+            <summary>
+            AddDocGDV control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.chlblFileType">
+            <summary>
+            chlblFileType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.chtxtFileType">
+            <summary>
+            chtxtFileType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.chlblBatchId">
+            <summary>
+            chlblBatchId control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.chtxtBatchId">
+            <summary>
+            chtxtBatchId control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.chlblSequence">
+            <summary>
+            chlblSequence control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.chtxtSequence">
+            <summary>
+            chtxtSequence control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.NewTaxYear.Button1">
+            <summary>
+            Button1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.TestingUtil.lblBatchId">
+            <summary>
+            lblBatchId control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.TestingUtil.txtBatchId">
+            <summary>
+            txtBatchId control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.TestingUtil.btnReset">
+            <summary>
+            btnReset control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.TestingUtil.btnClear">
+            <summary>
+            btnClear control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.TestingUtil.btnAmend">
+            <summary>
+            btnAmend control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.TestingUtil.lblStatus">
+            <summary>
+            lblStatus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.TestingUtil.lblMsg">
+            <summary>
+            lblMsg control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UdImgLoad.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.divHeaderBackground">
+            <summary>
+            divHeaderBackground control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.Formnamelbl">
+            <summary>
+            Formnamelbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.Formnametxt">
+            <summary>
+            Formnametxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.Positionlbl">
+            <summary>
+            Positionlbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.Positiontxt">
+            <summary>
+            Positiontxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.Cameralbl">
+            <summary>
+            Cameralbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.Cameratxt">
+            <summary>
+            Cameratxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.ImgSrclbl">
+            <summary>
+            ImgSrclbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.ImgSrctxt">
+            <summary>
+            ImgSrctxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.Offsetlbl">
+            <summary>
+            Offsetlbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.Offsettxt">
+            <summary>
+            Offsettxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.Sizelbl">
+            <summary>
+            Sizelbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.Sizetxt">
+            <summary>
+            Sizetxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.ShowImg">
+            <summary>
+            ShowImg control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.PickForm">
+            <summary>
+            PickForm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.ClearTxtBTN">
+            <summary>
+            ClearTxtBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.GetRecBTN">
+            <summary>
+            GetRecBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.UpdRecBTN">
+            <summary>
+            UpdRecBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.GetImageBTN">
+            <summary>
+            GetImageBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.ClearForm">
+            <summary>
+            ClearForm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.SqlBTN">
+            <summary>
+            SqlBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.homeBTN">
+            <summary>
+            homeBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.formListLIT">
+            <summary>
+            formListLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.UdImage">
+            <summary>
+            UdImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.maxScrl">
+            <summary>
+            maxScrl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.controlsLIT">
+            <summary>
+            controlsLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.Line1">
+            <summary>
+            Line1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.Line2">
+            <summary>
+            Line2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.Line3">
+            <summary>
+            Line3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.Line4">
+            <summary>
+            Line4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.Line5">
+            <summary>
+            Line5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.Line6">
+            <summary>
+            Line6 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.Line7">
+            <summary>
+            Line7 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.DdTaxPgm">
+            <summary>
+            DdTaxPgm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.BatchId">
+            <summary>
+            BatchId control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.BatchDate">
+            <summary>
+            BatchDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.SeqNbr">
+            <summary>
+            SeqNbr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.ImgTable">
+            <summary>
+            ImgTable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.RecTable">
+            <summary>
+            RecTable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.TaxYear">
+            <summary>
+            TaxYear control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.OpStatus">
+            <summary>
+            OpStatus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.formPickClick">
+            <summary>
+            formPickClick control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.hidFormName">
+            <summary>
+            hidFormName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.hidYYear">
+            <summary>
+            hidYYear control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.hidPosition">
+            <summary>
+            hidPosition control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.hidCamera">
+            <summary>
+            hidCamera control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.hidFormType">
+            <summary>
+            hidFormType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.hidPick">
+            <summary>
+            hidPick control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.blockBatch.taxProgLIT">
+            <summary>
+            taxProgLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.blockBatch.taxYearDDL">
+            <summary>
+            taxYearDDL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.blockBatch.fileTypeTXT">
+            <summary>
+            fileTypeTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.blockBatch.saveHeaderBTN">
+            <summary>
+            saveHeaderBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.blockBatch.taxFormsTBL">
+            <summary>
+            taxFormsTBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.blockBatch.headerROW">
+            <summary>
+            headerROW control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.blockBatch.saveTableNameBTN">
+            <summary>
+            saveTableNameBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.blockBatch.newFormBTN">
+            <summary>
+            newFormBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.blockBatch.newFormTXT">
+            <summary>
+            newFormTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.blockBatch.formNameREQ">
+            <summary>
+            formNameREQ control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.blockBatch.tableNameTXT">
+            <summary>
+            tableNameTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.blockBatch.tableNameREQ">
+            <summary>
+            tableNameREQ control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.blockBatch.ValidationSummary1">
+            <summary>
+            ValidationSummary1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.editJSauto.functionLST">
+            <summary>
+            functionLST control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.editJSauto.funcNameTXT">
+            <summary>
+            funcNameTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.editJSauto.input1NameTXT">
+            <summary>
+            input1NameTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.editJSauto.input2NameTXT">
+            <summary>
+            input2NameTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.editJSauto.name1NameTXT">
+            <summary>
+            name1NameTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.editJSauto.name2NameTXT">
+            <summary>
+            name2NameTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.editJSauto.funcListTXT">
+            <summary>
+            funcListTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.editJSauto.addBTN">
+            <summary>
+            addBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.editJSauto.saveBTN">
+            <summary>
+            saveBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.editJSauto.remBTN">
+            <summary>
+            remBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.existForms.existFormsRPT">
+            <summary>
+            existFormsRPT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.existForms.taxCodeLIT">
+            <summary>
+            taxCodeLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.existForms.taxYearDDL">
+            <summary>
+            taxYearDDL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.existForms.yearREQ">
+            <summary>
+            yearREQ control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.existForms.fileTypeTXT">
+            <summary>
+            fileTypeTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.existForms.fileTypeREQ">
+            <summary>
+            fileTypeREQ control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.existForms.newBTN">
+            <summary>
+            newBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.existForms.valSum1">
+            <summary>
+            valSum1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.divHeader">
+            <summary>
+            divHeader control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.fileTypeLBL">
+            <summary>
+            fileTypeLBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.fileTypeTXT">
+            <summary>
+            fileTypeTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.taxYearLBL">
+            <summary>
+            taxYearLBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.taxYearTXT">
+            <summary>
+            taxYearTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.taxProgLBL">
+            <summary>
+            taxProgLBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.taxProgTXT">
+            <summary>
+            taxProgTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.BatchLbl">
+            <summary>
+            BatchLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.BatchTxt">
+            <summary>
+            BatchTxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.SequenceLbl">
+            <summary>
+            SequenceLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.SequenceTxt">
+            <summary>
+            SequenceTxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.FormLbl">
+            <summary>
+            FormLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.FormTxt">
+            <summary>
+            FormTxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.BlkLbl">
+            <summary>
+            BlkLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.BlkTxt">
+            <summary>
+            BlkTxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.TableLbl">
+            <summary>
+            TableLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.TableTxt">
+            <summary>
+            TableTxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.btnSub">
+            <summary>
+            btnSub control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.OgdBtn">
+            <summary>
+            OgdBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.O85Btn">
+            <summary>
+            O85Btn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.O99Btn">
+            <summary>
+            O99Btn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.OirBtn">
+            <summary>
+            OirBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.OsfBtn">
+            <summary>
+            OsfBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.OsrBtn">
+            <summary>
+            OsrBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.OasBtn">
+            <summary>
+            OasBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.loadTemplateBTN">
+            <summary>
+            loadTemplateBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.pathLBL">
+            <summary>
+            pathLBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.pathTXT">
+            <summary>
+            pathTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.clipDIV">
+            <summary>
+            clipDIV control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.ScriptManager1">
+            <summary>
+            ScriptManager1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.isHidden">
+            <summary>
+            isHidden control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.controlInfoUPD">
+            <summary>
+            controlInfoUPD control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.typeDDL">
+            <summary>
+            typeDDL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.addBTN">
+            <summary>
+            addBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.moveUpBTN">
+            <summary>
+            moveUpBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.testBTN">
+            <summary>
+            testBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.removeBTN">
+            <summary>
+            removeBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.moveDnBTN">
+            <summary>
+            moveDnBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.clipTopTXT">
+            <summary>
+            clipTopTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.clipLeftTXT">
+            <summary>
+            clipLeftTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.clipBotTXT">
+            <summary>
+            clipBotTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.clipRightTXT">
+            <summary>
+            clipRightTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.IDclipBTN">
+            <summary>
+            IDclipBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.zoomPercTXT">
+            <summary>
+            zoomPercTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.saveZoomPercBTN">
+            <summary>
+            saveZoomPercBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.repeaterSetPNL">
+            <summary>
+            repeaterSetPNL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.blockOffsetTXT">
+            <summary>
+            blockOffsetTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.saveOffsetBTN">
+            <summary>
+            saveOffsetBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.headerNumberStartsTXT">
+            <summary>
+            headerNumberStartsTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.Button1">
+            <summary>
+            Button1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.lockMoveCKB">
+            <summary>
+            lockMoveCKB control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.labelTXT">
+            <summary>
+            labelTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.lookupCKB">
+            <summary>
+            lookupCKB control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.vertSkipCKB">
+            <summary>
+            vertSkipCKB control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.inputIDTXT">
+            <summary>
+            inputIDTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.maxLenTXT">
+            <summary>
+            maxLenTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.dispLenTXT">
+            <summary>
+            dispLenTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.columnIDTXT">
+            <summary>
+            columnIDTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.gentaxFieldTXT">
+            <summary>
+            gentaxFieldTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.imageXTXT">
+            <summary>
+            imageXTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.imageYTXT">
+            <summary>
+            imageYTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.markerXTXT">
+            <summary>
+            markerXTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.markerYTXT">
+            <summary>
+            markerYTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.controlScrollTXT">
+            <summary>
+            controlScrollTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.dataTypeDDL">
+            <summary>
+            dataTypeDDL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.varTypeDDL">
+            <summary>
+            varTypeDDL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.ckbTransTXT">
+            <summary>
+            ckbTransTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.nextControlDDL">
+            <summary>
+            nextControlDDL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.hiddenCKB">
+            <summary>
+            hiddenCKB control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.requiredCKB">
+            <summary>
+            requiredCKB control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.saveOptionsBTN">
+            <summary>
+            saveOptionsBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.saveJSBTNfocus">
+            <summary>
+            saveJSBTNfocus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.jsAutoGDVfocus">
+            <summary>
+            jsAutoGDVfocus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.newField1DDLfocus">
+            <summary>
+            newField1DDLfocus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.newField2DDLfocus">
+            <summary>
+            newField2DDLfocus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.newFuncDDLfocus">
+            <summary>
+            newFuncDDLfocus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.addRowBTNfocus">
+            <summary>
+            addRowBTNfocus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.saveJSBTNblur">
+            <summary>
+            saveJSBTNblur control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.jsAutoGDVblur">
+            <summary>
+            jsAutoGDVblur control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.newField1DDLblur">
+            <summary>
+            newField1DDLblur control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.newField2DDLblur">
+            <summary>
+            newField2DDLblur control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.newFuncDDLblur">
+            <summary>
+            newFuncDDLblur control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.addRowBTNblur">
+            <summary>
+            addRowBTNblur control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.hiddenBTN">
+            <summary>
+            hiddenBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.templateImgPath">
+            <summary>
+            templateImgPath control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormBuild.controlEditActive">
+            <summary>
+            controlEditActive control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormTest.divHeader">
+            <summary>
+            divHeader control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormTest.fileTypeLBL">
+            <summary>
+            fileTypeLBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormTest.fileTypeTXT">
+            <summary>
+            fileTypeTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormTest.taxYearLBL">
+            <summary>
+            taxYearLBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormTest.taxYearTXT">
+            <summary>
+            taxYearTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormTest.taxProgLBL">
+            <summary>
+            taxProgLBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormTest.taxProgTXT">
+            <summary>
+            taxProgTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormTest.btnSub">
+            <summary>
+            btnSub control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormTest.titleLBL">
+            <summary>
+            titleLBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormTest.blockLBL">
+            <summary>
+            blockLBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormTest.blockTXT">
+            <summary>
+            blockTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormTest.tableLBL">
+            <summary>
+            tableLBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormTest.tableTXT">
+            <summary>
+            tableTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.FormTest.templateImgPath">
+            <summary>
+            templateImgPath control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.needSql.backBBLNK">
+            <summary>
+            backBBLNK control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.needSql.sqlTXT">
+            <summary>
+            sqlTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.needSql.emailsTXT">
+            <summary>
+            emailsTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.needSql.sendEmailBTN">
+            <summary>
+            sendEmailBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ManageUserRoles2.ScriptManager1">
+            <summary>
+            ScriptManager1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ManageUserRoles2.userUPD">
+            <summary>
+            userUPD control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ManageUserRoles2.userListRPT">
+            <summary>
+            userListRPT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ManageUserRoles2.searchTXT">
+            <summary>
+            searchTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ManageUserRoles2.doSearchBTN">
+            <summary>
+            doSearchBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ManageUserRoles2.clearSearchBTN">
+            <summary>
+            clearSearchBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ManageUserRoles2.updateUserBTN">
+            <summary>
+            updateUserBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ManageUserRoles2.invalidateUserBTN">
+            <summary>
+            invalidateUserBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ManageUserRoles2.AddUserBTN">
+            <summary>
+            AddUserBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ManageUserRoles2.updateRoleDDL">
+            <summary>
+            updateRoleDDL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ManageUserRoles2.expiredCKB">
+            <summary>
+            expiredCKB control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ManageUserRoles2.clearFilterBTN">
+            <summary>
+            clearFilterBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ManageUserRoles2.applyFilterBTN">
+            <summary>
+            applyFilterBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ManageUserRoles2.roleDDL">
+            <summary>
+            roleDDL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.divHeader">
+            <summary>
+            divHeader control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.batchIDLBL">
+            <summary>
+            batchIDLBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.batchIDTXT">
+            <summary>
+            batchIDTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.batchDateLBL">
+            <summary>
+            batchDateLBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.batchDateTXT">
+            <summary>
+            batchDateTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.itemNoLBL">
+            <summary>
+            itemNoLBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.itemNoTXT">
+            <summary>
+            itemNoTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.ImgSrclbl">
+            <summary>
+            ImgSrclbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.ImgSrctxt">
+            <summary>
+            ImgSrctxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.Titlelbl">
+            <summary>
+            Titlelbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.Titletxt">
+            <summary>
+            Titletxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.Blocklbl">
+            <summary>
+            Blocklbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.Blocktxt">
+            <summary>
+            Blocktxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.DocNbrlbl">
+            <summary>
+            DocNbrlbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.DocNbrtxt">
+            <summary>
+            DocNbrtxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.Offsetlbl">
+            <summary>
+            Offsetlbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.Offsettxt">
+            <summary>
+            Offsettxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.Sizelbl">
+            <summary>
+            Sizelbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.Sizetxt">
+            <summary>
+            Sizetxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.TaxPgmlbl">
+            <summary>
+            TaxPgmlbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.TaxPgmtxt">
+            <summary>
+            TaxPgmtxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.PymTypelbl">
+            <summary>
+            PymTypelbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.PymTypetxt">
+            <summary>
+            PymTypetxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.Timelylbl">
+            <summary>
+            Timelylbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.Timelytxt">
+            <summary>
+            Timelytxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.CountryChk">
+            <summary>
+            CountryChk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.btnSub">
+            <summary>
+            btnSub control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.homeBTN">
+            <summary>
+            homeBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.TimelyBTN">
+            <summary>
+            TimelyBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.btnMavImg">
+            <summary>
+            btnMavImg control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.OgdBtn">
+            <summary>
+            OgdBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.O85Btn">
+            <summary>
+            O85Btn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.O99Btn">
+            <summary>
+            O99Btn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.OirBtn">
+            <summary>
+            OirBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.OsfBtn">
+            <summary>
+            OsfBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.OsrBtn">
+            <summary>
+            OsrBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.OasBtn">
+            <summary>
+            OasBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.adminKeyModeLBL">
+            <summary>
+            adminKeyModeLBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.formListLIT">
+            <summary>
+            formListLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.formPickClick">
+            <summary>
+            formPickClick control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.hidFormName">
+            <summary>
+            hidFormName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.hidTitle">
+            <summary>
+            hidTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.hidBlock">
+            <summary>
+            hidBlock control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.hidDln">
+            <summary>
+            hidDln control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.hidDocNumber">
+            <summary>
+            hidDocNumber control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.hidRec">
+            <summary>
+            hidRec control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.theVals">
+            <summary>
+            theVals control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.hidTableName">
+            <summary>
+            hidTableName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.hidYYear">
+            <summary>
+            hidYYear control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.requiredNamesHID">
+            <summary>
+            requiredNamesHID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.hidFormType">
+            <summary>
+            hidFormType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.hidPick">
+            <summary>
+            hidPick control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.taxProgHID">
+            <summary>
+            taxProgHID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.entry.KeyEntry.buffHID">
+            <summary>
+            buffHID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchInquire.batchIDTXT">
+            <summary>
+            batchIDTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchInquire.batchDateTXT">
+            <summary>
+            batchDateTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchInquire.openedDateTXT">
+            <summary>
+            openedDateTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchInquire.subBTN">
+            <summary>
+            subBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchInquire.batchRPT">
+            <summary>
+            batchRPT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchInquire.overallSummaryPNL">
+            <summary>
+            overallSummaryPNL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchInquire.overallSummarybatchCountLIT">
+            <summary>
+            overallSummarybatchCountLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchInquire.overallSummaryheaderTotalLIT">
+            <summary>
+            overallSummaryheaderTotalLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchInquire.overallSummaryItemTotalLIT">
+            <summary>
+            overallSummaryItemTotalLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchInquire.overallSummarydetailRPT">
+            <summary>
+            overallSummarydetailRPT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.BatchNo">
+            <summary>
+            BatchNo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.BatchDt">
+            <summary>
+            BatchDt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.ImgSrc">
+            <summary>
+            ImgSrc control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.userCMB">
+            <summary>
+            userCMB control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.batchownerREQ">
+            <summary>
+            batchownerREQ control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.CreateDate">
+            <summary>
+            CreateDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.ReceivedDate">
+            <summary>
+            ReceivedDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.ReceivedDateREQ">
+            <summary>
+            ReceivedDateREQ control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.ReceivedDateREGEX">
+            <summary>
+            ReceivedDateREGEX control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.PostmarkDate">
+            <summary>
+            PostmarkDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.PostmarkDateREQ">
+            <summary>
+            PostmarkDateREQ control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.PostmarkDateREGEX">
+            <summary>
+            PostmarkDateREGEX control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.DepositDate">
+            <summary>
+            DepositDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.DepositDateREQ">
+            <summary>
+            DepositDateREQ control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.DepositDateREGEX">
+            <summary>
+            DepositDateREGEX control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.BatchCount">
+            <summary>
+            BatchCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.BatchCountREQ">
+            <summary>
+            BatchCountREQ control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.BatchAmount">
+            <summary>
+            BatchAmount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.BatchAmountREQ">
+            <summary>
+            BatchAmountREQ control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.ItemCount">
+            <summary>
+            ItemCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.ItemAmount">
+            <summary>
+            ItemAmount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.BatchType">
+            <summary>
+            BatchType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.BatchTypeREQ">
+            <summary>
+            BatchTypeREQ control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.FormType">
+            <summary>
+            FormType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.FormTypeREQ">
+            <summary>
+            FormTypeREQ control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.DLN">
+            <summary>
+            DLN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.TimelyBatch">
+            <summary>
+            TimelyBatch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.TimelyBatchREQ">
+            <summary>
+            TimelyBatchREQ control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.BatchStatus">
+            <summary>
+            BatchStatus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.BatchStatusREQ">
+            <summary>
+            BatchStatusREQ control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.LastOwner">
+            <summary>
+            LastOwner control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.BatchID">
+            <summary>
+            BatchID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.BatchDate">
+            <summary>
+            BatchDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.ImageSource">
+            <summary>
+            ImageSource control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.ProgCode">
+            <summary>
+            ProgCode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.ReadStatus">
+            <summary>
+            ReadStatus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.BatchInfo">
+            <summary>
+            BatchInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.WhereFrom">
+            <summary>
+            WhereFrom control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.BatchNext">
+            <summary>
+            BatchNext control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.batchModPNL">
+            <summary>
+            batchModPNL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.subBTN">
+            <summary>
+            subBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.valSumm">
+            <summary>
+            valSumm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.infoLIT">
+            <summary>
+            infoLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.ShowMavroImageLIT">
+            <summary>
+            ShowMavroImageLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.toggleBTN">
+            <summary>
+            toggleBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.otherBTN">
+            <summary>
+            otherBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.blankBTN">
+            <summary>
+            blankBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.batchRPT">
+            <summary>
+            batchRPT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.noItemsPNL">
+            <summary>
+            noItemsPNL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ClosedBatches.batchCountLIT">
+            <summary>
+            batchCountLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ClosedBatches.headerTotalLIT">
+            <summary>
+            headerTotalLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ClosedBatches.ItemTotalLIT">
+            <summary>
+            ItemTotalLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ClosedBatches.batchPNL">
+            <summary>
+            batchPNL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ClosedBatches.batchRPT">
+            <summary>
+            batchRPT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ClosedBatches.noBatchPNL">
+            <summary>
+            noBatchPNL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ClosedBatches.noBatchLIT">
+            <summary>
+            noBatchLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ClosedBatches.detailPNL">
+            <summary>
+            detailPNL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ClosedBatches.subBTN">
+            <summary>
+            subBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.Error.errorLIT">
+            <summary>
+            errorLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.editPCodes.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.editPCodes.codesLST">
+            <summary>
+            codesLST control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.editPCodes.codeTXT">
+            <summary>
+            codeTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.editPCodes.descTXT">
+            <summary>
+            descTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.editPCodes.addBTN">
+            <summary>
+            addBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.editPCodes.editBTN">
+            <summary>
+            editBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.editPCodes.remBTN">
+            <summary>
+            remBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ErrView.errListRPT">
+            <summary>
+            errListRPT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.btnMavImg">
+            <summary>
+            btnMavImg control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.batchCntTBL">
+            <summary>
+            batchCntTBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.BatchId">
+            <summary>
+            BatchId control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.BatchDate">
+            <summary>
+            BatchDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.ImageSource">
+            <summary>
+            ImageSource control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.TaxPgm">
+            <summary>
+            TaxPgm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.HdrCount">
+            <summary>
+            HdrCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.ItemCount">
+            <summary>
+            ItemCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.ItemAmount">
+            <summary>
+            ItemAmount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.PymAmount">
+            <summary>
+            PymAmount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.PymTbl">
+            <summary>
+            PymTbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.SeqTop">
+            <summary>
+            SeqTop control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.SeqBot">
+            <summary>
+            SeqBot control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.btnMavPrv">
+            <summary>
+            btnMavPrv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.lblInfo">
+            <summary>
+            lblInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.btnMavNxt">
+            <summary>
+            btnMavNxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.RtnModify">
+            <summary>
+            RtnModify control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.lblEnter">
+            <summary>
+            lblEnter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.ToEntry">
+            <summary>
+            ToEntry control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.Table1">
+            <summary>
+            Table1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.Label2">
+            <summary>
+            Label2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.MavImgAmt">
+            <summary>
+            MavImgAmt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.Label1">
+            <summary>
+            Label1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.MavImgStub">
+            <summary>
+            MavImgStub control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.SeqHld">
+            <summary>
+            SeqHld control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.MavImgView.MavImgDetail">
+            <summary>
+            MavImgDetail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.OpenBatches.batchCountTBL">
+            <summary>
+            batchCountTBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.OpenBatches.batchTD">
+            <summary>
+            batchTD control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.OpenBatches.headerTD">
+            <summary>
+            headerTD control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.OpenBatches.itemTD">
+            <summary>
+            itemTD control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.OpenBatches.batchesRPT">
+            <summary>
+            batchesRPT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.OpenBatches.noBatchesTBL">
+            <summary>
+            noBatchesTBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.OpenBatches.noneTR">
+            <summary>
+            noneTR control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.OpenBatches.noneTD">
+            <summary>
+            noneTD control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.OpenBatches.submitMeBTN">
+            <summary>
+            submitMeBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ReassignBatches.usersFROMDDL">
+            <summary>
+            usersFROMDDL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ReassignBatches.assignBTN">
+            <summary>
+            assignBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ReassignBatches.userTODDL">
+            <summary>
+            userTODDL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ReassignBatches.batchCountLIT">
+            <summary>
+            batchCountLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ReassignBatches.headerTotalLIT">
+            <summary>
+            headerTotalLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ReassignBatches.ItemTotalLIT">
+            <summary>
+            ItemTotalLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ReassignBatches.batchRPT">
+            <summary>
+            batchRPT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ReassignBatches.noBatchPNL">
+            <summary>
+            noBatchPNL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ReassignBatches.noBatchLBL">
+            <summary>
+            noBatchLBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.unassignedBatches.batchCountLIT">
+            <summary>
+            batchCountLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.unassignedBatches.headerTotalLIT">
+            <summary>
+            headerTotalLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.unassignedBatches.ItemTotalLIT">
+            <summary>
+            ItemTotalLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.unassignedBatches.detailPNL">
+            <summary>
+            detailPNL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.unassignedBatches.detailRPT">
+            <summary>
+            detailRPT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.unassignedBatches.batchPNL">
+            <summary>
+            batchPNL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.unassignedBatches.usersDDL">
+            <summary>
+            usersDDL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.unassignedBatches.assignBTN">
+            <summary>
+            assignBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.unassignedBatches.batchRPT">
+            <summary>
+            batchRPT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.unassignedBatches.noBatchPNL">
+            <summary>
+            noBatchPNL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.unassignedBatches.noBatchLBL">
+            <summary>
+            noBatchLBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.userStats.beginDateTXT">
+            <summary>
+            beginDateTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.userStats.endDateTXT">
+            <summary>
+            endDateTXT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.userStats.userCMB">
+            <summary>
+            userCMB control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.userStats.subBTN">
+            <summary>
+            subBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.userStats.usersRPT">
+            <summary>
+            usersRPT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.userStats.noUserPNL">
+            <summary>
+            noUserPNL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.userStats.noBatchLBL">
+            <summary>
+            noBatchLBL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.ViewMavImg.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+    </members>
+</doc>

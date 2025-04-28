@@ -1,0 +1,12 @@
+GenKFI TODO
+- bulk reassign
+- new HTML table builder (asp:table?)
+- bigger font
+- 2 column layout
+- blank on empty SQL dates
+- image div bigger to drag when at bottom of image
+- populate 505 auto
+- double check checkbox format function
+* indicator color inside box
+- adjust initial image to confirm correct form
+

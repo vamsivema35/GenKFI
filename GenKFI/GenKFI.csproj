@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D011E9A2-6C38-4B2C-B848-6CB0FEE4AAF2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GenKFI</RootNamespace>
+    <AssemblyName>GenKFI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>disabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>GenKFI.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <ExcludeGeneratedDebugSymbol>false</ExcludeGeneratedDebugSymbol>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>GenKFI.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\GenKFI.dll" />
+    <Content Include="bin\GenKFI.pdb" />
+    <Content Include="BreadCrumb.ascx" />
+    <Content Include="css\footer.css" />
+    <Content Include="css\smoothness\images\animated-overlay.gif" />
+    <Content Include="css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="css\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="css\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\smoothness\jquery-ui-1.10.3.custom.css" />
+    <Content Include="css\smoothness\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="css\ui.dropdownchecklist.themeroller.css" />
+    <Content Include="Global.asax" />
+    <Content Include="images\Blank.png" />
+    <Content Include="images\dev.png" />
+    <Content Include="images\imgError.jpg" />
+    <Content Include="images\ImgScroll.png" />
+    <Content Include="images\landscape.jpg" />
+    <Content Include="images\MagnifyingBlank.png" />
+    <Content Include="images\MagnifyingGlass.png" />
+    <Content Include="images\MagnifyingOther.png" />
+    <Content Include="images\NM_Logo2.png" />
+    <Content Include="images\portrait.jpg" />
+    <Content Include="scripts\formattingDB.js" />
+    <Content Include="scripts\jquery-ui.js" />
+    <Content Include="scripts\jquery-ui.min.js" />
+    <Content Include="scripts\jQueryRotate.2.2.js" />
+    <Content Include="scripts\moment.min.js" />
+    <Content Include="scripts\ui.dropdownchecklist.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="utils\DcImgLoad.aspx" />
+    <Content Include="utils\DcUtility.aspx" />
+    <Content Include="utils\formBuilder\GkInstall.aspx" />
+    <Content Include="utils\formBuilder\NewTaxYear.aspx" />
+    <Content Include="utils\formBuilder\TestingUtil.aspx" />
+    <Content Include="utils\formBuilder\UdImgLoad.aspx" />
+    <Content Include="utils\formBuilder\UtilDev.aspx" />
+    <Content Include="utils\manageUserRoles2.aspx" />
+    <Content Include="utils\entry\KeyEntry.aspx" />
+    <Content Include="scripts\divMove.js" />
+    <Content Include="scripts\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="utils\batchInquire.aspx" />
+    <Content Include="utils\BatchModify.aspx" />
+    <Content Include="utils\closedBatches.aspx" />
+    <Content Include="noFront\imageLoad.aspx" />
+    <Content Include="utils\editPCodes.aspx" />
+    <Content Include="utils\errView.aspx" />
+    <Content Include="utils\formBuilder\blockBatch.aspx" />
+    <Content Include="utils\formBuilder\editJSauto.aspx" />
+    <Content Include="utils\formBuilder\existForms.aspx" />
+    <Content Include="utils\formBuilder\formBuild.aspx" />
+    <Content Include="utils\formBuilder\formTest.aspx" />
+    <Content Include="utils\formBuilder\needSql.aspx" />
+    <Content Include="utils\MavImgView.aspx" />
+    <Content Include="utils\reassignBatches.aspx" />
+    <Content Include="utils\unassignedBatches.aspx" />
+    <Content Include="utils\userStats.aspx" />
+    <Content Include="utils\ViewMavImg.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BreadCrumb.ascx.cs">
+      <DependentUpon>BreadCrumb.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BreadCrumb.ascx.designer.cs">
+      <DependentUpon>BreadCrumb.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BreadCrumbNode.cs" />
+    <Compile Include="forms.Master.cs">
+      <DependentUpon>forms.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forms.Master.designer.cs">
+      <DependentUpon>forms.Master</DependentUpon>
+    </Compile>
+    <Compile Include="myUserRole.cs" />
+    <Compile Include="noFront\CMPRateLookup.ashx.cs">
+      <DependentUpon>CMPRateLookup.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="noFront\CountryLookUp.ashx.cs">
+      <DependentUpon>CountryLookUp.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="noFront\CRSLocationLookup.ashx.cs">
+      <DependentUpon>CRSLocationLookup.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="noFront\CRSRateLookup.ashx.cs">
+      <DependentUpon>CRSRateLookup.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="noFront\GRTRateLookup.ashx.cs">
+      <DependentUpon>GRTRateLookup.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="noFront\LowIncTableLookup.ashx.cs">
+      <DependentUpon>LowIncTableLookup.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="noFront\newBlock.ashx.cs">
+      <DependentUpon>newBlock.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="noFront\RateTableLookup.ashx.cs">
+      <DependentUpon>RateTableLookup.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="noFront\remBlock.ashx.cs">
+      <DependentUpon>remBlock.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="noFront\STPRateLookup.ashx.cs">
+      <DependentUpon>STPRateLookup.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="noFront\WDTRateLookup.ashx.cs">
+      <DependentUpon>WDTRateLookup.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="utilClass.cs" />
+    <Compile Include="GenKFI.Master.cs">
+      <DependentUpon>GenKFI.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenKFI.Master.designer.cs">
+      <DependentUpon>GenKFI.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GoodConn.cs" />
+    <Compile Include="noFront\DoLookup.ashx.cs">
+      <DependentUpon>DoLookup.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\DcImgLoad.aspx.cs">
+      <DependentUpon>DcImgLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\DcImgLoad.aspx.designer.cs">
+      <DependentUpon>DcImgLoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\DcUtility.aspx.cs">
+      <DependentUpon>DcUtility.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\DcUtility.aspx.designer.cs">
+      <DependentUpon>DcUtility.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\formBuilder\GkInstall.aspx.cs">
+      <DependentUpon>GkInstall.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\formBuilder\GkInstall.aspx.designer.cs">
+      <DependentUpon>GkInstall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\formBuilder\NewTaxYear.aspx.cs">
+      <DependentUpon>NewTaxYear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\formBuilder\NewTaxYear.aspx.designer.cs">
+      <DependentUpon>NewTaxYear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\formBuilder\TestingUtil.aspx.cs">
+      <DependentUpon>TestingUtil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\formBuilder\TestingUtil.aspx.designer.cs">
+      <DependentUpon>TestingUtil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\formBuilder\UdImgLoad.aspx.cs">
+      <DependentUpon>UdImgLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\formBuilder\UdImgLoad.aspx.designer.cs">
+      <DependentUpon>UdImgLoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\formBuilder\UtilDev.aspx.cs">
+      <DependentUpon>UtilDev.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\formBuilder\UtilDev.aspx.designer.cs">
+      <DependentUpon>UtilDev.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\manageUserRoles2.aspx.cs">
+      <DependentUpon>manageUserRoles2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\manageUserRoles2.aspx.designer.cs">
+      <DependentUpon>manageUserRoles2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\entry\KeyEntry.aspx.cs">
+      <DependentUpon>KeyEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\entry\KeyEntry.aspx.designer.cs">
+      <DependentUpon>KeyEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\batchInquire.aspx.cs">
+      <DependentUpon>batchInquire.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\batchInquire.aspx.designer.cs">
+      <DependentUpon>batchInquire.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\BatchModify.aspx.cs">
+      <DependentUpon>BatchModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\BatchModify.aspx.designer.cs">
+      <DependentUpon>BatchModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\closedBatches.aspx.cs">
+      <DependentUpon>closedBatches.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\closedBatches.aspx.designer.cs">
+      <DependentUpon>closedBatches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="error.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="noFront\imageLoad.aspx.cs">
+      <DependentUpon>imageLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="noFront\imageLoad.aspx.designer.cs">
+      <DependentUpon>imageLoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\editPCodes.aspx.cs">
+      <DependentUpon>editPCodes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\editPCodes.aspx.designer.cs">
+      <DependentUpon>editPCodes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\errView.aspx.cs">
+      <DependentUpon>errView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\errView.aspx.designer.cs">
+      <DependentUpon>errView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\formBuilder\blockBatch.aspx.cs">
+      <DependentUpon>blockBatch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\formBuilder\blockBatch.aspx.designer.cs">
+      <DependentUpon>blockBatch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\formBuilder\editJSauto.aspx.cs">
+      <DependentUpon>editJSauto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\formBuilder\editJSauto.aspx.designer.cs">
+      <DependentUpon>editJSauto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\formBuilder\existForms.aspx.cs">
+      <DependentUpon>existForms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\formBuilder\existForms.aspx.designer.cs">
+      <DependentUpon>existForms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\formBuilder\formBuild.aspx.cs">
+      <DependentUpon>formBuild.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\formBuilder\formBuild.aspx.designer.cs">
+      <DependentUpon>formBuild.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\formBuilder\formTest.aspx.cs">
+      <DependentUpon>formTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\formBuilder\formTest.aspx.designer.cs">
+      <DependentUpon>formTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\formBuilder\needSql.aspx.cs">
+      <DependentUpon>needSql.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\formBuilder\needSql.aspx.designer.cs">
+      <DependentUpon>needSql.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\MavImgView.aspx.cs">
+      <DependentUpon>MavImgView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\MavImgView.aspx.designer.cs">
+      <DependentUpon>MavImgView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\OpenBatches.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>OpenBatches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\OpenBatches.aspx.designer.cs">
+      <DependentUpon>OpenBatches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\reassignBatches.aspx.cs">
+      <DependentUpon>reassignBatches.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\reassignBatches.aspx.designer.cs">
+      <DependentUpon>reassignBatches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\unassignedBatches.aspx.cs">
+      <DependentUpon>unassignedBatches.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\unassignedBatches.aspx.designer.cs">
+      <DependentUpon>unassignedBatches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\userStats.aspx.cs">
+      <DependentUpon>userStats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\userStats.aspx.designer.cs">
+      <DependentUpon>userStats.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utils\ViewMavImg.aspx.cs">
+      <DependentUpon>ViewMavImg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utils\ViewMavImg.aspx.designer.cs">
+      <DependentUpon>ViewMavImg.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\ApplicationStyle_001.css" />
+    <Content Include="GenKFI.Master" />
+    <Content Include="images\nmsign.gif" />
+    <Content Include="images\Warning.png" />
+    <Content Include="scripts\jquery-1.8.2.js" />
+    <Content Include="scripts\jquery-1.8.2.min.js" />
+    <Content Include="error.aspx" />
+    <Content Include="utils\OpenBatches.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="oldAPSX\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="noFront\DoLookup.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="noFront\remBlock.ashx" />
+    <Content Include="noFront\newBlock.ashx" />
+    <Content Include="forms.Master" />
+    <Content Include="noFront\RateTableLookup.ashx" />
+    <Content Include="noFront\LowIncTableLookup.ashx" />
+    <Content Include="noFront\CRSLocationLookup.ashx" />
+    <Content Include="noFront\CRSRateLookup.ashx" />
+    <Content Include="noFront\STPRateLookup.ashx" />
+    <Content Include="noFront\WDTRateLookup.ashx" />
+    <Content Include="noFront\GRTRateLookup.ashx" />
+    <Content Include="noFront\CMPRateLookup.ashx" />
+    <Content Include="noFront\CountryLookUp.ashx" />
+    <None Include="Properties\PublishProfiles\toFile-Dev.pubxml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\PublishProfiles\toFile-Release.pubxml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">  
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55223</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

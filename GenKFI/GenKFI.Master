@@ -1,0 +1,90 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GenKFI.master.cs" Inherits="GenKFI.GenKFI" %>
+<%@ Register TagName="BreadCrumb" TagPrefix="bc" Src="~/BreadCrumb.ascx" %>
+
+
+<!DOCTYPE html>   
+
+<head runat="server">
+	<script type="text/javascript" src="<%= ResolveClientUrl( "~/scripts/jquery-1.8.2.min.js" ) %>"></script>
+	<script type="text/javascript" src="<%= ResolveClientUrl( "~/scripts/jquery-ui-1.10.3.custom.min.js" ) %>"></script>
+	<script type="text/javascript" src="<%= ResolveClientUrl( "~/scripts/ui.dropdownchecklist.js" ) %>"></script>
+	<script type="text/javascript" src="<%= ResolveClientUrl( "~/scripts/moment.min.js" ) %>"></script>
+	<script type="text/javascript">
+		$(document).ready(
+			function()
+			{
+				if($("#<%= tpSEL.ClientID %>") != null)
+				{
+					$("#<%= tpSEL.ClientID %>").dropdownchecklist({
+						firstItemChecksAll: true,
+						minWidth: 75,
+						
+						onComplete: function(selector)
+						{
+							var values = "";
+							for(i = 0; i < selector.options.length; i++)
+							{
+								if(selector.options[i].selected && (selector.options[i].value != ""))
+								{
+									if(values != "") values += ";";
+									values += selector.options[i].value;
+								}
+							}
+							$("#<%= tpSelHID.ClientID %>").val(values);
+							__doPostBack("<%= tpSelHID.ClientID %>", values);
+						}
+					})
+				};
+			});
+	</script>
+	<link rel="Stylesheet" type="text/css" href="~/css/ApplicationStyle_001.css" />
+	<link rel="Stylesheet" type="text/css" href="~/css/footer.css" />
+	<link rel="Stylesheet" type="text/css" href="~/css/ui.dropdownchecklist.themeroller.css" />
+	<link rel="Stylesheet" type="text/css" href="~/css/smoothness/jquery-ui-1.10.3.custom.min.css" />
+	<title><asp:Literal runat="server" ID="titleLIT" Mode="PassThrough"></asp:Literal></title>
+	<asp:ContentPlaceHolder runat="server" ID="headHolder">
+	</asp:ContentPlaceHolder>
+</head>
+<body>
+    <!--From Table below   cellpadding="10" -->
+	<table style="width:100%; text-align: left; float: left;"> 
+		<tr>
+			<td style="width:128px; top:0px; "> 
+				<img style="width:512px; height:256px" alt="" src="<%= ResolveClientUrl( "~/images/NM_Logo2.png" ) %>" />
+			</td>
+			<td>
+				<h2>New Mexico</h2>
+				<h2>Taxation and Revenue Department</h2>
+				<h2>GenKFI Tax Programs</h2>
+			</td>
+		</tr>
+	</table>
+	
+	<form id="form1" runat="server">
+		<div id="header">
+			<h2 style="text-align: center;"><asp:Literal runat="server" ID="headerLIT"></asp:Literal></h2>
+			<div>
+				<div style="float: left;"><bc:BreadCrumb runat="server" ID="bc1"></bc:BreadCrumb></div>
+				<div style="float: right; text-align: right;">
+					<asp:Panel runat="server" ID="tpSELPNL" Visible="true" style="display: inline;">Choose Tax Program: <asp:ListBox runat="server" ID="tpSEL" SelectionMode="Multiple"></asp:ListBox><asp:HiddenField runat="server" ID="tpSelHID" /></asp:Panel>
+					<asp:Button runat="server" ID="homeBTN" PostBackUrl="/Default.aspx" Text="Home" Width="110px" CssClass="btn" UseSubmitBehavior="false" ></asp:Button>
+					<br />
+				</div>
+			</div>
+			<br />
+			<div style="clear: both;"><hr /></div>
+			<h2 style="text-align: center;"><asp:Label runat="server" ID="userNoticeLBL" Text="" BackColor="LightSkyBlue" ForeColor="DarkRed"></asp:Label></h2>
+
+		</div>
+		<div id="content">
+		<asp:HiddenField runat="server" ID="hidSeqKey" EnableViewState="true" />
+			<asp:ContentPlaceHolder ID="bodyHolder" runat="server">
+			</asp:ContentPlaceHolder>
+		</div>
+		<asp:Panel runat="server" ID="footerPNL" Visible="false">
+			<div id="footer">
+			</div>
+		</asp:Panel>
+	</form>
+</body>
+

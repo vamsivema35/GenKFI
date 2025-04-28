@@ -1,0 +1,40 @@
+Below are the column os the old rfrControls table:
+
+IDrfrControls
+* fstrFileType
+fstrGenTaxFieldName
+fstrInputID
+* fstrTaxProgram
+* flngTaxYear
+* fstrTaxForm
+flngOrder
+* fstrTable
+fstrColumn
+fstrFormat
+flngDispLength
+flngMaxLength
+fblnHidden
+flngVBVarType
+flngBlock
+fblnPostBack
+fblnVertSkip
+fstrLabel
+fstrOnFocus
+fstrOnKeyDown
+fblnActive
+flngCtrlMove
+flngImgMoveX
+flngImgMoveY
+flngMarkerMoveX
+flngMarkerMoveY
+fstrNextCtrl
+flngFormatIDFK
+fstrTranslate
+* flngClipTop
+* flngClipRight
+* flngClipBottom
+* flngClipLeft
+* fstrBlockHeader
+* fstrFormType
+
+I've made a new rfrControlHeaders table containing the starred columns above. The starred columns can then be moved over to the new table. The new table can contain the data from rfrControls WHERE flngBlock = 0, and the old table can then be modified to include an FK column to point to the appropriate row in the new rfrControlHeaders table.

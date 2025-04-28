@@ -1,0 +1,14 @@
+fixed - Date Validation
+fixed - Data Truncation
+fixed - Clearer Error Messages
+double input on bank and routing info
+check on filing jointly and get other person
+
+fixed - alternative to CSS opacity on IE8
+too fast breaks
+reset jQuery ready scripts
+fix forms for taskbar and shortcut bar space
+
+something wrong with dependant order entry
+fblnFilled on non repeater forms
+fixed - Request.Form bad input on IE8

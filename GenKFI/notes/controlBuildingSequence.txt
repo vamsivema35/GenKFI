@@ -1,0 +1,65 @@
+start on existForms.aspx
+	list all forms from rfrControls, grouped by tax program, tax year, and file type, link to blockBatch.aspx
+	also include a button for creating a new form
+	the new form we can put the values in the rfrControls table, with flngOrder = 0, for the declaration value that the form will exist
+	 also use that method to get existing form header (declarations)
+
+move on to blockBatch.aspx
+	for entire batch, user can set tax program, tax year, file type
+	then user can start adding tax forms (name and template image file location), tables, and blocks
+		blocks are a subset of the tax forms
+		each tax form is associated with one table
+
+for each tax form, table and block, a button will take user to controlEdit.aspx
+	this will load the template image (set on previous page) and user can start adding controls
+	header has the following controls
+		control type DDL
+		add control
+		save edits
+		remove control
+		move control up in sequence
+		move control down in sequence
+		move control right (vert skip)
+		move control vertical (no vert skip)
+		test controls button (go to text page)
+
+	each control has the following properties (properties window?)
+		checkbox for which control is currently being edited
+		textbox for label
+		textbox for GenTax field
+		the control itself (type selected when adding)
+		two text boxes for x and y of marker position
+		two textboxes for image scroll position
+		DDL for type of data
+		DDL for formatting (if any)
+		DDL for control div scrolling (0, 10, 20, etc.)
+
+end on formBuild.aspx
+given these columns, they are for this entire batch form
+	fstrFileType
+	flngTaxYear
+	fstrTaxProgram
+
+given these columns, for this tax form and all with same name
+	fstrTaxForm
+	fstrTable
+
+given this column for this block
+	flngBlock
+
+these are the columns that need filled
+	fstrGenTaxFieldName
+	fstrInputID
+	flngOrder		// automatic once we are done
+	fstrColumn
+	fstrFormat
+	flngDispLength
+	flngMaxLength
+	flngVBVarType
+	fblnPostBack		// never used, but make the last control '1', otherwise '0'
+	fblnVertSkip
+	fstrOnFocus		// mostly the same, numbers will be different
+	fstrOnKeyDown		// mostly always the same, formatting function and numbers will be different
+	fblnActive		// always 1
+
+

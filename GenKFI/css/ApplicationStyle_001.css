@@ -1,0 +1,78 @@
+input.btn {
+	margin: auto;
+	width: 100px; 
+	height: 24px; 
+	text-align: center;
+}
+
+input.txt {
+	margin: auto;
+	width: 100px; 
+	height: 22px; 
+	text-align: left;
+	font-size: 16px;
+}
+
+table {
+	margin: auto;
+	text-align: center;
+	border: 0px;
+	padding: 10px;
+	width: 90%;
+}
+
+tr {
+	border: 0px;
+}
+
+#first td 
+{
+color:#000000;
+background-color:#EAF2D3;
+}	
+
+th {
+	border: 0px;
+	color: #ff6347;
+}
+
+td {
+	border: 0px;
+}
+
+td.input_lbl {
+	text-align: right;
+	padding-right: 20px;
+}
+
+td.input_txt {
+	text-align: left;
+	padding-left: 20px;
+}
+
+td.input_cmb {
+	text-align: left;
+	padding-left: 20px;
+}
+
+img#popup {    
+	position: absolute;    
+	z-index: +1;
+	width: 30%;
+	border-style: dashed;
+	border-width: 1px;
+	border-color: blue;
+    left: 1400px;
+    Top: 200px;
+    clip: rect(400px, 650px, 600px, 150px)
+}
+
+div#snippet {
+	position: absolute;    
+	padding: 1px;
+	border-style: dashed;
+	border-width: 1px;
+	border-color: blue;	
+	height: 199px;
+	width: 499px;
+}

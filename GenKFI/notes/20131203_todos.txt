@@ -1,0 +1,28 @@
+* 1) Better user stats query by tax program
+* 2) Restrict tax year dates to +- 1 year to tax program year
+* 	i) Either that or auto populate the tax year beginning and end based on tax program year (for FID or all programs?)
+* 3) Double the routing and account number inputs
+*	i) Add onblur/onfocus option to js auto functions
+	ii) On blur of first fields, blank or star the number, to force keying off the return scan
+	iii) On blur of second fields, double check the numbers match
+* 4) Adjust for scan and marker being too low and falling off the bottom of screen
+* 5) Reset Xform should also reset the image offset under the marker
+* 6) Save drag offset values also, so marker and image movement can be offset for small resolutions
+* 7) Carry over numbers from previous fields/forms/pages
+* 	i) Add placeholder values and custom PUT and GET js functions
+* 8) 'Timely return' questions
+* 	i) if a batch is timely, skip postmark entry
+* 	ii) if a batch is timely, fill postmark with scan date
+* 	iii) where is 'timely return' set - defined dates, for each tax program
+* 9) PIT - auto fill tax ammount if from lookup table
+* 	i) store lookup table in GenKFI database?
+	ii) can we lookup this value in GenTax?
+* 10) Preparers id, auto-capitalize the P
+* 11) Allow supervisors to key like a user, not via impersonation
+
+IDEAS/NOTES
+1) Can a keyboard shortcut be captured to end the repeater forms?
+2) Bad DateTime (i.e. no possible way to interpret as date), just continue?
+3) TextBox, when setting max length, can we programatically put in longer values. This will get around the extra length needed for dashes, yes, this works, so we can limit fields by needed length, not leaving space for users to key dashes
+4) CRS beginning with '04-' will still work, it matches CRS numbers of the form 0x-xxxxxx-00x
+

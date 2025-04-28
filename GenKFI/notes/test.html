@@ -1,0 +1,27 @@
+<html>
+	<head>
+	<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+	<script type="text/javascript">
+function makePass() {
+  var inp = document.createElement('input'),
+       mp = document.getElementById('tt'),
+       sw = document.getElementById('sw');  
+  inp.type = 'password';
+  inp.id = mp.id;
+  inp.name = mp.name;
+  inp.value = mp.value;
+  mp.parentNode.replaceChild(inp, mp);
+  inp.onblur = makePass;
+  inp.onfocus = makeText;
+}
+function changeType() {
+	var mp = document.getElementById('tt');
+	document.getElementById("tt").setAttribute("type", mp.type=="password" ? "text" : "password");
+}
+	</script>
+	</head>
+	<body>
+		<div><input type="text" id="tt" onblur="changeType();" onfocus="changeType();" /></div>
+		<div><input type="text" id="tt2" /></div>
+	</body>
+</html>

@@ -1,0 +1,92 @@
+-- General flow of KeyEntry for a rewrite based on the new header table framework --
+
+@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+@# Page_Load @#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@
+@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+-- if formPickClick (hidden on aspx) is "Y"
+--- we used the form picker, first do update to save what is on the screen currently
+--- reset to formPickClick "N"
+-- load first data on first load ... loadData( true );
+
+@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+@# OnClick_btnSub @#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+-- calls doUpdate
+
+@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+@# doUpdate @#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+-- as with the load, get the table and column names
+-- and build an updte statement, gettig the values via Request.Form[]
+-- since it's just a simple HTML table
+-- also save the list of values to compare with the old values
+-- update the master queue as this batchID, batchDate, Sequence, title and block as 'K' keyed
+-- if the values are different, also set fstrchanged = 'Y'
+-- also update the mornal queue stting all that as 'K' keyed
+-- do another select from the normal queue with all the conditions and fstrStatus = 'A'
+-- if nothing, check in image in tblBatchImage
+-- check if there are more, for this user, batchID, batchDate, sequence, and status = 'A'
+-- if nothing, clean up queue
+--- delete from normal queue for this batchID, batchDate and sequence
+--- check if sequence > batchCount in tblBatchInfo
+---- if so, update tblBatchInfo set fintBatchCount = sequence
+---- if we didn't use the formPickClick, redirect to BatchModify
+---- if this is a user, the master page will take care of redirecting back here if there is more to do
+
+-- if there are more, do nothing, loadData will do it after we updated the queue
+-- call loadDatas()
+
+
+@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+@# loadData @#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+-- we're given the BatchID, BatchDate, BatchSource, and Sequence
+-- this lets us identify the batch in tblBatchImfo
+-- (sequence will give us the specific images from tblBatchImage)
+-- for the controls we need the tax program, tax year, file type form rfrReturnHeaders
+-- and tax form, block, and table from rfrControlHeaders
+-- link to controls via 
+--- tblBatchInfo.fstrTaxProgram = rfrReturnHeaders.fstrTaxProgram
+--- tblBatchImage.fstrFormName = rfrControlHeaders.fstrTaxForm
+--- tblBatchInfo.fstrForm = rfrReturnHeaders.flngTaxYear
+
+-- master queue selections are found via fstrBatchID, fdtmBatchDate and flngSequence
+-- normal queue selections add fstrUserID to this also
+
+-- first check the master queue, if there are rows, turn off a flag, 'keLoadQMast'
+-- check normal queue, if it's empty (for this return, see conditions above)
+--- get all forms and blocks for the entire return (this SQL is already done for the new headers)
+--- insert relevant info into the queue, for all rows selected above
+---- if we need to load the master queue (keLoadQMast from above)
+----- then also fill the master queue with same info
+-- 
+--- update normal queue three ways
+---- set current sequence as active
+---- anything less than current title, set as keyed
+----- (this is bad, we can't garuntee the names will always be in alphabetica order)
+----- (find another way of doing this)
+---- anything with a lower block, in this sequence and title, set as keyed
+-- after the updates to the normal queue, reselect from it to get the next active block/form
+--- SELECT is ORDERed, loop until we get the first 'A' for active, or first row, if none are marked ??
+-- again, reselect from normal queue
+--- build form pick table
+-- update tblBatchImage with current datetime to check it out
+--- (with fstrBatchID, flngSequence and formName, where all the blank checks are 0)
+-- get the table and column names from the controls table
+--- build a select statement to get the values off the data table
+-- if that statement returns nothing
+--- insert fstrBatchId, fdtmBatchDate, flngSequence into the data table
+--- (this will force the DB to make the data row, and insert the default values)
+--- reselect with the build statement to get the default values
+-- build controls table (already done in external function, just need to pass correct params)
+-- now that we have the HTML controls and the data values, loop over the data
+--- do a replace on ~controlName~ to put the data in the controls
+--- also keep a string of the values, to compare if new values are entered
+--- save various data in hidden controls, for use later
+
+
+@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+@# tryLoad @#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@
+@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+-- merely an attempt to load the image file path
+-- if it breaks, we know the image isn't there and we can show an error to the user

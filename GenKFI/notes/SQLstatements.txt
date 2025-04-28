@@ -1,0 +1,24 @@
+-- get the possible form declarations
+SELECT
+	fstrFileType,
+	flngTaxYear,
+	fstrTaxProgram
+FROM
+	rfrControls
+GROUP BY fstrFileType, flngTaxYear, fstrTaxProgram
+ORDER BY fstrTaxProgram, flngTaxYear, fstrFileType;
+
+-- get each form and block for a given type, year, and program
+SELECT
+	fstrTaxForm,
+	fstrTable,
+	flngBlock
+FROM
+	rfrControls
+WHERE
+	fstrFileType='SCOR11' AND
+	flngTaxYear = 2011 AND
+	fstrTaxProgram = 'SCO'
+GROUP BY fstrTaxForm, fstrTable, flngBlock
+ORDER BY fstrTaxForm, fstrTable, flngBlock;
+

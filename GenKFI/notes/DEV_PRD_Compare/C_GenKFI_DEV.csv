@@ -1,0 +1,1989 @@
+NAME,tblPtePtd
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fstrFein,varchar(9),NOT NULL
+,fcurNMNetIncome,money,NOT NULL
+,fblnAmend,tinyint,NOT NULL
+,fdtmPostMarkDate,datetime,NOT NULL
+,fstrName,varchar(40),NOT NULL
+,fstrStreet,varchar(40),NOT NULL
+,fstrCity,varchar(20),NOT NULL
+,fstrState,varchar(2),NOT NULL
+,fstrCountry,varchar(4),NOT NULL
+,fstrZipCode,varchar(9),NOT NULL
+,fblnPte,tinyint,NOT NULL
+,fblnScorp,tinyint,NOT NULL
+,fblnCit,tinyint,NOT NULL
+,fblnFid,tinyint,NOT NULL
+,fblnOth,tinyint,NOT NULL
+,fstrOthWhy,varchar(40),NOT NULL
+,fdtmTaxYrBeg,datetime,NOT NULL
+,fdtmTaxYrEnd,datetime,NOT NULL
+,fdtmTaxDue,datetime,NOT NULL
+,fdtmExtDue,datetime,NOT NULL
+,fcurWthPage,money,NOT NULL
+,fcurWthAll,money,NOT NULL
+,fcurWthOwn,money,NOT NULL
+,fcurWthPte,money,NOT NULL
+,fcurSubTotal,money,NOT NULL
+,fcurPenalty,money,NOT NULL
+,fcurInterest,money,NOT NULL
+,fcurTotalDue,money,NOT NULL
+,fdtmSigned,datetime,NOT NULL
+,fstrPhone,varchar(10),NOT NULL
+,fstrEmail,varchar(80),NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblPtePtd
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fstrFein,varchar(9),NOT NULL
+,fcurNMNetIncome,money,NOT NULL
+,fblnAmend,tinyint,NOT NULL
+,fdtmPostMarkDate,datetime,NOT NULL
+,fstrName,varchar(40),NOT NULL
+,fstrStreet,varchar(40),NOT NULL
+,fstrCity,varchar(20),NOT NULL
+,fstrState,varchar(2),NOT NULL
+,fstrCountry,varchar(4),NOT NULL
+,fstrZipCode,varchar(9),NOT NULL
+,fblnPte,tinyint,NOT NULL
+,fblnScorp,tinyint,NOT NULL
+,fblnCit,tinyint,NOT NULL
+,fblnFid,tinyint,NOT NULL
+,fblnOth,tinyint,NOT NULL
+,fstrOthWhy,varchar(40),NOT NULL
+,fdtmTaxYrBeg,datetime,NOT NULL
+,fdtmTaxYrEnd,datetime,NOT NULL
+,fdtmTaxDue,datetime,NOT NULL
+,fdtmExtDue,datetime,NOT NULL
+,fcurWthPage,money,NOT NULL
+,fcurWthAll,money,NOT NULL
+,fcurWthOwn,money,NOT NULL
+,fcurWthPte,money,NOT NULL
+,fcurSubTotal,money,NOT NULL
+,fcurPenalty,money,NOT NULL
+,fcurInterest,money,NOT NULL
+,fcurTotalDue,money,NOT NULL
+,fdtmSigned,datetime,NOT NULL
+,fstrPhone,varchar(10),NOT NULL
+,fstrEmail,varchar(80),NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblCit2
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurTaxable,money,NOT NULL
+,fcurIntMuni,money,NOT NULL
+,fcurFedSpDed,money,NOT NULL
+,fcurNMBase,money,NOT NULL
+,fcurNMNOL,money,NOT NULL
+,fcurIntUSOblig,money,NOT NULL
+,fcurNMSubTotal,money,NOT NULL
+,fcurDednForDiv,money,NOT NULL
+,fcurNMNetTaxable,money,NOT NULL
+,fcurComputedIncTax,money,NOT NULL
+,fcurNMPercentage,decimal(18;4),NOT NULL
+,fcurNMIncomeTax,money,NOT NULL
+,fcurTotTaxCredits,money,NOT NULL
+,fcurNetIncomeTax,money,NOT NULL
+,fcurFranchiseTax,money,NOT NULL
+,fcurTotIncFranch,money,NOT NULL
+,fcurRefundApplied,money,NOT NULL
+,fcurSubTotal2,money,NOT NULL
+,fblnPaymtQuart,tinyint,NOT NULL
+,fblnPaymtTent,tinyint,NOT NULL
+,fblnPaymtYear,tinyint,NOT NULL
+,fblnPaymtMethFour,tinyint,NOT NULL
+,fcurTotalPayments,money,NOT NULL
+,fcurTaxWithholdOGP,money,NOT NULL
+,fcurNMWithPass,money,NOT NULL
+,fcurNMWithTotBen,money,NOT NULL
+,fcurTaxDue,money,NOT NULL
+,fcurPenalty,money,NOT NULL
+,fcurInterest,money,NOT NULL
+,fcurTotalDue,money,NOT NULL
+,fcurOverPaymt,money,NOT NULL
+,fcurOvPaymentNxtYr,money,NOT NULL
+,fcurOvPaymentRef,money,NOT NULL
+,fcurRefRenewEner,money,NOT NULL
+,fcurTotalRefCred,money,NOT NULL
+,fcurFilmProduction,money,NOT NULL
+,fstrTPEmailAdd,varchar(80),NOT NULL
+,fstrPrepCRSID,varchar(11),NOT NULL
+,fstrPrepFEIN,varchar(9),NOT NULL
+,fstrPrepSSNPTIN,varchar(9),NOT NULL
+,fstrPrepPhoneNum,varchar(10),NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,progCodes
+KEYS,idProgCodes
+COLUMNS,idProgCodes,int,NOT NULL
+,progCode,varchar(10),NOT NULL
+,description,varchar(255),NULL
+,removed,tinyint,NOT NULL
+NAME,tblPteB
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurBDividends,money,NOT NULL
+,fcurBNMDividends,money,NOT NULL
+,fcurBInterest,money,NOT NULL
+,fcurBNMInterest,money,NOT NULL
+,fcurBRents,money,NOT NULL
+,fcurBNMRents,money,NOT NULL
+,fcurBRoyalties,money,NOT NULL
+,fcurBNMRoyalties,money,NOT NULL
+,fcurBProfitLoss,money,NOT NULL
+,fcurBNMProfitLoss,money,NOT NULL
+,fcurBIncome,money,NOT NULL
+,fcurBNMIncome,money,NOT NULL
+,fcurBOthIncome,money,NOT NULL
+,fcurBNMOthIncome,money,NOT NULL
+,fcurBNetAllocInc,money,NOT NULL
+,fcurBNMNetAllocInc,money,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,userProgCode
+KEYS,idUserProgCode
+COLUMNS,idUserProgCode,int,NOT NULL
+,userIDFK,uniqueidentifier,NOT NULL
+,progCodeIDFK,int,NOT NULL
+NAME,tblScorpA
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurAInventory,money,NOT NULL
+,fcurANMInventory,money,NOT NULL
+,fcurARealProperty,money,NOT NULL
+,fcurANMRealProperty,money,NOT NULL
+,fcurAPerProperty,money,NOT NULL
+,fcurANMPerProperty,money,NOT NULL
+,fcurARentProperty,money,NOT NULL
+,fcurANMRentProperty,money,NOT NULL
+,fcurATotalProperty,money,NOT NULL
+,fcurANMTotalProperty,money,NOT NULL
+,fcurAPropertyFactor,decimal(18;4),NOT NULL
+,fcurATotalPayRoll,money,NOT NULL
+,fcurANMPayRoll,money,NOT NULL
+,fcurAPayRollFactor,decimal(18;4),NOT NULL
+,fcurASales,money,NOT NULL
+,fcurANMSales,money,NOT NULL
+,fcurASalesFactor,decimal(18;4),NOT NULL
+,fcurATotalFactors,decimal(18;4),NOT NULL
+,fdtmATaxYearEnd,datetime,NOT NULL
+,fdtmAElection,datetime,NOT NULL
+,fcurAAvgFactor,decimal(18;4),NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,userExpires
+KEYS,idUserExpires
+COLUMNS,idUserExpires,int,NOT NULL
+,userIDFK,uniqueidentifier,NOT NULL
+,expires,datetime,NOT NULL
+NAME,tblCitC
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurCNMNetTaxable,money,NOT NULL
+,fcurCNMAllocIncome,money,NOT NULL
+,fcurCNMApportIncome,money,NOT NULL
+,fcurCSubTotal,money,NOT NULL
+,fcurCNMPercentage,decimal(18;4),NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblAutoJavaComplete
+KEYS,IDtblAutoJavaComplete
+COLUMNS,IDtblAutoJavaComplete,int,NOT NULL
+,flngControlOutIDFK,int,NOT NULL
+,flngControl1IDFK,int,NOT NULL
+,flngControl2IDFK,int,NOT NULL
+,fdecConstant,decimal(18;4),NOT NULL
+,flngJavaFuncIDFK,int,NOT NULL
+,flngOrder,int,NOT NULL
+,fblnOnBlur,tinyint,NOT NULL
+,flngName1IDFK,int,NOT NULL
+,flngName2IDFK,int,NOT NULL
+NAME,tblCitCR
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurCRChildCare,money,NOT NULL
+,fcurCRCultProp,money,NOT NULL
+,fcurCRBusFac,money,NOT NULL
+,fcurCRInterGov,money,NOT NULL
+,fcurCRRuralJob,money,NOT NULL
+,fcurCRTechJobs,money,NOT NULL
+,fcurCRElecCard,money,NOT NULL
+,fcurCRJobMentor,money,NOT NULL
+,fcurCRLandCons,money,NOT NULL
+,fcurCRAffordHouse,money,NOT NULL
+,fcurCRBioDiesel,money,NOT NULL
+,fcurCRSusBldg,money,NOT NULL
+,fcurCRWaterCons,money,NOT NULL
+,fcurCRAdvEnergy,money,NOT NULL
+,fcurCRGeolPump,money,NOT NULL
+,fcurCRAgrBioMass,money,NOT NULL
+,fcurCRFilmApplied,money,NOT NULL
+,fcurCRFilmApproved,money,NOT NULL
+,fcurCRRenewEner,money,NOT NULL
+,fcurCRVetEmploy,money,NOT NULL
+,fcurCRTotCredit,money,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,rfrJavaAutoFunctions
+KEYS,IDrfrJavaAutoFunctions
+COLUMNS,IDrfrJavaAutoFunctions,int,NOT NULL
+,fstrFuncName,varchar(50),NOT NULL
+,fstrJavaTemplate,text,NOT NULL
+,fstrInput1,varchar(50),NOT NULL
+,fstrInput2,varchar(50),NOT NULL
+,fstrName1,varchar(50),NOT NULL
+,fstrName2,varchar(50),NOT NULL
+NAME,tblCitD
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurDForDiv,money,NOT NULL
+,fcurDDivLess20,money,NOT NULL
+,fcurDDivLess80,money,NOT NULL
+,fcurDDivMore80,money,NOT NULL
+,fcurDTotalNMDedn,money,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,rfrFormatTypes
+KEYS,IDrfrFormatTypes
+COLUMNS,IDrfrFormatTypes,int,NOT NULL
+,fstrDesc,varchar(128),NOT NULL
+,fstrFJSfuncName,varchar(64),NOT NULL
+,fstrdoLookupType,varchar(10),NULL
+NAME,tblScoPtdS
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+,flngRepNum
+,fblnFilled
+,fstrTaxForm
+,fstrMPDLN
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,flngRepNum,int,NOT NULL
+,fstrId,varchar(9),NOT NULL
+,fblnFein,tinyint,NOT NULL
+,fblnSsn,tinyint,NOT NULL
+,fstrName,varchar(40),NOT NULL
+,fstrStreet,varchar(40),NOT NULL
+,fstrCity,varchar(20),NOT NULL
+,fstrState,varchar(2),NOT NULL
+,fstrCountry,varchar(4),NOT NULL
+,fstrZipCode,varchar(9),NOT NULL
+,fblnOutSide,tinyint,NOT NULL
+,fcurOwnNet,money,NOT NULL
+,fcurOwnWth,money,NOT NULL
+,fbln41353,tinyint,NOT NULL
+,fblnFilled,tinyint,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+,fstrMPDLN,varchar(300),NOT NULL
+,fstrTaxForm,varchar(63),NOT NULL
+,fstrSource,varchar(6),NOT NULL
+,fblnFound,tinyint,NOT NULL
+NAME,rfrTaxTable
+KEYS,
+COLUMNS,fstrTaxYear,float,NULL
+,fcurLower,float,NULL
+,fcurUpper,float,NULL
+,fcurSingle,float,NULL
+,fcurJoint,float,NULL
+,fcurSeperate,float,NULL
+,fcurHeadHouse,float,NULL
+NAME,tblPtdS
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+,flngRepNum
+,fblnFilled
+,fstrTaxForm
+,fstrMPDLN
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,flngRepNum,int,NOT NULL
+,fstrId,varchar(9),NOT NULL
+,fblnFein,tinyint,NOT NULL
+,fblnSsn,tinyint,NOT NULL
+,fstrName,varchar(40),NOT NULL
+,fstrStreet,varchar(40),NOT NULL
+,fstrCity,varchar(20),NOT NULL
+,fstrState,varchar(2),NOT NULL
+,fstrCountry,varchar(4),NOT NULL
+,fstrZipCode,varchar(9),NOT NULL
+,fblnOutSide,tinyint,NOT NULL
+,fcurOwnNet,money,NOT NULL
+,fcurOwnWth,money,NOT NULL
+,fbln41353,tinyint,NOT NULL
+,fblnFilled,tinyint,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+,fstrMPDLN,varchar(300),NOT NULL
+,fstrTaxForm,varchar(63),NOT NULL
+,fstrSource,varchar(6),NOT NULL
+,fblnFound,tinyint,NOT NULL
+NAME,tblCitB
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurBDividends,money,NOT NULL
+,fcurBNMDividends,money,NOT NULL
+,fcurBInterest,money,NOT NULL
+,fcurBNMInterest,money,NOT NULL
+,fcurBRents,money,NOT NULL
+,fcurBNMRents,money,NOT NULL
+,fcurBRoyalties,money,NOT NULL
+,fcurBNMRoyalties,money,NOT NULL
+,fcurBProfitLoss,money,NOT NULL
+,fcurBNMProfitLoss,money,NOT NULL
+,fcurBIncome,money,NOT NULL
+,fcurBNMIncome,money,NOT NULL
+,fcurBOthIncome,money,NOT NULL
+,fcurBNMOthIncome,money,NOT NULL
+,fcurBNetAllocInc,money,NOT NULL
+,fcurBNMNetAllocInc,money,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblScoPtd
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fstrFein,varchar(9),NOT NULL
+,fcurNMNetIncome,money,NOT NULL
+,fblnAmend,tinyint,NOT NULL
+,fdtmPostMarkDate,datetime,NOT NULL
+,fstrName,varchar(40),NOT NULL
+,fstrStreet,varchar(40),NOT NULL
+,fstrCity,varchar(20),NOT NULL
+,fstrState,varchar(2),NOT NULL
+,fstrCountry,varchar(4),NOT NULL
+,fstrZipCode,varchar(9),NOT NULL
+,fblnPte,tinyint,NOT NULL
+,fblnScorp,tinyint,NOT NULL
+,fblnCit,tinyint,NOT NULL
+,fblnFid,tinyint,NOT NULL
+,fblnOth,tinyint,NOT NULL
+,fstrOthWhy,varchar(40),NOT NULL
+,fdtmTaxYrBeg,datetime,NOT NULL
+,fdtmTaxYrEnd,datetime,NOT NULL
+,fdtmTaxDue,datetime,NOT NULL
+,fdtmExtDue,datetime,NOT NULL
+,fcurWthPage,money,NOT NULL
+,fcurWthAll,money,NOT NULL
+,fcurWthOwn,money,NOT NULL
+,fcurWthPte,money,NOT NULL
+,fcurSubTotal,money,NOT NULL
+,fcurPenalty,money,NOT NULL
+,fcurInterest,money,NOT NULL
+,fcurTotalDue,money,NOT NULL
+,fdtmSigned,datetime,NOT NULL
+,fstrPhone,varchar(10),NOT NULL
+,fstrEmail,varchar(80),NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblFid2
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurFedNOL,money,NOT NULL
+,fcurNonNMMuni,money,NOT NULL
+,fcurFedAdd,money,NOT NULL
+,fcurNMNOL,money,NOT NULL
+,fcurUSBondInt,money,NOT NULL
+,fcurNetCapGain,money,NOT NULL
+,fcurTotDed,money,NOT NULL
+,fcurTotDistAmt,money,NOT NULL
+,fstrRouting1Num,varchar(9),NOT NULL
+,fstrRoutingNum,varchar(9),NOT NULL
+,fstrAccount1Num,varchar(17),NOT NULL
+,fstrAccountNum,varchar(17),NOT NULL
+,fstrAccountType,varchar(1),NOT NULL
+,fblnAcctChk,tinyint,NOT NULL
+,fblnAcctSav,tinyint,NOT NULL
+,fblnIATFlag,tinyint,NOT NULL
+,fblnIATYes,tinyint,NOT NULL
+,fblnIATNo,tinyint,NOT NULL
+,fstrPhoneNo,varchar(10),NOT NULL
+,fstrEmail,varchar(80),NOT NULL
+,fstrPrepName,varchar(50),NOT NULL
+,fstrPrepEIN,varchar(9),NOT NULL
+,fstrPrepCRSID,varchar(11),NOT NULL
+,fstrPrepPTIN,varchar(9),NOT NULL
+,fstrPrepPhone,varchar(10),NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblFidDS
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+,flngRepNum
+,fblnFilled
+,fstrTaxForm
+,fstrMPDLN
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,flngRepNum,int,NOT NULL
+,fstrId,varchar(9),NOT NULL
+,fblnFein,tinyint,NOT NULL
+,fblnSsn,tinyint,NOT NULL
+,fstrName,varchar(40),NOT NULL
+,fstrStreet,varchar(40),NOT NULL
+,fstrCity,varchar(20),NOT NULL
+,fstrState,varchar(2),NOT NULL
+,fstrCountry,varchar(4),NOT NULL
+,fstrZipCode,varchar(9),NOT NULL
+,fblnOutSide,tinyint,NOT NULL
+,fcurOwnNet,money,NOT NULL
+,fcurOwnWth,money,NOT NULL
+,fbln41353,tinyint,NOT NULL
+,fblnFilled,tinyint,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+,fstrMPDLN,varchar(300),NOT NULL
+,fstrTaxForm,varchar(63),NOT NULL
+,fstrSource,varchar(6),NOT NULL
+,fblnFound,tinyint,NOT NULL
+NAME,tblPte
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fstrFEIN,varchar(9),NOT NULL
+,fstrCRSId,varchar(11),NOT NULL
+,fstrName,varchar(40),NOT NULL
+,fstrStreet,varchar(40),NOT NULL
+,fstrCity,varchar(20),NOT NULL
+,fstrState,varchar(2),NOT NULL
+,fstrCountry,varchar(4),NOT NULL
+,fstrZipCode,varchar(9),NOT NULL
+,fdtmTaxYrBeg,datetime,NOT NULL
+,fdtmTaxYrEnd,datetime,NOT NULL
+,fdtmExtDue,datetime,NOT NULL
+,fdtmPostMarkDate,datetime,NOT NULL
+,fblnAmended,tinyint,NOT NULL
+,fstrNAICSCode,varchar(6),NOT NULL
+,fstrStateOrg,varchar(40),NOT NULL
+,fdtmDateOrg,datetime,NOT NULL
+,fdtmDateBeg,datetime,NOT NULL
+,fdtmFinalReturn,datetime,NOT NULL
+,fcurTaxWithheldOGP,money,NOT NULL
+,fcurWithPteNetInc,money,NOT NULL
+,fcurRefundOverpmt,money,NOT NULL
+,fcurNMWithPass,money,NOT NULL
+,fcurWithPdPteOwNet,money,NOT NULL
+,fcurOrdinaryIncome,money,NOT NULL
+,fcurOtherIncome,money,NOT NULL
+,fcurIntMuniBond,money,NOT NULL
+,fcurSubTotal,money,NOT NULL
+,fcurIntFedBond,money,NOT NULL
+,fcurAllowDeduct,money,NOT NULL
+,fcurAllocatedIncome,money,NOT NULL
+,fcurAppIncome,money,NOT NULL
+,fcurNMPercent,decimal(18;4),NOT NULL
+,fcurNMAppIncome,money,NOT NULL
+,fcurNMAllocatedInc,money,NOT NULL
+,fcurNMNetIncome,money,NOT NULL
+,fcurFlmPrd,money,NOT NULL
+,fstrPhoneNo,varchar(10),NOT NULL
+,fstrTPEmailAdd,varchar(80),NOT NULL
+,fstrPrepCRSID,varchar(11),NOT NULL
+,fstrPrepFEIN,varchar(9),NOT NULL
+,fstrPrepSSNPTIN,varchar(9),NOT NULL
+,fstrPrepPhoneNum,varchar(10),NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblCit
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fstrFein,varchar(9),NOT NULL
+,fstrCrsID,varchar(11),NOT NULL
+,fstrName,varchar(40),NOT NULL
+,fstrStreet,varchar(40),NOT NULL
+,fstrCity,varchar(20),NOT NULL
+,fstrState,varchar(2),NOT NULL
+,fstrCountry,varchar(4),NOT NULL
+,fstrZipCode,varchar(9),NOT NULL
+,fdtmTaxYrBeg,datetime,NOT NULL
+,fdtmTaxYrEnd,datetime,NOT NULL
+,fdtmExtDue,datetime,NOT NULL
+,fdtmPostMarkDate,datetime,NOT NULL
+,fstrReturnFlag,varchar(1),NOT NULL
+,fstrPhoneNo,varchar(10),NOT NULL
+,fstrNAICSCode,varchar(6),NOT NULL
+,fstrIncomeMethod,varchar(1),NOT NULL
+,fstrAccountingMethod,varchar(1),NOT NULL
+,fstrFinalReturnType,varchar(1),NOT NULL
+,fdtmFinalReturnDate,datetime,NOT NULL
+,fstrLegalEntType,varchar(30),NOT NULL
+,fblnImmune,tinyint,NOT NULL
+,fstrRouting1Num,varchar(9),NOT NULL
+,fstrRoutingNum,varchar(9),NOT NULL
+,fstrAccount1Num,varchar(17),NOT NULL
+,fstrAccountNum,varchar(17),NOT NULL
+,fstrAccountType,varchar(1),NOT NULL
+,fblnAcctChk,tinyint,NOT NULL
+,fblnAcctSav,tinyint,NOT NULL
+,fblnIATFlag,tinyint,NOT NULL
+,fblnIATYes,tinyint,NOT NULL
+,fblnIATNo,tinyint,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,rfrTaxPgm
+KEYS,
+COLUMNS,fstrFileType,varchar(10),NOT NULL
+,fstrTaxProgram,varchar(3),NOT NULL
+,fstrTaxYear,varchar(50),NOT NULL
+,fintJobIdDev,int,NOT NULL
+,fintJobIdProd,int,NOT NULL
+,fstrSQL,varchar(10),NOT NULL
+,fstrBatchSource,varchar(10),NOT NULL
+,fstrBatchPrefix,varchar(10),NOT NULL
+,fstrBatchSuffix,varchar(10),NOT NULL
+,fstrBatchType,varchar(10),NOT NULL
+,fstrAccountType,varchar(10),NOT NULL
+,fdtmFilingPeriod,datetime,NOT NULL
+,fdtmDueDate,datetime,NOT NULL
+,fstrDocType,varchar(10),NOT NULL
+,fintDocVer,int,NOT NULL
+,fstrPrimType,varchar(10),NOT NULL
+,fstrSecType,varchar(10),NOT NULL
+,fbln2Db,tinyint,NOT NULL
+,fblnImport,tinyint,NOT NULL
+,fblnExtract,tinyint,NOT NULL
+,fblnActive,tinyint,NOT NULL
+,fblnPtdAddition,tinyint,NOT NULL
+NAME,tblKeQueue
+KEYS,fstrUserID
+,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+,fstrTitle
+,flngBlock
+,fstrDLN
+COLUMNS,fstrUserID,varchar(256),NOT NULL
+,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fstrTitle,varchar(50),NOT NULL
+,flngBlock,int,NOT NULL
+,fstrFormName,varchar(50),NOT NULL
+,fstrImagePath,varchar(300),NOT NULL
+,fstrStatus,char(1),NOT NULL
+,fstrTaxProgram,varchar(3),NOT NULL
+,flngTaxYear,int,NOT NULL
+,fstrFileType,varchar(10),NOT NULL
+,fstrDLN,varchar(300),NOT NULL
+,fstrTimelyBatch,char(1),NOT NULL
+,fdtmPostMarkDate,datetime,NOT NULL
+NAME,tblPit
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fstrPSSN,varchar(9),NOT NULL
+,fblnPBlind,tinyint,NOT NULL
+,fblnP65,tinyint,NOT NULL
+,fstrPResident,varchar(1),NOT NULL
+,fdtmPDob,datetime,NOT NULL
+,fstrPFirst,varchar(20),NOT NULL
+,fstrPMiddle,varchar(1),NOT NULL
+,fstrPLast,varchar(25),NOT NULL
+,fstrPSuffix,varchar(4),NOT NULL
+,fstrSpSSN,varchar(9),NOT NULL
+,fblnSpBlind,tinyint,NOT NULL
+,fblnSp65,tinyint,NOT NULL
+,fstrSpResident,varchar(1),NOT NULL
+,fdtmSDob,datetime,NOT NULL
+,fstrSFirst,varchar(20),NOT NULL
+,fstrSMiddle,varchar(1),NOT NULL
+,fstrSLast,varchar(25),NOT NULL
+,fstrSSuffix,varchar(4),NOT NULL
+,fdtmPostMarkDate,datetime,NOT NULL
+,fdtmTaxYrBeg,datetime,NOT NULL
+,fdtmTaxYrEnd,datetime,NOT NULL
+,fblnAddrChg,tinyint,NOT NULL
+,fstrName,varchar(40),NOT NULL
+,fstrAddress,varchar(40),NOT NULL
+,fstrCity,varchar(20),NOT NULL
+,fstrState,varchar(2),NOT NULL
+,fstrCountry,varchar(4),NOT NULL
+,fstrZipCode,varchar(9),NOT NULL
+,fstrCFirst,varchar(20),NOT NULL
+,fstrCMiddle,varchar(1),NOT NULL
+,fstrCLast,varchar(25),NOT NULL
+,fstrCSuffix,varchar(4),NOT NULL
+,fstrCSSN,varchar(9),NOT NULL
+,fblnPDeceased,tinyint,NOT NULL
+,fdtmPDeceased,datetime,NOT NULL
+,fblnSpDeceased,tinyint,NOT NULL
+,fdtmSpDeceased,datetime,NOT NULL
+,fintExemptions,smallint,NOT NULL
+,fblnExtension,tinyint,NOT NULL
+,fdtmExtension,datetime,NOT NULL
+,fintFilingStatus,tinyint,NOT NULL
+,fstrHOHDep,varchar(50),NOT NULL
+,fcurFedAGI,money,NOT NULL
+,fcurItemFedDed,money,NOT NULL
+,fcurTotFedAdd,money,NOT NULL
+,fcurFedStdItmDed,money,NOT NULL
+,fblnItemized,tinyint,NOT NULL
+,fcurFedExemption,money,NOT NULL
+,fcurNMLowDedn,money,NOT NULL
+,fcurFedDedns,money,NOT NULL
+,fcurMedicalCare,money,NOT NULL
+,fcurMedicalCareExp,money,NOT NULL
+,fcurNMTaxInc,money,NOT NULL
+,fcurNMIncomeTax,money,NOT NULL
+,fstrSchedule,varchar(1),NOT NULL
+,fcurLumpsum,money,NOT NULL
+,fcurOthStateCred,money,NOT NULL
+,fcurNonRefundable,money,NOT NULL
+,fcurNetIncomeTax,money,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblPit2
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurNMNetTaxPass,money,NOT NULL
+,fcurTotalClaimed,money,NOT NULL
+,fcurWorkFamCred,money,NOT NULL
+,fcurFedEICredit,money,NOT NULL
+,fcurIncTaxWithheld,money,NOT NULL
+,fcurIncTaxWithOGP,money,NOT NULL
+,fcurIncTaxWithPTE,money,NOT NULL
+,fcurEstimatedPymt,money,NOT NULL
+,fcurOtherPayments,money,NOT NULL
+,fcurPaymtnCredits,money,NOT NULL
+,fcurTaxDue,money,NOT NULL
+,fcurEstPymtPenalty,money,NOT NULL
+,fstrPenaltyCalcMeth,varchar(1),NOT NULL
+,fcurPenalty,money,NOT NULL
+,fcurInterest,money,NOT NULL
+,fcurTotalDue,money,NOT NULL
+,fcurOverPayment,money,NOT NULL
+,fcurRefundDonations,money,NOT NULL
+,fcurAppliedEstTax,money,NOT NULL
+,fcurRefundAmount,money,NOT NULL
+,fstrRouting1Num,varchar(9),NOT NULL
+,fstrRoutingNumber,varchar(9),NOT NULL
+,fstrAccount1Num,varchar(17),NOT NULL
+,fstrAccountNumber,varchar(17),NOT NULL
+,fstrAccountType,varchar(1),NOT NULL
+,fblnAcctChk,tinyint,NOT NULL
+,fblnAcctSav,tinyint,NOT NULL
+,fblnIATFlag,tinyint,NOT NULL
+,fblnIATYes,tinyint,NOT NULL
+,fblnIATNo,tinyint,NOT NULL
+,fstrTPPhone,varchar(10),NOT NULL
+,fstrTPEmail,varchar(80),NOT NULL
+,fstrPrepCRS,varchar(11),NOT NULL
+,fstrPrepPTIN,varchar(9),NOT NULL
+,fstrPrepEIN,varchar(9),NOT NULL
+,fstrPrepPhone,varchar(10),NOT NULL
+,fbln41338Flg,tinyint,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblFid
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fstrFein,varchar(9),NOT NULL
+,fstrEstate,varchar(40),NOT NULL
+,fstrName,varchar(40),NOT NULL
+,fstrAddress,varchar(40),NOT NULL
+,fstrCity,varchar(20),NOT NULL
+,fstrState,varchar(2),NOT NULL
+,fstrCountry,varchar(4),NOT NULL
+,fstrZipCode,varchar(9),NOT NULL
+,fdtmPostMarkDate,datetime,NOT NULL
+,fdtmEstateCreate,datetime,NOT NULL
+,fdtmDistribution,datetime,NOT NULL
+,fblnFedAdjust,tinyint,NOT NULL
+,fintSpecCalc,smallint,NOT NULL
+,fdtmTaxYrBeg,datetime,NOT NULL
+,fdtmTaxYrEnd,datetime,NOT NULL
+,fblnAmended,tinyint,NOT NULL
+,fblnEstate,tinyint,NOT NULL
+,fblnSimple,tinyint,NOT NULL
+,fblnComplex,tinyint,NOT NULL
+,fblnNMResident,tinyint,NOT NULL
+,fdtmExtDueDate,datetime,NOT NULL
+,fcurFedTaxInc,money,NOT NULL
+,fcurFedIncAdd,money,NOT NULL
+,fcurFedIncDed,money,NOT NULL
+,fcurNMTaxable,money,NOT NULL
+,fcurGrossTaxDue,money,NOT NULL
+,fcurNMPercent,decimal(18;4),NOT NULL
+,fcurNMIncTax,money,NOT NULL
+,fcurLumpSumTax,money,NOT NULL
+,fcurTotNMTax,money,NOT NULL
+,fcurTaxPdOthState,money,NOT NULL
+,fcurCredApplied,money,NOT NULL
+,fcurNetNMTax,money,NOT NULL
+,fcurTotPymts,money,NOT NULL
+,fcurNMWithHold,money,NOT NULL
+,fcurNMWithOGP,money,NOT NULL
+,fcurNMWithPass,money,NOT NULL
+,fcurNMWithTotBen,money,NOT NULL
+,fcurPymtWithTot,money,NOT NULL
+,fcurTaxDue,money,NOT NULL
+,fcurPenalty,money,NOT NULL
+,fcurInterest,money,NOT NULL
+,fcurTotalDue,money,NOT NULL
+,fcurOvpymt,money,NOT NULL
+,fcurApplyOvpymt,money,NOT NULL
+,fcurRefOvpymt,money,NOT NULL
+,fcurRefRenewEner,money,NOT NULL
+,fcurTotRefCrd,money,NOT NULL
+,fcurRefFilmProd,money,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblScorpCR
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurCRChildCare,money,NOT NULL
+,fcurCRCultProp,money,NOT NULL
+,fcurCRBusFac,money,NOT NULL
+,fcurCRInterGov,money,NOT NULL
+,fcurCRRuralJob,money,NOT NULL
+,fcurCRTechJobs,money,NOT NULL
+,fcurCRElecCard,money,NOT NULL
+,fcurCRJobMentor,money,NOT NULL
+,fcurCRLandCons,money,NOT NULL
+,fcurCRAffordHouse,money,NOT NULL
+,fcurCRBioDiesel,money,NOT NULL
+,fcurCRSusBldg,money,NOT NULL
+,fcurCRAdvEnergy,money,NOT NULL
+,fcurCRWaterCons,money,NOT NULL
+,fcurCRGeolPump,money,NOT NULL
+,fcurCRAgrBioMass,money,NOT NULL
+,fcurCRFilmApplied,money,NOT NULL
+,fcurCRFilmApproved,money,NOT NULL
+,fcurCRRenewEner,money,NOT NULL
+,fcurCRVetEmploy,money,NOT NULL
+,fcurCRTotalCredit,money,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblKeQMast
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+,fstrTitle
+,flngBlock
+,fstrDLN
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fstrTitle,varchar(50),NOT NULL
+,flngBlock,int,NOT NULL
+,fstrUserID,varchar(256),NOT NULL
+,fstrStatus,char(1),NOT NULL
+,fstrChanged,char(1),NOT NULL
+,fstrFormName,varchar(50),NOT NULL
+,fstrImagePath,varchar(300),NOT NULL
+,fstrTaxProgram,varchar(3),NOT NULL
+,flngTaxYear,int,NOT NULL
+,fstrFileType,varchar(10),NOT NULL
+,fstrDLN,varchar(300),NOT NULL
+,fstrTimelyBatch,char(1),NOT NULL
+,fdtmPostMarkDate,datetime,NOT NULL
+,fdtmWhenFinished,datetime,NOT NULL
+,fstrWhoFinished,varchar(256),NOT NULL
+NAME,tblFidCR
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurCRCultProp,money,NOT NULL
+,fcurCRBusFac,money,NOT NULL
+,fcurCRRuralJob,money,NOT NULL
+,fcurCRTechJob,money,NOT NULL
+,fcurCRElecCard,money,NOT NULL
+,fcurCRJobMentor,money,NOT NULL
+,fcurCRLandCons,money,NOT NULL
+,fcurCRAffHouse,money,NOT NULL
+,fcurCRSolarDev,money,NOT NULL
+,fcurCRBioDiesel,money,NOT NULL
+,fcurCRSusBldg,money,NOT NULL
+,fcurCRAngelInv,money,NOT NULL
+,fcurCRRuralHealth,money,NOT NULL
+,fcurCRWaterCons,money,NOT NULL
+,fcurCRAdvEnergy,money,NOT NULL
+,fcurCRGeothermal,money,NOT NULL
+,fcurCRAgrBioMass,money,NOT NULL
+,fcurCRFilmApplied,money,NOT NULL
+,fcurCRFilmApproved,money,NOT NULL
+,fcurCRRenewEner,money,NOT NULL
+,fcurCRCancer,money,NOT NULL
+,fcurCRVetEmploy,money,NOT NULL
+,fcurCRTotalCredit,money,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblScorpB
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurBDividends,money,NOT NULL
+,fcurBNMDividends,money,NOT NULL
+,fcurBInterest,money,NOT NULL
+,fcurBNMInterest,money,NOT NULL
+,fcurBRents,money,NOT NULL
+,fcurBNMRents,money,NOT NULL
+,fcurBRoyalties,money,NOT NULL
+,fcurBNMRoyalties,money,NOT NULL
+,fcurBProfitLoss,money,NOT NULL
+,fcurBNMProfitLoss,money,NOT NULL
+,fcurBIncome,money,NOT NULL
+,fcurBNMIncome,money,NOT NULL
+,fcurBOthIncome,money,NOT NULL
+,fcurBNMOthIncome,money,NOT NULL
+,fcurBNetAlloc,money,NOT NULL
+,fcurBNMNetAlloc,money,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblFidD
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fstrFein,varchar(9),NOT NULL
+,fcurNMNetIncome,money,NOT NULL
+,fblnAmend,tinyint,NOT NULL
+,fdtmPostMarkDate,datetime,NOT NULL
+,fstrName,varchar(40),NOT NULL
+,fstrStreet,varchar(40),NOT NULL
+,fstrCity,varchar(20),NOT NULL
+,fstrState,varchar(2),NOT NULL
+,fstrCountry,varchar(4),NOT NULL
+,fstrZipCode,varchar(9),NOT NULL
+,fblnPte,tinyint,NOT NULL
+,fblnScorp,tinyint,NOT NULL
+,fblnCit,tinyint,NOT NULL
+,fblnFid,tinyint,NOT NULL
+,fblnOth,tinyint,NOT NULL
+,fstrOthWhy,varchar(40),NOT NULL
+,fdtmTaxYrBeg,datetime,NOT NULL
+,fdtmTaxYrEnd,datetime,NOT NULL
+,fdtmTaxDue,datetime,NOT NULL
+,fdtmExtDue,datetime,NOT NULL
+,fcurWthPage,money,NOT NULL
+,fcurWthAll,money,NOT NULL
+,fcurWthOwn,money,NOT NULL
+,fcurWthPte,money,NOT NULL
+,fcurSubTotal,money,NOT NULL
+,fcurPenalty,money,NOT NULL
+,fcurInterest,money,NOT NULL
+,fcurTotalDue,money,NOT NULL
+,fdtmSigned,datetime,NOT NULL
+,fstrPhone,varchar(10),NOT NULL
+,fstrEmail,varchar(80),NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblBatchInfo
+KEYS,fstrBatchID
+,fstrTaxProgram
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,fstrTaxProgram,varchar(3),NOT NULL
+,fstrBatchSource,varchar(10),NOT NULL
+,fstrBatchType,varchar(50),NOT NULL
+,fstrForm,varchar(50),NOT NULL
+,fstrDLN,varchar(30),NOT NULL
+,fintBatchCount,int,NOT NULL
+,fcurBatchAmount,money,NOT NULL
+,fintHeaderCount,int,NOT NULL
+,fcurHeaderAmount,money,NOT NULL
+,fintRejectCount,int,NOT NULL
+,fcurRejectAmount,money,NOT NULL
+,fstrBatchUploaded,char(1),NOT NULL
+,fdtmBatchUploaded,datetime,NOT NULL
+,fstrPaymentUploaded,char(1),NOT NULL
+,fdtmPaymentUploaded,datetime,NOT NULL
+,fdtmBatchCreated,datetime,NOT NULL
+,fdtmReceivedDate,datetime,NOT NULL
+,fdtmDepositDate,datetime,NOT NULL
+,fdtmPostmarkDate,datetime,NOT NULL
+,fstrBatchStatus,char(1),NOT NULL
+,fstrBatchUser,varchar(50),NOT NULL
+,fstrTimelyBatch,char(1),NOT NULL
+,fstrImageUploaded,char(1),NOT NULL
+,fdtmImageUploaded,datetime,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+,fdtmAssigned,datetime,NOT NULL
+NAME,tblPitB2
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+,fstrMPDLN
+COLUMNS,fstrBatchId,char(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fstrMPDLN,varchar(300),NOT NULL
+,fstrB2Fein,varchar(9),NOT NULL
+,fstrB2Crs,varchar(11),NOT NULL
+,fstrB2Name,varchar(40),NOT NULL
+,fstrB2Street,varchar(40),NOT NULL
+,fstrB2City,varchar(20),NOT NULL
+,fstrB2State,varchar(2),NOT NULL
+,fstrB2Country,varchar(4),NOT NULL
+,fstrB2ZipCode,varchar(9),NOT NULL
+,fcurB2Property,money,NOT NULL
+,fcurB2NMProperty,money,NOT NULL
+,fcurB2PropertyFactor,decimal(4;3),NOT NULL
+,fcurB2Payroll,money,NOT NULL
+,fcurB2NMPayroll,money,NOT NULL
+,fcurB2PayrollFactor,decimal(4;3),NOT NULL
+,fcurB2Sales,money,NOT NULL
+,fcurB2NMSales,money,NOT NULL
+,fcurB2SalesFactor,decimal(4;3),NOT NULL
+,fcurB2TotalFactor,decimal(4;3),NOT NULL
+,fcurB2AvgFactor,decimal(4;3),NOT NULL
+,fdtmB2ManufDate,datetime,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblBInfo2
+KEYS,fstrBatchID
+,fstrTaxProgram
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,fstrTaxProgram,varchar(3),NOT NULL
+,fstrBatchSource,varchar(10),NOT NULL
+,fstrBatchType,varchar(50),NOT NULL
+,fstrForm,varchar(50),NOT NULL
+,fstrDLN,varchar(30),NOT NULL
+,fintBatchCount,int,NOT NULL
+,fcurBatchAmount,money,NOT NULL
+,fintHeaderCount,int,NOT NULL
+,fcurHeaderAmount,money,NOT NULL
+,fintRejectCount,int,NOT NULL
+,fcurRejectAmount,money,NOT NULL
+,fstrBatchUploaded,char(1),NOT NULL
+,fdtmBatchUploaded,datetime,NOT NULL
+,fstrPaymentUploaded,char(1),NOT NULL
+,fdtmPaymentUploaded,datetime,NOT NULL
+,fdtmBatchCreated,datetime,NOT NULL
+,fdtmReceivedDate,datetime,NOT NULL
+,fdtmDepositDate,datetime,NOT NULL
+,fdtmPostmarkDate,datetime,NOT NULL
+,fstrBatchStatus,char(1),NOT NULL
+,fstrBatchUser,varchar(50),NOT NULL
+,fstrTimelyBatch,char(1),NOT NULL
+,fstrImageUploaded,char(1),NOT NULL
+,fdtmImageUploaded,datetime,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+,fdtmAssigned,datetime,NOT NULL
+NAME,rfrPitRcLic
+KEYS,
+COLUMNS,fstrTaxYear,float,NULL
+,fcurLower,float,NULL
+,fcurUpper,float,NULL
+,fcurExmpt1,float,NULL
+,fcurExmpt2,float,NULL
+,fcurExmpt3,float,NULL
+,fcurExmpt4,float,NULL
+,fcurExmpt5,float,NULL
+,fcurExmpt6,float,NULL
+NAME,tblCitA
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fblnAChgReport,tinyint,NOT NULL
+,fdtmAManufacture,datetime,NOT NULL
+,fcurANMNetTaxInc,money,NOT NULL
+,fcurANetAllocInc,money,NOT NULL
+,fcurAApportInc,money,NOT NULL
+,fcurANMApportInc,money,NOT NULL
+,fcurAInventory,money,NOT NULL
+,fcurANMInventory,money,NOT NULL
+,fcurARealProperty,money,NOT NULL
+,fcurANMRealProperty,money,NOT NULL
+,fcurAPerProperty,money,NOT NULL
+,fcurANMPerProperty,money,NOT NULL
+,fcurARentProperty,money,NOT NULL
+,fcurANMRentProperty,money,NOT NULL
+,fcurATotalProperty,money,NOT NULL
+,fcurANMTotalProperty,money,NOT NULL
+,fcurAPropertyFactor,decimal(18;4),NOT NULL
+,fcurATotalPayRoll,money,NOT NULL
+,fcurANMPayRoll,money,NOT NULL
+,fcurAPayRollFactor,decimal(18;4),NOT NULL
+,fcurASales,money,NOT NULL
+,fcurANMSales,money,NOT NULL
+,fcurASalesFactor,decimal(18;4),NOT NULL
+,fcurATotalFactors,decimal(18;4),NOT NULL
+,fcurAAvgFactor,decimal(18;4),NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,rfrControls
+KEYS,IDrfrControls
+,fstrFileType
+,fstrDocName
+,fstrInputID
+COLUMNS,IDrfrControls,int,NOT NULL
+,fstrFileType,varchar(10),NOT NULL
+,fstrDocName,varchar(50),NOT NULL
+,fstrInputID,varchar(50),NOT NULL
+,fstrTaxProgram,varchar(3),NULL
+,flngTaxYear,int,NULL
+,fstrTaxForm,varchar(30),NULL
+,flngOrder,int,NULL
+,fstrTable,varchar(50),NULL
+,fstrColumn,varchar(50),NULL
+,fstrFormat,varchar(50),NOT NULL
+,flngDispLength,int,NULL
+,flngMaxLength,int,NULL
+,fblnHidden,tinyint,NULL
+,fblnRequired,tinyint,NULL
+,flngVBVarType,int,NOT NULL
+,flngBlock,int,NULL
+,fblnPostBack,tinyint,NOT NULL
+,fblnVertSkip,tinyint,NULL
+,fstrLabel,varchar(50),NULL
+,fblnActive,tinyint,NULL
+,flngCtrlMove,int,NULL
+,flngImgMoveX,int,NULL
+,flngImgMoveY,int,NULL
+,flngMarkerMoveX,int,NULL
+,flngMarkerMoveY,int,NULL
+,fstrNextCtrl,varchar(50),NULL
+,flngFormatIDFK,int,NULL
+,fstrTranslate,varchar(50),NULL
+,flngClipTop,int,NULL
+,flngClipRight,int,NULL
+,flngClipBottom,int,NULL
+,flngClipLeft,int,NULL
+,fstrBlockHeader,varchar(256),NULL
+,fstrFormType,varchar(1),NULL
+,flngControlHeadersIDFK,int,NULL
+,fblnPtdAddition,tinyint,NOT NULL
+NAME,tblFidB
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurBGrsDiv,money,NOT NULL
+,fcurBDstDiv,money,NOT NULL
+,fcurBNetDiv,money,NOT NULL
+,fcurBAlcDiv,money,NOT NULL
+,fcurBGrsInt,money,NOT NULL
+,fcurBDstInt,money,NOT NULL
+,fcurBNetInt,money,NOT NULL
+,fcurBAlcInt,money,NOT NULL
+,fcurBGrsFid,money,NOT NULL
+,fcurBDstFid,money,NOT NULL
+,fcurBNetFid,money,NOT NULL
+,fcurBAlcFid,money,NOT NULL
+,fcurBGrsRR,money,NOT NULL
+,fcurBDstRR,money,NOT NULL
+,fcurBNetRR,money,NOT NULL
+,fcurBAlcRR,money,NOT NULL
+,fcurBGrsPL,money,NOT NULL
+,fcurBDstPL,money,NOT NULL
+,fcurBNetPL,money,NOT NULL
+,fcurBAlcPL,money,NOT NULL
+,fcurBNetFarm,money,NOT NULL
+,fcurBAlcFarm,money,NOT NULL
+,fcurBGrsOth,money,NOT NULL
+,fcurBDstOth,money,NOT NULL
+,fcurBNetOth,money,NOT NULL
+,fcurBAlcOth,money,NOT NULL
+,fcurBGrsTot,money,NOT NULL
+,fcurBDstTot,money,NOT NULL
+,fcurBNetTot,money,NOT NULL
+,fcurBAlcTot,money,NOT NULL
+,fcurBAllocPercent,decimal(18;4),NOT NULL
+,fcurBNetExemp,money,NOT NULL
+,fcurBAlcExemp,money,NOT NULL
+,fcurBNetDist,money,NOT NULL
+,fcurBAlcDist,money,NOT NULL
+,fcurBNetODed,money,NOT NULL
+,fcurBAlcODed,money,NOT NULL
+,fcurBNetTTotal,money,NOT NULL
+,fcurBAlcTTotal,money,NOT NULL
+,fcurBNetTax,money,NOT NULL
+,fcurBAlcTax,money,NOT NULL
+,fcurBNetLump,money,NOT NULL
+,fcurBAlcLump,money,NOT NULL
+,fcurBNetTotTax,money,NOT NULL
+,fcurBAlcTotTax,money,NOT NULL
+,fcurBNMIncPercent,decimal(18;4),NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblBatchImage
+KEYS,flngPosInBatch
+,fstrBatchID
+,flngSequence
+,fstrTaxProgram
+,flngCamera
+COLUMNS,fstrTaxProgram,varchar(3),NOT NULL
+,fstrBatchSource,varchar(10),NULL
+,fstrBatchID,varchar(10),NOT NULL
+,flngSequence,int,NOT NULL
+,fdtmScanDate,datetime,NULL
+,fstrImageDocID,varchar(5),NULL
+,fstrID,varchar(20),NULL
+,fstrID2,varchar(20),NULL
+,fstrID3,varchar(20),NULL
+,fstrDLN,varchar(30),NULL
+,fstrFormName,varchar(50),NULL
+,fstrDir,varchar(128),NULL
+,fstrFile,varchar(128),NULL
+,fstrImagePath,varchar(300),NULL
+,fstrBatchName,varchar(80),NULL
+,flngPosInBatch,int,NOT NULL
+,flngImgWnd,int,NULL
+,flngCamera,int,NOT NULL
+,fstrBarData,varchar(80),NULL
+,flngLevelID,int,NULL
+,fstrFormCode,varchar(10),NULL
+,fstrFormOCR,varchar(50),NULL
+,fstrFormIdentified,varchar(50),NULL
+,fstrFormConfirmed,varchar(50),NULL
+,fstrVendorCode,varchar(10),NULL
+,flngImageWidth,int,NULL
+,flngImageHeight,int,NULL
+,flngImageSize,int,NULL
+,flngImageDPI,int,NULL
+,fblnImageFolderMissing,bit,NULL
+,fblnImageFileMissing,bit,NULL
+,fblnImageBlankSizeCheck,bit,NULL
+,fblnImageBlankSizeCompare,bit,NULL
+,fblnImageBlankMiniCheck,bit,NULL
+,fblnImageBlankUserCheck,bit,NULL
+,fdtmImageCheckedOut,datetime,NULL
+,fdtmImageCheckedIn,datetime,NULL
+,fstrStatus,varchar(50),NULL
+,fstrWho,varchar(50),NULL
+,fdtmWhen,datetime,NULL
+,fblnPtdAddition,tinyint,NOT NULL
+NAME,tblCitCRS
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+,flngRepNum
+,fblnFilled
+,fstrMPDLN
+,fstrTaxForm
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,flngRepNum,int,NOT NULL
+,fintCrdType,int,NOT NULL
+,fstrApprove,varchar(20),NOT NULL
+,fcurApplied,money,NOT NULL
+,fcurRefund,money,NOT NULL
+,fblnFilled,tinyint,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+,fstrMPDLN,varchar(300),NOT NULL
+,fstrTaxForm,varchar(63),NOT NULL
+,fstrSource,varchar(6),NOT NULL
+,fblnFound,tinyint,NOT NULL
+NAME,tblScorpC
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurCCapital,money,NOT NULL
+,fcurCNMCapital,money,NOT NULL
+,fcurCPassive,money,NOT NULL
+,fcurCNMPassive,money,NOT NULL
+,fcurCNetRecognized,money,NOT NULL
+,fcurCNMNetRecognized,money,NOT NULL
+,fcurCtotal,money,NOT NULL
+,fcurCNMtotal,money,NOT NULL
+,fcurCNMPerctage,decimal(18;4),NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblPitAdj
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurAjFedTaxBonds,money,NOT NULL
+,fcurAjNOLAddition,money,NOT NULL
+,fcurAjCollegeTerm,money,NOT NULL
+,fcurAjLandCons,money,NOT NULL
+,fcurAjTotalAdd,money,NOT NULL
+,fcurAjIntDiv,money,NOT NULL
+,fcurAjNMNOL,money,NOT NULL
+,fcurAjIntUSGovt,money,NOT NULL
+,fcurAjRailRoad,money,NOT NULL
+,fcurAjIndianLand,money,NOT NULL
+,fstrAjPrimeTribe,varchar(50),NOT NULL
+,fstrAjSpouseTribe,varchar(50),NOT NULL
+,fblnAjPrime100,tinyint,NOT NULL
+,fblnAjSpouse100,tinyint,NOT NULL
+,fcurAj100Years,money,NOT NULL
+,fcurAj65orBlind,money,NOT NULL
+,fcurAjNMMedCare,money,NOT NULL
+,fcurAjNMEdnTrust,money,NOT NULL
+,fcurAjNetCapGains,money,NOT NULL
+,fcurAjMilitary,money,NOT NULL
+,fcurAjNMMedical65,money,NOT NULL
+,fcurAjOrganDon,money,NOT NULL
+,fcurAjNMNatlGuard,money,NOT NULL
+,fcurAjStateLocTax,money,NOT NULL
+,fcurAjTotalDeduct,money,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,rfrControlHeaders
+KEYS,
+COLUMNS,idControlHeaders,int,NOT NULL
+,fstrFileType,varchar(10),NOT NULL
+,fstrTaxProgram,varchar(3),NOT NULL
+,flngTaxYear,int,NOT NULL
+,fstrTaxForm,varchar(30),NOT NULL
+,fstrBlockTitle,varchar(50),NOT NULL
+,flngBlock,int,NOT NULL
+,fstrTable,varchar(50),NOT NULL
+,flngClipTop,int,NOT NULL
+,flngClipRight,int,NOT NULL
+,flngClipBottom,int,NOT NULL
+,flngClipLeft,int,NOT NULL
+,fstrTemplateImage,varchar(256),NOT NULL
+,fintZoomPerc,int,NOT NULL
+,fstrFormType,varchar(2),NOT NULL
+,flngRepeatOffset,int,NOT NULL
+,flngReturnHeadersIDFK,int,NOT NULL
+NAME,tblPitCR
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurCRCultProp,money,NOT NULL
+,fcurCRBusFac,money,NOT NULL
+,fcurCRRuralJob,money,NOT NULL
+,fcurCRTechJobs,money,NOT NULL
+,fcurCRElecCard,money,NOT NULL
+,fcurCRJobMentor,money,NOT NULL
+,fcurCRLandCons,money,NOT NULL
+,fcurCRAffordHouse,money,NOT NULL
+,fcurCRSolarDev,money,NOT NULL
+,fcurCRBioDiesel,money,NOT NULL
+,fcurCRSusBldg,money,NOT NULL
+,fcurCRAngelInv,money,NOT NULL
+,fcurCRHealthCare,money,NOT NULL
+,fcurCRWaterCons,money,NOT NULL
+,fcurCRAdvEnergy,money,NOT NULL
+,fcurCRGeolPump,money,NOT NULL
+,fcurCRBiomass,money,NOT NULL
+,fcurCRFilmApplied,money,NOT NULL
+,fcurCRFilmApproved,money,NOT NULL
+,fcurCRCancerTrial,money,NOT NULL
+,fcurCRVetEmploy,money,NOT NULL
+,fcurCRTotalCredits,money,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblPitD
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurDOverPayment,money,NOT NULL
+,fcurDWildLife,money,NOT NULL
+,fcurDVetCemetery,money,NOT NULL
+,fcurDNMAbuseEd,money,NOT NULL
+,fcurDNMForest,money,NOT NULL
+,fcurDGuardMember,money,NOT NULL
+,fcurDKidParks,money,NOT NULL
+,fcurDAmyotrophic,money,NOT NULL
+,fcurDVietnam,money,NOT NULL
+,fintDPParty,smallint,NOT NULL
+,fintDSpParty,smallint,NOT NULL
+,fcurDPartyAmt,money,NOT NULL
+,fcurDVetFund,money,NOT NULL
+,fcurDLottery,money,NOT NULL
+,fcurDHorse,money,NOT NULL
+,fcurDTotalContrib,money,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblFidCRS
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+,flngRepNum
+,fblnFilled
+,fstrMPDLN
+,fstrTaxForm
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,flngRepNum,int,NOT NULL
+,fintCrdType,int,NOT NULL
+,fstrApprove,varchar(20),NOT NULL
+,fcurApplied,money,NOT NULL
+,fcurRefund,money,NOT NULL
+,fblnFilled,tinyint,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+,fstrMPDLN,varchar(300),NOT NULL
+,fstrTaxForm,varchar(63),NOT NULL
+,fstrSource,varchar(6),NOT NULL
+,fblnFound,tinyint,NOT NULL
+NAME,tblPtd
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fstrFein,varchar(9),NOT NULL
+,fcurNMNetIncome,money,NOT NULL
+,fblnAmend,tinyint,NOT NULL
+,fdtmPostMarkDate,datetime,NOT NULL
+,fstrName,varchar(40),NOT NULL
+,fstrStreet,varchar(40),NOT NULL
+,fstrCity,varchar(20),NOT NULL
+,fstrState,varchar(2),NOT NULL
+,fstrCountry,varchar(4),NOT NULL
+,fstrZipCode,varchar(9),NOT NULL
+,fblnPte,tinyint,NOT NULL
+,fblnScorp,tinyint,NOT NULL
+,fblnCit,tinyint,NOT NULL
+,fblnFid,tinyint,NOT NULL
+,fblnOth,tinyint,NOT NULL
+,fstrOthWhy,varchar(40),NOT NULL
+,fdtmTaxYrBeg,datetime,NOT NULL
+,fdtmTaxYrEnd,datetime,NOT NULL
+,fdtmTaxDue,datetime,NOT NULL
+,fdtmExtDue,datetime,NOT NULL
+,fcurWthPage,money,NOT NULL
+,fcurWthAll,money,NOT NULL
+,fcurWthOwn,money,NOT NULL
+,fcurWthPte,money,NOT NULL
+,fcurSubTotal,money,NOT NULL
+,fcurPenalty,money,NOT NULL
+,fcurInterest,money,NOT NULL
+,fcurTotalDue,money,NOT NULL
+,fdtmSigned,datetime,NOT NULL
+,fstrPhone,varchar(10),NOT NULL
+,fstrEmail,varchar(80),NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblPitRC
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fblnRCPResident,tinyint,NOT NULL
+,fblnRCSpResident,tinyint,NOT NULL
+,fblnRCPPhyPresent,tinyint,NOT NULL
+,fblnRCSpPhyPresent,tinyint,NOT NULL
+,fblnRCPOthClaim,tinyint,NOT NULL
+,fblnRCSpOthClaim,tinyint,NOT NULL
+,fblnRCPInmate,tinyint,NOT NULL
+,fblnRCSpInmate,tinyint,NOT NULL
+,fintRCExemptions,smallint,NOT NULL
+,fintRCNotQualify,smallint,NOT NULL
+,fintRCAllowable,smallint,NOT NULL
+,fintRCExtraExempt,smallint,NOT NULL
+,fintRCTotalExempt,smallint,NOT NULL
+,fintRCPExempt65,smallint,NOT NULL
+,fintRCSpExempt65,smallint,NOT NULL
+,fintRCSubtotal,smallint,NOT NULL
+,fintRCMFSExempts,smallint,NOT NULL
+,fintRCTotExempts,smallint,NOT NULL
+,fcurRCWages,money,NOT NULL
+,fcurRCSSBenefits,money,NOT NULL
+,fcurRCUnemploy,money,NOT NULL
+,fcurRCPublicAssist,money,NOT NULL
+,fcurRCNetProfit,money,NOT NULL
+,fcurRCCapitalGains,money,NOT NULL
+,fcurRCGiftsofCash,money,NOT NULL
+,fcurRCOtherIncome,money,NOT NULL
+,fcurRCModifiedGross,money,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblCitPtd
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fstrFein,varchar(9),NOT NULL
+,fcurNMNetIncome,money,NOT NULL
+,fblnAmend,tinyint,NOT NULL
+,fdtmPostMarkDate,datetime,NOT NULL
+,fstrName,varchar(40),NOT NULL
+,fstrStreet,varchar(40),NOT NULL
+,fstrCity,varchar(20),NOT NULL
+,fstrState,varchar(2),NOT NULL
+,fstrCountry,varchar(4),NOT NULL
+,fstrZipCode,varchar(9),NOT NULL
+,fblnPte,tinyint,NOT NULL
+,fblnScorp,tinyint,NOT NULL
+,fblnCit,tinyint,NOT NULL
+,fblnFid,tinyint,NOT NULL
+,fblnOth,tinyint,NOT NULL
+,fstrOthWhy,varchar(40),NOT NULL
+,fdtmTaxYrBeg,datetime,NOT NULL
+,fdtmTaxYrEnd,datetime,NOT NULL
+,fdtmTaxDue,datetime,NOT NULL
+,fdtmExtDue,datetime,NOT NULL
+,fcurWthPage,money,NOT NULL
+,fcurWthAll,money,NOT NULL
+,fcurWthOwn,money,NOT NULL
+,fcurWthPte,money,NOT NULL
+,fcurSubTotal,money,NOT NULL
+,fcurPenalty,money,NOT NULL
+,fcurInterest,money,NOT NULL
+,fcurTotalDue,money,NOT NULL
+,fdtmSigned,datetime,NOT NULL
+,fstrPhone,varchar(10),NOT NULL
+,fstrEmail,varchar(80),NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblCitRPT
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+,flngRepNum
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,flngRepNum,int,NOT NULL
+,fstrCorpName,varchar(45),NOT NULL
+,fstrCorpFEIN,varchar(10),NOT NULL
+,fstrPaymentApplied,money,NOT NULL
+,fstr50FranTax,money,NOT NULL
+,fblnFilled,tinyint,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblPitRC2
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurRC2ModGross,money,NOT NULL
+,fcurRC2TotExemp,money,NOT NULL
+,fcurRC2LowRebate,money,NOT NULL
+,fcurRC2PropOwn65,money,NOT NULL
+,fcurRC2Rent65,money,NOT NULL
+,fblnRC2RentGov65,tinyint,NOT NULL
+,fcurRC2Multiply65,money,NOT NULL
+,fcurRC2Add65,money,NOT NULL
+,fcurRC2Find65,money,NOT NULL
+,fcurRC2Rebate65,money,NOT NULL
+,fblnRC2LACounty,tinyint,NOT NULL
+,fblnRC2SFCounty,tinyint,NOT NULL
+,fcurRC2PrpOwnLow,money,NOT NULL
+,fcurRC2FindLow,money,NOT NULL
+,fcurRC2RebateLow,money,NOT NULL
+,fcurRC2TotalColG,money,NOT NULL
+,fintRC2QualifyDep,smallint,NOT NULL
+,fcurRC2FedChildCare,money,NOT NULL
+,fcurRC2NMChildCare,money,NOT NULL
+,fcurRC2MedicalCare65,money,NOT NULL
+,fcurRC2AdoptionChild,money,NOT NULL
+,fcurRC2RenewEnergy,money,NOT NULL
+,fcurRC2FilmProd,money,NOT NULL
+,fcurRC2TotalClaimed,money,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblPitB
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fdtmBPFrom,datetime,NOT NULL
+,fdtmBPTo,datetime,NOT NULL
+,fdtmBSpFrom,datetime,NOT NULL
+,fdtmBSpTo,datetime,NOT NULL
+,fblnBPMilitary,tinyint,NOT NULL
+,fblnBSpMilitary,tinyint,NOT NULL
+,fcurBWages,money,NOT NULL
+,fcurBNMWages,money,NOT NULL
+,fblnBCalc110,tinyint,NOT NULL
+,fcurBInterest,money,NOT NULL
+,fcurBNMInterest,money,NOT NULL
+,fcurBPensions,money,NOT NULL
+,fcurBNMPensions,money,NOT NULL
+,fcurBRents,money,NOT NULL
+,fcurBNMRents,money,NOT NULL
+,fcurBGains,money,NOT NULL
+,fcurBNMGains,money,NOT NULL
+,fcurBIncPte,money,NOT NULL
+,fcurBNMIncPte,money,NOT NULL
+,fcurBOthInc,money,NOT NULL
+,fcurBNMOthInc,money,NOT NULL
+,fcurBFarm,money,NOT NULL
+,fcurBNMFarm,money,NOT NULL
+,fcurBSubTotal,money,NOT NULL
+,fcurBNMSubTotal,money,NOT NULL
+,fcurBFedAdj,money,NOT NULL
+,fcurBNMFedAdj,money,NOT NULL
+,fcurBTotInc,money,NOT NULL
+,fcurBNMTotInc,money,NOT NULL
+,fcurBPercent,decimal(4;3),NOT NULL
+,fcurBTaxTable,money,NOT NULL
+,fcurBFinalTax,money,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,rfrCRDropDown
+KEYS,fstrFileType
+,flngItemNo
+COLUMNS,fstrFileType,varchar(10),NOT NULL
+,flngItemNo,int,NOT NULL
+,fstrItemName,varchar(50),NOT NULL
+NAME,tblOgd
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fblnFein,tinyint,NOT NULL
+,fblnSsn,tinyint,NOT NULL
+,fstrID,varchar(9),NOT NULL
+,fcurTotalDue,money,NOT NULL
+,fblnAmend,tinyint,NOT NULL
+,fdtmPostMarkDate,datetime,NOT NULL
+,fstrName,varchar(40),NOT NULL
+,fstrStreet,varchar(40),NOT NULL
+,fstrCity,varchar(20),NOT NULL
+,fstrState,varchar(2),NOT NULL
+,fstrCountry,varchar(4),NOT NULL
+,fstrZipCode,varchar(9),NOT NULL
+,fcurPage,money,NOT NULL
+,fcurAllPage,money,NOT NULL
+,fdtmSigned,datetime,NOT NULL
+,fstrPhone,varchar(10),NOT NULL
+,fstrEmail,varchar(80),NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblCitPtdS
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+,flngRepNum
+,fblnFilled
+,fstrTaxForm
+,fstrMPDLN
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,flngRepNum,int,NOT NULL
+,fstrId,varchar(9),NOT NULL
+,fblnFein,tinyint,NOT NULL
+,fblnSsn,tinyint,NOT NULL
+,fstrName,varchar(40),NOT NULL
+,fstrStreet,varchar(40),NOT NULL
+,fstrCity,varchar(20),NOT NULL
+,fstrState,varchar(2),NOT NULL
+,fstrCountry,varchar(4),NOT NULL
+,fstrZipCode,varchar(9),NOT NULL
+,fblnOutSide,tinyint,NOT NULL
+,fcurOwnNet,money,NOT NULL
+,fcurOwnWth,money,NOT NULL
+,fbln41353,tinyint,NOT NULL
+,fblnFilled,tinyint,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+,fstrMPDLN,varchar(300),NOT NULL
+,fstrTaxForm,varchar(63),NOT NULL
+,fstrSource,varchar(6),NOT NULL
+,fblnFound,tinyint,NOT NULL
+NAME,rfrAddDoc
+KEYS,
+COLUMNS,fstrFileType,varchar(10),NOT NULL
+,fstrDocName,varchar(10),NULL
+,fstrValue,varchar(20),NULL
+,flngFunction,int,NULL
+,fblnActive,tinyint,NOT NULL
+,fblnPtdAddition,tinyint,NOT NULL
+NAME,errMsg
+KEYS,IDerrMsg
+COLUMNS,IDerrMsg,int,NOT NULL
+,fdtmWhen,datetime,NOT NULL
+,fstrWho,varchar(50),NOT NULL
+,fstrWhat,text,NOT NULL
+,fstrWhere,varchar(400),NOT NULL
+,fblnResolved,tinyint,NOT NULL
+,fstrResolveMsg,varchar(400),NOT NULL
+NAME,tblPteA
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurAInventory,money,NOT NULL
+,fcurANMInventory,money,NOT NULL
+,fcurARealProperty,money,NOT NULL
+,fcurANMRealProperty,money,NOT NULL
+,fcurAPerProperty,money,NOT NULL
+,fcurANMPerProperty,money,NOT NULL
+,fcurARentProperty,money,NOT NULL
+,fcurANMRentProperty,money,NOT NULL
+,fcurATotalProperty,money,NOT NULL
+,fcurANMTotalProperty,money,NOT NULL
+,fcurAPropertyFactor,decimal(18;4),NOT NULL
+,fcurATotalPayRoll,money,NOT NULL
+,fcurANMPayRoll,money,NOT NULL
+,fcurAPayRollFactor,decimal(18;4),NOT NULL
+,fcurASales,money,NOT NULL
+,fcurANMSales,money,NOT NULL
+,fcurASalesFactor,decimal(18;4),NOT NULL
+,fcurATotalFactors,decimal(18;4),NOT NULL
+,fdtmATaxYearEnd,datetime,NOT NULL
+,fdtmAManufacture,datetime,NOT NULL
+,fcurAAvgFactor,decimal(18;4),NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblPitCRS
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+,flngRepNum
+,fblnFilled
+,fstrMPDLN
+,fstrTaxForm
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,flngRepNum,int,NOT NULL
+,fintCrdType,int,NOT NULL
+,fstrApprove,varchar(20),NOT NULL
+,fcurApplied,money,NOT NULL
+,fcurRefund,money,NOT NULL
+,fblnFilled,tinyint,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+,fstrMPDLN,varchar(300),NOT NULL
+,fstrTaxForm,varchar(63),NOT NULL
+,fstrSource,varchar(6),NOT NULL
+,fblnFound,tinyint,NOT NULL
+NAME,tblScorp
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fstrFein,varchar(9),NOT NULL
+,fstrCrsId,varchar(11),NOT NULL
+,fstrName,varchar(40),NOT NULL
+,fstrStreet,varchar(40),NOT NULL
+,fstrCity,varchar(20),NOT NULL
+,fstrState,varchar(2),NOT NULL
+,fstrCountry,varchar(4),NOT NULL
+,fstrZipCode,varchar(9),NOT NULL
+,fdtmTaxYrBeg,datetime,NOT NULL
+,fdtmTaxYrEnd,datetime,NOT NULL
+,fdtmExtDue,datetime,NOT NULL
+,fdtmPostMarkDate,datetime,NOT NULL
+,fstrNAICSCode,varchar(6),NOT NULL
+,fblnAmended,tinyint,NOT NULL
+,fdtmFinalReturn,datetime,NOT NULL
+,fblnImmune,tinyint,NOT NULL
+,fcurTaxableIncome,money,NOT NULL
+,fcurIncomeTax,money,NOT NULL
+,fcurNMPercent,decimal(18;4),NOT NULL
+,fcurNMIncomeTax,money,NOT NULL
+,fcurNonRefCredits,money,NOT NULL
+,fcurNetIncomeTax,money,NOT NULL
+,fcurFranchiseTax,money,NOT NULL
+,fcurTotalIncome,money,NOT NULL
+,fcurRefundsReceived,money,NOT NULL
+,fcurSubTotal,money,NOT NULL
+,fblnPmtExtension,tinyint,NOT NULL
+,fblnPmtEstimated,tinyint,NOT NULL
+,fblnPmtPriorYear,tinyint,NOT NULL
+,fcurTotalPayment,money,NOT NULL
+,fcurTaxWithheldOGP,money,NOT NULL
+,fcurNMWithPass,money,NOT NULL
+,fcurNMWithTotBen,money,NOT NULL
+,fcurRefundCredits,money,NOT NULL
+,fcurTaxDue,money,NOT NULL
+,fcurPenalty,money,NOT NULL
+,fcurInterest,money,NOT NULL
+,fcurTotalDue,money,NOT NULL
+,fcurOverPayment,money,NOT NULL
+,fcurOvPaymtNextYr,money,NOT NULL
+,fcurOvPaymtRefund,money,NOT NULL
+,fcurRenewEner,money,NOT NULL
+,fcurRefundCrd,money,NOT NULL
+,fcurFilmProduction,money,NOT NULL
+,fstrRouting1Num,varchar(9),NOT NULL
+,fstrRoutingNum,varchar(9),NOT NULL
+,fstrAccount1Num,varchar(17),NOT NULL
+,fstrAccountNum,varchar(17),NOT NULL
+,fstrAccountType,varchar(1),NOT NULL
+,fblnAcctChk,tinyint,NOT NULL
+,fblnAcctSav,tinyint,NOT NULL
+,fblnIATFlag,tinyint,NOT NULL
+,fblnIATYes,tinyint,NOT NULL
+,fblnIATNo,tinyint,NOT NULL
+,fstrPhoneNo,varchar(10),NOT NULL
+,fstrTPEmailAdd,varchar(80),NOT NULL
+,fstrPrepCRSID,varchar(11),NOT NULL
+,fstrPrepFEIN,varchar(9),NOT NULL
+,fstrPrepSSNPTIN,varchar(9),NOT NULL
+,fstrPrepPhoneNum,varchar(10),NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,rfrReturnHeaders
+KEYS,idReturnHeaders
+COLUMNS,idReturnHeaders,int,NOT NULL
+,fstrFileType,varchar(10),NOT NULL
+,fstrTaxProgram,varchar(4),NOT NULL
+,flngTaxYear,int,NOT NULL
+NAME,tblPitS
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+,flngRepNum
+,fblnFilled
+,fstrTaxForm
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,flngRepNum,int,NOT NULL
+,fstrSDepName,varchar(50),NOT NULL
+,fstrSDepSSN,varchar(9),NOT NULL
+,fdtmSDepDOB,datetime,NOT NULL
+,fblnFilled,tinyint,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+,fstrTaxForm,varchar(63),NOT NULL
+NAME,tblScorpCRS
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+,flngRepNum
+,fblnFilled
+,fstrMPDLN
+,fstrTaxForm
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,flngRepNum,int,NOT NULL
+,fintCrdType,int,NOT NULL
+,fstrApprove,varchar(20),NOT NULL
+,fcurApplied,money,NOT NULL
+,fcurRefund,money,NOT NULL
+,fblnFilled,tinyint,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+,fstrMPDLN,varchar(300),NOT NULL
+,fstrTaxForm,varchar(63),NOT NULL
+,fstrSource,varchar(6),NOT NULL
+,fblnFound,tinyint,NOT NULL
+NAME,tblOgdS
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+,flngRepNum
+,fblnFilled
+,fstrTaxForm
+,fstrMPDLN
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,flngRepNum,int,NOT NULL
+,fstrId,varchar(9),NOT NULL
+,fblnFein,tinyint,NOT NULL
+,fblnSsn,tinyint,NOT NULL
+,fstrName,varchar(40),NOT NULL
+,fstrStreet,varchar(40),NOT NULL
+,fstrCity,varchar(20),NOT NULL
+,fstrState,varchar(2),NOT NULL
+,fstrCountry,varchar(4),NOT NULL
+,fstrZipCode,varchar(9),NOT NULL
+,fblnOutSide,tinyint,NOT NULL
+,fcurReeNet,money,NOT NULL
+,fcurReeWth,money,NOT NULL
+,fblnFilled,tinyint,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+,fstrMPDLN,varchar(300),NOT NULL
+,fstrTaxForm,varchar(63),NOT NULL
+,fstrSource,varchar(6),NOT NULL
+,fblnFound,tinyint,NOT NULL
+NAME,tblScorp1
+KEYS,fstrBatchID
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchID,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurOrdIncomeLoss,money,NOT NULL
+,fcurOthIncomeLoss,money,NOT NULL
+,fcurIntIncome,money,NOT NULL
+,fcurIncomeSubtotal,money,NOT NULL
+,fcurIntUSOblig,money,NOT NULL
+,fcurAllowDeducts,money,NOT NULL
+,fcurAllocIncome,money,NOT NULL
+,fcurApportIncome,money,NOT NULL
+,fcurAverNMPercent,decimal(18;4),NOT NULL
+,fcurNMApportIncome,money,NOT NULL
+,fcurNMAllocIncome,money,NOT NULL
+,fcurNMTaxableIncome,money,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+NAME,tblExtError
+KEYS,
+COLUMNS,fstrExtPgm,varchar(10),NOT NULL
+,fstrBatchId,varchar(10),NOT NULL
+,fintJobId,int,NOT NULL
+,flngSequence,int,NOT NULL
+,fstrFileType,varchar(10),NOT NULL
+,fstrTaxProgram,varchar(3),NOT NULL
+,fstrTaxYear,varchar(50),NOT NULL
+,fstrErrMsg,varchar(50),NOT NULL
+,fstrImgPath,varchar(300),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+,fblnActive,tinyint,NOT NULL
+NAME,tblPtePtdS
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+,flngRepNum
+,fblnFilled
+,fstrTaxForm
+,fstrMPDLN
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,flngRepNum,int,NOT NULL
+,fstrId,varchar(9),NOT NULL
+,fblnFein,tinyint,NOT NULL
+,fblnSsn,tinyint,NOT NULL
+,fstrName,varchar(40),NOT NULL
+,fstrStreet,varchar(40),NOT NULL
+,fstrCity,varchar(20),NOT NULL
+,fstrState,varchar(2),NOT NULL
+,fstrCountry,varchar(4),NOT NULL
+,fstrZipCode,varchar(9),NOT NULL
+,fblnOutSide,tinyint,NOT NULL
+,fcurOwnNet,money,NOT NULL
+,fcurOwnWth,money,NOT NULL
+,fbln41353,tinyint,NOT NULL
+,fblnFilled,tinyint,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL
+,fstrMPDLN,varchar(300),NOT NULL
+,fstrTaxForm,varchar(63),NOT NULL
+,fstrSource,varchar(6),NOT NULL
+,fblnFound,tinyint,NOT NULL
+NAME,tblFidB2
+KEYS,fstrBatchId
+,fdtmBatchDate
+,flngSequence
+COLUMNS,fstrBatchId,varchar(10),NOT NULL
+,fdtmBatchDate,datetime,NOT NULL
+,flngSequence,int,NOT NULL
+,fcurB2Inventory,money,NOT NULL
+,fcurB2NMInventory,money,NOT NULL
+,fcurB2Real,money,NOT NULL
+,fcurB2NMReal,money,NOT NULL
+,fcurB2Rented,money,NOT NULL
+,fcurB2NMRented,money,NOT NULL
+,fcurB2Property,money,NOT NULL
+,fcurB2NMProperty,money,NOT NULL
+,fcurB2PropertyFactor,decimal(18;4),NOT NULL
+,fcurB2Payroll,money,NOT NULL
+,fcurB2NMPayroll,money,NOT NULL
+,fcurB2PayrollFactor,decimal(18;4),NOT NULL
+,fcurB2Sales,money,NOT NULL
+,fcurB2NMSales,money,NOT NULL
+,fcurB2SalesFactor,decimal(18;4),NOT NULL
+,fcurB2TotFactor,decimal(18;4),NOT NULL
+,fcurB2AvgFactor,decimal(18;4),NOT NULL
+,fdtmB2ApportDate,datetime,NOT NULL
+,fstrWho,varchar(256),NOT NULL
+,fdtmWhen,datetime,NOT NULL

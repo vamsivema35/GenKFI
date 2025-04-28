@@ -1,0 +1,456 @@
+--- General flow of BatchModify for a rewrite based on the new header table framework --
+
+@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+@# Page_Load @#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@
+@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+-- normal load stuff won't change
+-- hide the tax program selector, since we cn't overlap tax programs once we have a specific batch
+-- the QueryString is given, which allows us to get the spcific batch
+--- QueryString = fstrBatchId ; fdtmBatchDate ; fstrBatchSource ; fstrTaxProgram
+--- set the values in their respective controls, and save the tax program code in a global
+-- select some data for the header, no change here
+		SELECT 
+			fstrBatchID AS fstrBatchID, 
+			CONVERT( VARCHAR(10), fdtmBatchDate, 101 ) AS fstrBatchDate, 
+			fstrBatchSource AS fstrBatchSource, 
+			fstrBatchUser AS fstrBatchUser, 
+			CONVERT( VARCHAR(10), fdtmBatchCreated, 101 ) AS fstrBatchCreated, 
+			CONVERT( VARCHAR(10), fdtmReceivedDate, 101 ) AS fstrReceivedDate, 
+			CONVERT( VARCHAR(10), fdtmPostmarkDate, 101 ) AS fstrPostmarkDate, 
+			CONVERT( VARCHAR(10), fdtmDepositDate, 101 ) AS fstrDepositDate, 
+			fintHeaderCount AS fintHeaderCount, 
+			CONVERT( VARCHAR(20), fcurHeaderAmount ) AS fcurHeaderAmount, 
+			fintBatchCount AS fintBatchCount, 
+			CONVERT( VARCHAR(20), fcurBatchAmount ) AS fcurBatchAmount, 
+			fstrBatchType AS fstrBatchType, 
+			fstrForm AS fstrForm, 
+			fstrDLN AS fstrDLN, 
+			fstrTimelyBatch AS fstrTimelyBatch, 
+			fstrBatchStatus AS fstrBatchStatus 
+		FROM 
+			tblBatchInfo a 
+		WHERE 
+			a.fstrTaxProgram = 'strProgCode' AND 
+			a.fstrBatchID = 'BatchID.Value' AND 
+			CONVERT( VARCHAR(10), a.fdtmBatchDate, 101 ) = 'BatchDate.Value' AND 
+			a.fstrBatchSource = 'BatchSource.Value' 
+-- put selected values from above in the respectiove controls
+-- if this batch is open and this user is ADMIN or ( SUPER and ItemCount <= 0 )
+--- color these controls
+		ReceivedDate
+		PostmarkDate
+		DepositDate
+		BatchCount
+		BatchAmount
+		BatchType
+		FormType
+		ReadStatus
+-- else
+--- make same controls read only
+-- via a SELECT statement, build statements to insert all the default value rows for this batch
+** this I don't think we need anymore
+** the KeyEntry will try to select already entered data
+** if it isn't there, it will insert the batch info, and then get the default values generated from the insert
+** below is the SQL used, but I'm going to try to take it out and see what happens
+		SELECT
+			'IF NOT EXISTS (
+				SELECT *
+				FROM ' + 
+					c.fstrTable + ' 
+				WHERE 
+					fstrBatchID = ''' + i.fstrBatchID + '''' + ' AND 
+					CONVERT( VARCHAR(10), fdtmBatchDate, 101 ) = ''' + CONVERT( VARCHAR(10), i.fdtmScanDate, 101 ) + '''' + ' AND 
+					flngSequence = ' + CONVERT( VARCHAR(10), i.flngSequence ) + ' )' + ' 
+			INSERT INTO ' + c.fstrTable + ' ( 
+				fstrBatchID, 
+				fdtmBatchDate, 
+				flngSequence, 
+				fstrWho )' + ' 
+			VALUES ( ''' + 
+				i.fstrBatchID + '''' + ', ''' + 
+				CONVERT( VARCHAR(10), i.fdtmScanDate, 101 ) + '''' + ', ' + 
+				CONVERT( VARCHAR(10), i.flngSequence ) + ', 
+				''batch'' )' 
+		FROM 
+			tblBatchImage i, 
+			rfrControls c 
+		WHERE 
+			i.fstrBatchID = 'BatchID.Value' AND 
+			i.fstrTaxProgram = 'strProgCode' AND 
+			ISNULL( i.fblnImageBlankSizeCheck, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankSizeCompare, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankMiniCheck, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankUserCheck, 0 ) = 0 AND 
+			i.fstrFormName IS NOT NULL AND 
+			i.fstrFormName = c.fstrTaxForm AND 
+			i.fstrTaxProgram = c.fstrTaxProgram AND 
+			i.fstrImagePath LIKE '%' + CONVERT( VARCHAR(4), c.flngTaxYear ) + '%' AND 
+			c.flngOrder = 0 
+		ORDER BY 
+			i.fstrDLN 
+--- the above will make statements like below, with the appropriate table names
+		IF NOT EXISTS ( 
+			SELECT * 
+			FROM 
+				'c.fstrTable' 
+			WHERE 
+				fstrBatchID = 'i.fstrBatchID' AND 
+				CONVERT( VARCHAR(10), fdtmBatchDate, 101 ) = CONVERT( VARCHAR(10), i.fdtmScanDate, 101 ) AND 
+				flngSequence = CONVERT( VARCHAR(10), i.flngSequence ) )
+		INSERT INTO 
+			c.fstrTable ( 
+			fstrBatchID, 
+			fdtmBatchDate, 
+			flngSequence, 
+			fstrWho ) 
+		VALUES ( 
+			'i.fstrBatchID', 
+			CONVERT( VARCHAR(10), i.fdtmScanDate, 101 ), 
+			CONVERT( VARCHAR(10), i.flngSequence ), 
+			'batch' ) 
+-- since this page allows us to assign the batch to a user, fill the user combo box with all users from all roles
+-- if there was a user already selected or assigned, select that value in the user combo box
+-- if not readonly above, set some more colors and states
+-- again, if NOT condition above on user, disable the submit button and hide the panel with the button
+-- get main table for the first block of this batch (see below) so we can select a postmark date and display 
+--- it for each item in the batch
+--- old SQL select
+		SELECT DISTINCT 
+			c.fstrTable 
+		FROM 
+			rfrControls c, 
+			tblBatchImage i, 
+			tblBatchInfo b 
+		WHERE 
+			i.fstrBatchID = 'BatchID.Value' AND 
+			i.fstrTaxProgram = 'strProgCode' AND 
+			i.fstrFormName IS NOT NULL AND 
+			ISNULL( i.fblnImageBlankSizeCheck, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankSizeCompare, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankMiniCheck, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankUserCheck, 0 ) = 0 AND 
+			i.fstrBatchID = b.fstrBatchID AND 
+			i.fstrTaxProgram = b.fstrTaxProgram AND 
+			CONVERT( VARCHAR(10), i.fdtmScanDate, 101 ) = CONVERT( VARCHAR(10), b.fdtmBatchDate, 101 ) AND 
+			i.fstrFormName = c.fstrTaxForm AND 
+			i.fstrTaxProgram = c.fstrTaxProgram AND 
+			b.fstrForm = CONVERT( VARCHAR(50), c.flngTaxYear ) AND 
+			c.flngOrder = 0 AND 
+			c.flngBlock = 0 AND 
+			c.fblnActive = 1 AND 
+			RIGHT( i.fstrDLN, 2 ) = '01' AND 
+			b.fstrDLN = i.fstrDLN; 
+------------------------------------------------------------
+new SQL select
+		SELECT DISTINCT 
+			ch.fstrTable 
+		FROM 
+			rfrControls c, 
+			rfrControlHeaders ch,
+			rfrReturnHeaders rh,
+			tblBatchImage i, 
+			tblBatchInfo b 
+		WHERE 
+			i.fstrBatchID = 'BatchID.Value' AND 
+			i.fstrTaxProgram = 'strProgCode' AND 
+			i.fstrFormName IS NOT NULL AND 
+			ISNULL( i.fblnImageBlankSizeCheck, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankSizeCompare, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankMiniCheck, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankUserCheck, 0 ) = 0 AND 
+			i.fstrBatchID = b.fstrBatchID AND 
+			i.fstrTaxProgram = b.fstrTaxProgram AND 
+			CONVERT( VARCHAR(10), i.fdtmScanDate, 101 ) = CONVERT( VARCHAR(10), b.fdtmBatchDate, 101 ) AND 
+			RIGHT( i.fstrDLN, 2 ) = '01' AND 
+			b.fstrDLN = i.fstrDLN AND 
+			rh.idReturnHeaders = ch.flngReturnHeadersIDFK AND
+			i.fstrFormName = ch.fstrTaxForm AND 
+			i.fstrTaxProgram = rh.fstrTaxProgram AND 
+			b.fstrForm = CONVERT( VARCHAR(50), rh.flngTaxYear ) AND 
+			ch.flngBlock = 0;
+
+
+------------------------------------------------------------
+-- then select the items in the batch (sequence number) getting the values we need to display images, clipping, icons, etc.
+-- there are basically 3 different SELECTs for forms, other images, and blanks
+-- all UNIONed together, and sent to the repeater
+		SELECT 
+			( CASE WHEN ( ( RIGHT( i.fstrDLN, 2 ) = '01' ) AND ( c.fstrTaxForm LIKE '%page 1%' ) ) THEN 'id=\"first\"' ELSE 'id=\"next\"' END ) AS fstrRowID, 
+			'^' + CONVERT( VARCHAR(10), i.flngSequence ) + '&DLN='+ i.fstrDLN +'>' + CONVERT( VARCHAR(10), i.flngSequence ) + '' AS flngSequence, 
+			i.fstrImagePath AS imagePath, 
+			i.fstrImagePath AS popupImage, 
+			ISNULL( i.fstrID, '' ) AS storedID, 
+			CONVERT( VARCHAR(10), r.fdtmPostmarkDate, 101 ) AS PostmarkDate, 
+			0 AS TotalDue, 
+			0 AS PaymentAmount, 
+			i.fstrDLN AS DLN, 
+			i.fstrFormName AS fstrFormName, 
+			i.fstrFormName AS formNameOnly, 
+			LOWER( r.fstrWho ) AS lastWho, 
+			( CASE WHEN ( i.fdtmImageCheckedOut <> '12/31/9999' ) THEN ( CASE WHEN ( i.fdtmImageCheckedIn = '12/31/9999' ) THEN 'CHECKED OUT' ELSE 'KEYED' END ) ELSE 'NOT STARTED' END ) AS BatchStatus, 
+			'0' AS fstrImageFlag, 
+			c.flngClipTop AS cTop, 
+			c.flngClipRight AS cRight, 
+			c.flngClipBottom AS cBot, 
+			c.flngClipLeft AS cLeft, 
+			'Glass' AS thumb 
+		FROM 
+			tblBatchImage i, 
+			tblBatchInfo b, 
+			'strMainReturn' r, 
+			rfrControls c 
+		WHERE 
+			i.fstrBatchID = 'BatchID' AND 
+			i.fstrTaxProgram = 'strProgCode' AND 
+			i.fstrFormName IS NOT NULL AND 
+			ISNULL( i.fblnImageBlankSizeCheck, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankSizeCompare, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankMiniCheck, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankUserCheck, 0 ) = 0 AND 
+			i.fstrBatchID = b.fstrBatchID AND 
+			i.fstrTaxProgram = b.fstrTaxProgram AND 
+			CONVERT( VARCHAR(10), i.fdtmScanDate, 101 ) = CONVERT( VARCHAR(10), b.fdtmBatchDate, 101 ) AND 
+			i.fstrBatchID = r.fstrBatchID AND 
+			i.flngSequence = r.flngSequence AND 
+			i.fstrFormName = c.fstrTaxForm AND 
+			i.fstrTaxProgram = c.fstrTaxProgram AND 
+			b.fstrForm = CONVERT( VARCHAR(50), c.flngTaxYear ) AND 
+			c.flngOrder = 0 AND 
+			c.flngBlock = 0 AND 
+			c.fblnActive = 1
+
+		-- Get additional images that have not been identified yet
+		UNION
+
+		SELECT 
+			'id=\"other\"' AS fstrRowID, 
+			' ' AS flngSequence, 
+			' ' AS imagePath, 
+			i.fstrImagePath AS popupImage, 
+			' ' AS storedID, 
+			' ' AS PostmarkDate, 
+			0 AS TotalDue, 
+			0 AS PaymentAmount, 
+			i.fstrDLN AS DLN, 
+			'Other Document' AS fstrFormName, 
+			i.fstrFormName AS formNameOnly, 
+			' ' AS lastWho, 
+			' ' AS BatchStatus, 
+			'0' AS fstrImageFlag, 
+			0 AS cTop, 
+			0 AS cRight, 
+			0 AS cBot, 
+			0 AS cLeft, 
+			'Other' AS thumb 
+		FROM 
+			tblBatchImage i 
+		WHERE 
+			i.fstrBatchID = 'BatchID' AND 
+			i.fstrTaxProgram = 'strProgCode' AND 
+			i.fstrFormName IS NULL AND 
+			ISNULL( i.fblnImageBlankSizeCheck, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankSizeCompare, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankMiniCheck, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankUserCheck, 0 ) = 0
+
+		-- Get images marked as blank by some or any processes
+		UNION
+
+		SELECT 
+			'id=\"blank\"' AS fstrRowID, 
+			' ' AS flngSequence, 
+			' ' AS imagePath, 
+			i.fstrImagePath AS popupImage, 
+			' ' AS storedID, 
+			' ' AS PostmarkDate, 
+			0 AS TotalDue, 
+			0 AS PaymentAmount, 
+			i.fstrDLN AS DLN, 
+			'Blank Image' AS fstrFormName, 
+			i.fstrFormName AS formNameOnly, 
+			' ' AS lastWho, 
+			' ' AS BatchStatus, 
+			'1' AS fstrImageFlag, 
+			0 AS cTop, 
+			0 AS cRight, 
+			0 AS cBot, 
+			0 AS cLeft, 
+			'Blank' AS thumb 
+		FROM 
+			tblBatchImage i 
+		WHERE 
+			i.fstrBatchID = 'BatchID' AND 
+			i.fstrTaxProgram = 'strProgCode' AND 
+			( 
+				ISNULL( i.fblnImageBlankSizeCheck, 0 ) = 1 OR 
+				ISNULL( i.fblnImageBlankSizeCompare, 0 ) = 1 OR 
+				ISNULL( i.fblnImageBlankMiniCheck, 0 ) = 1 OR 
+				ISNULL( i.fblnImageBlankUserCheck, 0 ) = 1 
+			)
+
+		-- Sort our table accross all unions
+		ORDER BY DLN, fstrImageFlag
+------------------------------------------------------------
+new SQL select
+		SELECT 
+			( CASE WHEN ( ( RIGHT( i.fstrDLN, 2 ) = '01' ) AND ( ch.fstrTaxForm LIKE '%page 1%' ) ) THEN 'id=\"first\"' ELSE 'id=\"next\"' END ) AS fstrRowID, 
+			'^' + CONVERT( VARCHAR(10), i.flngSequence ) + '&DLN='+ i.fstrDLN +'>' + CONVERT( VARCHAR(10), i.flngSequence ) + '' AS flngSequence, 
+			i.fstrImagePath AS imagePath, 
+			i.fstrImagePath AS popupImage, 
+			ISNULL( i.fstrID, '' ) AS storedID, 
+			CONVERT( VARCHAR(10), r.fdtmPostmarkDate, 101 ) AS PostmarkDate, 
+			0 AS TotalDue, 
+			0 AS PaymentAmount, 
+			i.fstrDLN AS DLN, 
+			i.fstrFormName AS fstrFormName, 
+			i.fstrFormName AS formNameOnly, 
+			LOWER( r.fstrWho ) AS lastWho, 
+			( CASE WHEN ( i.fdtmImageCheckedOut <> '12/31/9999' ) THEN ( CASE WHEN ( i.fdtmImageCheckedIn = '12/31/9999' ) THEN 'CHECKED OUT' ELSE 'KEYED' END ) ELSE 'NOT STARTED' END ) AS BatchStatus, 
+			'0' AS fstrImageFlag, 
+			ch.flngClipTop AS cTop, 
+			ch.flngClipRight AS cRight, 
+			ch.flngClipBottom AS cBot, 
+			ch.flngClipLeft AS cLeft, 
+			'Glass' AS thumb 
+		FROM 
+			rfrControlHeaders ch,
+			rfrReturnHeaders rh,
+			tblBatchImage i, 
+			tblBatchInfo b, 
+			'strMainReturn' r
+		WHERE 
+			i.fstrBatchID = 'BatchID' AND 
+			i.fstrTaxProgram = 'strProgCode' AND 
+			i.fstrFormName IS NOT NULL AND 
+			ISNULL( i.fblnImageBlankSizeCheck, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankSizeCompare, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankMiniCheck, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankUserCheck, 0 ) = 0 AND 
+			i.fstrBatchID = b.fstrBatchID AND 
+			i.fstrTaxProgram = b.fstrTaxProgram AND 
+			CONVERT( VARCHAR(10), i.fdtmScanDate, 101 ) = CONVERT( VARCHAR(10), b.fdtmBatchDate, 101 ) AND 
+			i.fstrBatchID = r.fstrBatchID AND 
+			i.flngSequence = r.flngSequence AND 
+			rh.idReturnHeaders = ch.flngReturnHeadersIDFK ANDE
+			i.fstrFormName = ch.fstrTaxForm AND 
+			i.fstrTaxProgram = rh.fstrTaxProgram AND 
+			b.fstrForm = CONVERT( VARCHAR(50), rh.flngTaxYear ) AND 
+			ch.flngBlock = 0
+
+		-- Get additional images that have not been identified yet
+		UNION
+
+		SELECT 
+			'id=\"other\"' AS fstrRowID, 
+			' ' AS flngSequence, 
+			' ' AS imagePath, 
+			i.fstrImagePath AS popupImage, 
+			' ' AS storedID, 
+			' ' AS PostmarkDate, 
+			0 AS TotalDue, 
+			0 AS PaymentAmount, 
+			i.fstrDLN AS DLN, 
+			'Other Document' AS fstrFormName, 
+			i.fstrFormName AS formNameOnly, 
+			' ' AS lastWho, 
+			' ' AS BatchStatus, 
+			'0' AS fstrImageFlag, 
+			0 AS cTop, 
+			0 AS cRight, 
+			0 AS cBot, 
+			0 AS cLeft, 
+			'Other' AS thumb 
+		FROM 
+			tblBatchImage i 
+		WHERE 
+			i.fstrBatchID = 'BatchID' AND 
+			i.fstrTaxProgram = 'strProgCode' AND 
+			i.fstrFormName IS NULL AND 
+			ISNULL( i.fblnImageBlankSizeCheck, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankSizeCompare, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankMiniCheck, 0 ) = 0 AND 
+			ISNULL( i.fblnImageBlankUserCheck, 0 ) = 0
+
+		-- Get images marked as blank by some or any processes
+		UNION
+
+		SELECT 
+			'id=\"blank\"' AS fstrRowID, 
+			' ' AS flngSequence, 
+			' ' AS imagePath, 
+			i.fstrImagePath AS popupImage, 
+			' ' AS storedID, 
+			' ' AS PostmarkDate, 
+			0 AS TotalDue, 
+			0 AS PaymentAmount, 
+			i.fstrDLN AS DLN, 
+			'Blank Image' AS fstrFormName, 
+			i.fstrFormName AS formNameOnly, 
+			' ' AS lastWho, 
+			' ' AS BatchStatus, 
+			'1' AS fstrImageFlag, 
+			0 AS cTop, 
+			0 AS cRight, 
+			0 AS cBot, 
+			0 AS cLeft, 
+			'Blank' AS thumb 
+		FROM 
+			tblBatchImage i 
+		WHERE 
+			i.fstrBatchID = 'BatchID' AND 
+			i.fstrTaxProgram = 'strProgCode' AND 
+			( 
+				ISNULL( i.fblnImageBlankSizeCheck, 0 ) = 1 OR 
+				ISNULL( i.fblnImageBlankSizeCompare, 0 ) = 1 OR 
+				ISNULL( i.fblnImageBlankMiniCheck, 0 ) = 1 OR 
+				ISNULL( i.fblnImageBlankUserCheck, 0 ) = 1 
+			)
+
+		-- Sort our table accross all unions
+		ORDER BY DLN, fstrImageFlag
+
+
+------------------------------------------------------------
+-- before the DataTable is sent to the repeater, turn off the readonly 
+-- and maxLength on all the columns, since the repeater does some 
+-- manipulating of the values before letting the page Eval() it
+
+
+
+
+@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+@# OnClick_subBTN @#@#@#@#@#@#@#@#@#@#@#@#@ no change here #
+@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+-- if the user is allowed to edit (see conditions above in load)
+-- and flag is not readonly
+-- check if page is valid, if not yell at the user
+-- simply get the values and build UPDATE statement
+UPDATE 
+	tblBatchInfo 
+SET 
+	fstrBatchUser = 'userCMB.SelectedValue', 
+	fdtmReceivedDate = 'ReceivedDate.Text',	-- useDateTime to normalize to 'yyyy-MM-dd'
+	fdtmPostmarkDate = 'PostmarkDate.Text',	-- useDateTime to normalize to 'yyyy-MM-dd'
+	fdtmDepositDate = 'DepositDate.Text',	-- useDateTime to normalize to 'yyyy-MM-dd'
+	fintHeaderCount = BatchCount.Text, 
+	fcurHeaderAmount = BatchAmount.Text, 
+	fstrBatchType = 'BatchType.Text', 
+	fstrForm = 'FormType.Text' 
+	-- C# code checks
+	if( !TimelyBatch.ReadOnly )
+		, fstrTimelyBatch = 'TimelyBatch.Text' 
+	if( !BatchStatus.ReadOnly )
+		, fstrBatchStatus = 'BatchStatus.Text' 
+WHERE 
+	fstrTaxProgram = 'strProgCode' AND 
+	fstrBatchID = 'BatchID.Value' AND 
+	fdtmBatchDate = 'BatchDate.Value' AND 
+	fstrBatchSource = 'BatchSource.Value';
+
+
+
+@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+@# batchRPT_ItemDataBound @#@#@#@#@#@#@#@#@#@#@# no change #
+@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+-- build link, with some checks, no change so not going to detail
+
