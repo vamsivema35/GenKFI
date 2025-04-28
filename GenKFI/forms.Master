@@ -403,7 +403,7 @@
 				<tr>
 					<td>
 			<asp:DropDownList runat="server" ID="CountryDDL" width="20%" Visible = "false" 
-				style="left: 25%; top: 100px; height: 40px; position: absolute;"
+				style="left: 5%; top: 80px; height: 40px; position: absolute;"
 				 AutoPostBack="true" OnSelectedIndexChanged="OnSelectedIndexChanged_CountryDDL">
             </asp:DropDownList>
 					</td>

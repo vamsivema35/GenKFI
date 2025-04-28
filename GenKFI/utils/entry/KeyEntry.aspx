@@ -43,7 +43,7 @@
 			<asp:Label runat="server" ID="Timelylbl"  Width="75" style="left:800px; top:50px; font-size:13px; color:black; position:absolute;" Text="Timely:" ></asp:Label>
 			<asp:Label runat="server" ID="Timelytxt"  Width="75" style="left:875px; top:50px; font-size:13px; color:black; position:absolute;" Text=""></asp:Label>
 
-			<asp:button runat="server" ID="CountryChk" tabindex="1" text="Country" Visible="false" style="left:200px; top:43px; position:absolute; height:20px; width: 120px; font-size:14px; font-weight:bold;" OnClick="CallLoadCountryName" />
+			<asp:button runat="server" ID="CountryChk" tabindex="1" text="Country" Visible="false" style="left:5%; top:43px; position:absolute; height:30px; width: 120px; font-size:14px; font-weight:bold;" OnClick="CallLoadCountryName" />
 
 			<asp:button runat="server" ID="btnSub" tabindex="81" text="Submit" style="left:950px; top:3px; position:absolute; height:45px; font-size:20px; font-weight:bold;" OnClientClick="if(!checkRequired()) return false;" OnClick="OnClick_btnSub" />
 
