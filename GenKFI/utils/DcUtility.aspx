@@ -127,8 +127,7 @@
             <asp:Button runat="server" ID="ClearTxtBTN" Text="Clear Choices" style="left:548px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;" OnClick="OnClick_ClearChoice" />
             <asp:Button runat="server" ID="DeleteBatchBTN" Text="Delete Batch" style="left:715px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;" OnClick="OnClick_DeleteBatch" />
             <asp:Button runat="server" ID="UnDel" Text="Un-Delete" style="left:860px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;" OnClick="OnClick_UnDelete" />
-        	<%--<asp:Button runat="server" ID="GetImageBTN" Text="Get Images" style="left:990px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;"  OnClick="OnClick_GetImages" />--%>
-            <asp:Button runat="server" ID="ClearForm" Text="Clear Form" style="left:1122px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;" OnClick="OnClick_ClearForm" />
+        	<asp:Button runat="server" ID="ClearForm" Text="Clear Form" style="left:1122px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;" OnClick="OnClick_ClearForm" />
             <asp:Button runat="server" ID="BlankSheet" Text="Blank" style="left:1253px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;" OnClick="OnClick_BlankForm" />
  			 <input id="BtnPick" tabindex="95" type="button" name="btnPick" value="Pick Form"
 				 style="left:1332px; top:13px; position:absolute; height:45px; font-size:20px; font-weight:bold;"
@@ -157,34 +156,17 @@
 					<asp:Literal runat="server" ID="formListLIT" Mode="PassThrough" ></asp:Literal>
 				</tbody>
 			</table>
-		</div>
-		<div 
-			 id="divImage"
-			 style="float:left;
-					overflow:hidden;        
-					position:absolute;
-                    -webkit-transform: translateZ(0);
-                    top:73px;
-					left:0px;
-					height:50%;
-					width:50%;
-                    border:solid 1px black;">
-
-			<div id="divImageDrag" style="top:0px; left:0px;" >
-				<asp:Image runat="server" ID="DcImage" Width="100%" />
-			</div>
-
-		</div>
+		</div>	
 		<div id="divControls"  
 			 style="position:absolute; 
 					overflow-x:hidden;
 					overflow-y:scroll; 
                     -webkit-transform: translateZ(0);
 					border:1px solid #ccc;
-					top:73px;
-					left:50%;
-					height:50%;
-					width:50%;
+					top:75px;
+					left:23%;					
+					height:90%;
+					width:90%;
                     border:solid 1px black;" >
 
 			<asp:HiddenField runat="server" ID="maxScrl" Value="0" />
@@ -196,42 +178,32 @@
 		</div>
         <div  id="divBotEntry"
 			style="position:absolute;
-				   top:60%;
-				   left:40%;
+				   top:75px;
+				   left:2%;
 				   height:20%;
 				   width:20%;
 				   border:solid 1px black;" > 
-        	<table>
-        		
+        	<table width ="100%">
+        		<tr><td colspan="2"> Select the Tax Program, Batch, Sequence</td></tr>
 		        	<tr><td class="input_lbl">Tax Pgm: </td>
-        			<td class="input_cmb"><asp:DropDownList runat="server" ID="DdTaxPgm" TabIndex="11" ></asp:DropDownList></td></tr>
+        			<td class="input_cmb"><asp:DropDownList runat="server" ID="DdTaxPgm" TabIndex="11" Width="100px" ></asp:DropDownList></td></tr>
 		        	<tr><td class="input_lbl">Batch: </td>
-        			<td class="input_txt"><asp:TextBox runat="server" ID="BatchId" MaxLength="10" TabIndex="12" Text="" ></asp:TextBox></td></tr>	
+        			<td class="input_txt"><asp:TextBox runat="server" ID="BatchId" MaxLength="10" TabIndex="12" Text="" Width="98%" ></asp:TextBox></td></tr>	
 		        	<tr><td class="input_lbl">Sequence: </td>
-        			<td class="input_txt"><asp:TextBox runat="server" ID="SeqNbr" MaxLength="4" TabIndex="13" Text="" ></asp:TextBox></td></tr>
+        			<td class="input_txt"><asp:TextBox runat="server" ID="SeqNbr" MaxLength="4" TabIndex="13" Text="" Width="98%" ></asp:TextBox></td></tr>
 		        	<tr><td class="input_lbl">Mavro File: </td>
-        			<td class="input_txt"><asp:TextBox runat="server" ID="MavFile" MaxLength="15" TabIndex="14" Text="" ></asp:TextBox></td></tr>
+        			<td class="input_txt"><asp:TextBox runat="server" ID="MavFile" MaxLength="15" TabIndex="14" Text="" Width="98%" ></asp:TextBox></td></tr>
 		        	<tr><td class="input_lbl">Mavro Prev: </td>
-        			<td class="input_txt"><asp:TextBox runat="server" ID="MavPrev" MaxLength="15" TabIndex="15" Text="" ></asp:TextBox></td></tr>
+        			<td class="input_txt"><asp:TextBox runat="server" ID="MavPrev" MaxLength="15" TabIndex="15" Text="" Width="98%" ></asp:TextBox></td></tr>
                 <tr></tr>
-
+				 <tr>
+  			<td class="input_lbl">Status: </td>
+ 	<td><asp:TextBox runat="server" ID="OpStatus" ReadOnly="true" Text="" Width="98%"></asp:TextBox></td>	
+ </tr>
                 
             </table>
         </div>
-        <div id="divBotStatus"
-				style="position:absolute;
-					   top:82%;
-					   left:40%;
-					   height:6%;
-					   width:20%;
-					   border:solid 1px black;" > 
-        	<table>
-		        <tr>
-        			<td class="input_lbl">Status: </td>
-		        	<td><asp:TextBox runat="server" ID="OpStatus" ReadOnly="true" Text="" ></asp:TextBox></td>	
-                </tr>
-            </table>
-        </div>
+      
    		<!-- ************************************************** -->
 		<!-- Hidden Inputs -->
 		<!-- ************************************************** -->

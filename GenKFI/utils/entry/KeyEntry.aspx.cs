@@ -323,8 +323,6 @@ namespace GenKFI.utils.entry
                 DocNbrtxt.Text = ((HiddenField)Master.FindControl("hidmvDocNbr")).Value;
                 Offsettxt.Text = ((HiddenField)Master.FindControl("hidmvOffset")).Value;
                 Sizetxt.Text = ((HiddenField)Master.FindControl("hidmvSize")).Value;
-
-                ((Image)Master.FindControl("imgImage")).ImageUrl = "noFront/imageLoad.aspx";
             }
             catch (Exception ex)
             {
@@ -1793,13 +1791,6 @@ namespace GenKFI.utils.entry
                 ImgSrctxt.Text = Session["mvImgSrc"].ToString();
                 string chkpath = Session["kestrImagePath"].ToString();
 
-                // check if it can load it
-                //if (TryLoad())
-                //    ((Image)Master.FindControl("imgImage")).ImageUrl = "noFront/imageLoad.aspx";
-                //else
-                //    ((Image)Master.FindControl("imgImage")).ImageUrl = "images/imgError.jpg";
-
-
                 // Get Entry Queue for Form Pick
                 // also get the timely flag and postmark
                 statement = "SELECT ";
@@ -2505,37 +2496,9 @@ namespace GenKFI.utils.entry
             if (isTimely && keFocus == "txtPostMarkDate")
                 ((HiddenField)Master.FindControl("keFocusHID")).Value = keFocus2nd;
             else
-                ((HiddenField)Master.FindControl("keFocusHID")).Value = keFocus;
-            
+                ((HiddenField)Master.FindControl("keFocusHID")).Value = keFocus;            
 
         }
 
-        private bool TryLoad()
-		{
- 			try
-			{
-				FileStream fs = new FileStream( Session[ "kestrImagePath" ].ToString(), FileMode.Open, FileAccess.Read );
-				BinaryReader reader = new BinaryReader( fs );
-
-                int lngSize = (Int32)fs.Length;
-
-                if (Convert.ToString(Session["mvImgSrc"]) == "MAVRO")
-                {
-                    fs.Position = Convert.ToInt32(Session["mvOffset"]);
-                    lngSize = Convert.ToInt32(Session["mvSize"]);
-                }
-
-                Byte[] img = reader.ReadBytes(lngSize);
-
-				reader.Close();
-//				fs.Close();
-				return true;
-			}
-            catch (Exception)
-            {
-                return false;
-			}
-
-		}
     }
 }

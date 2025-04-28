@@ -222,15 +222,6 @@ namespace GenKFI.utils.formBuilder
         protected global::System.Web.UI.WebControls.Literal formListLIT;
 
         /// <summary>
-        /// UdImage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image UdImage;
-
-        /// <summary>
         /// maxScrl control.
         /// </summary>
         /// <remarks>

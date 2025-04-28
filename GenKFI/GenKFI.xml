@@ -45,15 +45,6 @@
             To modify move field declaration from designer file to code-behind file.
             </remarks>
         </member>
-        <member name="F:GenKFI.Forms.DropDownHolder">
-            <summary>
-            DropDownHolder control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
         <member name="F:GenKFI.Forms.scriptingHolder">
             <summary>
             scriptingHolder control.

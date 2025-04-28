@@ -74,9 +74,7 @@
 			<asp:button runat="server" id="OsrBtn" TabIndex="96" text="StmRec" Visible="false" style="left:1120px; top:50px; position:absolute; height:17px; font-size:13px; font-weight:bold;" OnClick="OnClick_OsrBtn" />
            	<asp:button runat="server" id="OasBtn" TabIndex="97" text="AnnSum" Visible="false" style="left:1220px; top:8px; position:absolute; height:17px; font-size:13px; font-weight:bold;" OnClick="OnClick_OasBtn" />
 
-			<%--<asp:Button runat="server" ID="loadTemplateBTN" Text="Load/Save Template" style="left:1325px; top:10px; position:absolute; font-size:12px; font-weight:bold;" OnClick="OnClick_loadTemplateBTN" />
-			<asp:Label runat="server" ID="pathLBL" Width="20" style="left:1325px;color:Black;background-color:#F0E7BB;top:36px;position:absolute;height:20px;width:50px;font-weight:bold;" Text="Path:"></asp:Label>
-			<asp:TextBox runat="server" ID="pathTXT" style="left:1375px;color:Black;top:36px;position:absolute;" Text=""></asp:TextBox>--%>
+			
 		</div>
 	</asp:Content>
 
@@ -92,71 +90,12 @@
 			var locked = false;
 
 			$(document).ready(function()
-			{
-				// image drag and marker functions
-				<%--$('#divImageDrag').draggable();
-
-				$('#divImageDrag').mousedown(function()
-				{
-					oTop = $('#divMarker').offset().top;
-					oLeft = $('#divMarker').offset().left;
-					clipoTop = $("#<%= clipDIV.ClientID%>").offset().top;
-					clipoLeft = $("#<%= clipDIV.ClientID%>").offset().left;
-				});
-
-				$('#divImageDrag').on("drag", function(event, ui)
-				{
-					$('#divMarker').offset({ top: oTop + ui.position.top - ui.originalPosition.top, left: oLeft + ui.position.left - ui.originalPosition.left });
-					$("#<%= clipDIV.ClientID%>").offset({ top: clipoTop + ui.position.top - ui.originalPosition.top, left: clipoLeft + ui.position.left - ui.originalPosition.left });
-					$("#<%= imageXTXT.ClientID%>").val($('#divImageDrag').css("left").replace("px", ""));
-					$("#<%= imageYTXT.ClientID%>").val($('#divImageDrag').css("top").replace("px", ""));
-					$("#<%= markerXTXT.ClientID%>").val($('#divMarker').css("left").replace("px", ""));
-					$("#<%= markerYTXT.ClientID%>").val($('#divMarker').css("top").replace("px", ""));
-					$("#<%= clipLeftTXT.ClientID%>").val($("#<%= clipDIV.ClientID%>").offset().left - $('#divImageDrag').offset().left);
-					$("#<%= clipTopTXT.ClientID%>").val($("#<%= clipDIV.ClientID%>").offset().top - $('#divImageDrag').offset().top);
-					$("#<%= clipBotTXT.ClientID%>").val($("#<%= clipDIV.ClientID%>").offset().top - $('#divImageDrag').offset().top + $("#<%= clipDIV.ClientID%>").height());
-					$("#<%= clipRightTXT.ClientID%>").val($("#<%= clipDIV.ClientID%>").offset().left - $('#divImageDrag').offset().left + $("#<%= clipDIV.ClientID%>").width());
-				});
-
-				$("#divImageDrag").mouseover(function() { $("#divImageDrag").css("cursor", "move"); });
-
-				$('#divMarker').draggable();
-
-				$('#divMarker').on("drag", function(event, ui)
-				{
-					$("#<%= markerXTXT.ClientID%>").val($('#divMarker').css("left").replace("px", ""));
-					$("#<%= markerYTXT.ClientID%>").val($('#divMarker').css("top").replace("px", ""));
-				});--%>
+			{	
 
 				$('#divControls').scroll(function()
 				{
 					$("#<%= controlScrollTXT.ClientID%>").val($('#divControls').scrollTop());
 				});
-
-				// clip area functions
-				<%--$("#<%= clipDIV.ClientID%>").resizable().draggable();
-
-				$("#<%= clipDIV.ClientID%>").on("drag", function(event, ui)
-				{
-					$("#<%= clipLeftTXT.ClientID%>").val($("#<%= clipDIV.ClientID%>").offset().left - $('#divImageDrag').offset().left );
-					$("#<%= clipTopTXT.ClientID%>").val($("#<%= clipDIV.ClientID%>").offset().top - $('#divImageDrag').offset().top);
-					$("#<%= clipBotTXT.ClientID%>").val($("#<%= clipDIV.ClientID%>").offset().top - $('#divImageDrag').offset().top + $("#<%= clipDIV.ClientID%>").height());
-					$("#<%= clipRightTXT.ClientID%>").val($("#<%= clipDIV.ClientID%>").offset().left - $('#divImageDrag').offset().left + $("#<%= clipDIV.ClientID%>").width());
-				});
-
-				$("#<%= clipDIV.ClientID%>").on("resize", function(event, ui)
-				{
-					$("#<%= clipBotTXT.ClientID%>").val($("#<%= clipDIV.ClientID%>").offset().top - $('#divImageDrag').offset().top + $("#<%= clipDIV.ClientID%>").height());
-					$("#<%= clipRightTXT.ClientID%>").val($("#<%= clipDIV.ClientID%>").offset().left - $('#divImageDrag').offset().left + $("#<%= clipDIV.ClientID%>").width());
-				});
-				// initial position
-				$("#<%= clipDIV.ClientID%>").css({
-					top: parseInt($("#<%= clipTopTXT.ClientID%>").val()) + parseInt($('#divImageDrag').offset().top),
-					left: parseInt($("#<%= clipLeftTXT.ClientID%>").val()) + parseInt($('#divImageDrag').offset().left),
-					height: parseInt($("#<%= clipBotTXT.ClientID%>").val()) - parseInt($("#<%= clipTopTXT.ClientID%>").val()),
-					width: parseInt($("#<%= clipRightTXT.ClientID%>").val()) - parseInt($("#<%= clipLeftTXT.ClientID%>").val())
-				});--%>
-
 				$(function()
 				{
 					$("#controlLink").click(function()

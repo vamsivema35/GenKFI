@@ -231,15 +231,6 @@ namespace GenKFI.utils
         protected global::System.Web.UI.WebControls.Literal formListLIT;
 
         /// <summary>
-        /// DcImage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image DcImage;
-
-        /// <summary>
         /// maxScrl control.
         /// </summary>
         /// <remarks>

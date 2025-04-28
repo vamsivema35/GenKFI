@@ -323,14 +323,6 @@ namespace GenKFI.utils.formBuilder
                             Session["mvSize"] = dt.Rows[0]["flngFrontSize"].ToString();
                             Session["mvImgSrc"] = "MAVRO";
                         }
-                        //if (templateImage != null)
-                        //{
-                        //    // this has to be set as this key, the loader looks for that name
-                        //    Session["kestrImagePath"] = templateImage;
-                        //    ((Image)Master.FindControl("imgImage")).ImageUrl = "noFront/imageLoad.aspx";
-                        //    pathTXT.Text = templateImage;
-                        //}
-
                     }
 
                     // fill the DDLS for the new function controls
@@ -473,14 +465,7 @@ namespace GenKFI.utils.formBuilder
                 // we know this has one row, but for consistency do the check anyway
                 if (numRows > 0)
                 {
-                    templateImage = dt.Rows[0]["fstrTemplateImage"].ToString();
-                    //if (templateImage != null)
-                    //{
-                    //    // this has to be set as this key, the loader looks for that name
-                    //    Session["kestrImagePath"] = templateImage;
-                    //    ((Image)Master.FindControl("imgImage")).ImageUrl = "noFront/imageLoad.aspx";
-                    //    pathTXT.Text = templateImage;
-                    //}
+                    templateImage = dt.Rows[0]["fstrTemplateImage"].ToString();                    
                     if (dt.Rows[0]["fstrFormType"].ToString() == "R")
                     {
                         ViewState["isRepeater"] = int.Parse(dt.Rows[0]["flngRepeatOffset"].ToString());
@@ -552,14 +537,7 @@ namespace GenKFI.utils.formBuilder
                 // we know this has one row, but for consistency do the check anyway
                 if (numRows > 0)
                 {
-                    templateImage = dt.Rows[0]["fstrTemplate2Image"].ToString();
-                    //if (templateImage != null)
-                    //{
-                    //    // this has to be set as this key, the loader looks for that name
-                    //    Session["kestrImagePath"] = templateImage;
-                    //    ((Image)Master.FindControl("imgImage")).ImageUrl = "noFront/imageLoad.aspx";
-                    //    pathTXT.Text = templateImage;
-                    //}
+                    templateImage = dt.Rows[0]["fstrTemplate2Image"].ToString();                   
 
                     if (dt.Rows[0]["fstrFormType"].ToString() == "R")
                     {
@@ -633,14 +611,7 @@ namespace GenKFI.utils.formBuilder
                 // we know this has one row, but for consistency do the check anyway
                 if (numRows > 0)
                 {
-                    templateImage = dt.Rows[0]["fstrTemplate3Image"].ToString();
-                    //if (templateImage != null)
-                    //{
-                    //    // this has to be set as this key, the loader looks for that name
-                    //    Session["kestrImagePath"] = templateImage;
-                    //    ((Image)Master.FindControl("imgImage")).ImageUrl = "noFront/imageLoad.aspx";
-                    //    pathTXT.Text = templateImage;
-                    //}
+                    templateImage = dt.Rows[0]["fstrTemplate3Image"].ToString();                   
                     if (dt.Rows[0]["fstrFormType"].ToString() == "R")
                     {
                         ViewState["isRepeater"] = int.Parse(dt.Rows[0]["flngRepeat3Offset"].ToString());
@@ -712,14 +683,7 @@ namespace GenKFI.utils.formBuilder
                 // we know this has one row, but for consistency do the check anyway
                 if (numRows > 0)
                 {
-                    templateImage = dt.Rows[0]["fstrTemplate4Image"].ToString();
-                    //if (templateImage != null)
-                    //{
-                    //    // this has to be set as this key, the loader looks for that name
-                    //    Session["kestrImagePath"] = templateImage;
-                    //    ((Image)Master.FindControl("imgImage")).ImageUrl = "noFront/imageLoad.aspx";
-                    //    pathTXT.Text = templateImage;
-                    //}
+                    templateImage = dt.Rows[0]["fstrTemplate4Image"].ToString();                   
                     if (dt.Rows[0]["fstrFormType"].ToString() == "R")
                     {
                         ViewState["isRepeater"] = int.Parse(dt.Rows[0]["flngRepeat4Offset"].ToString());
@@ -792,14 +756,7 @@ namespace GenKFI.utils.formBuilder
                 // we know this has one row, but for consistency do the check anyway
                 if (numRows > 0)
                 {
-                    templateImage = dt.Rows[0]["fstrTemplate5Image"].ToString();
-                    //if (templateImage != null)
-                    //{
-                    //    // this has to be set as this key, the loader looks for that name
-                    //    Session["kestrImagePath"] = templateImage;
-                    //    ((Image)Master.FindControl("imgImage")).ImageUrl = "noFront/imageLoad.aspx";
-                    //    pathTXT.Text = templateImage;
-                    //}
+                    templateImage = dt.Rows[0]["fstrTemplate5Image"].ToString();                    
                     if (dt.Rows[0]["fstrFormType"].ToString() == "R")
                     {
                         ViewState["isRepeater"] = int.Parse(dt.Rows[0]["flngRepeat5Offset"].ToString());
@@ -872,14 +829,7 @@ namespace GenKFI.utils.formBuilder
                 // we know this has one row, but for consistency do the check anyway
                 if (numRows > 0)
                 {
-                    templateImage = dt.Rows[0]["fstrTemplate6Image"].ToString();
-                    //if (templateImage != null)
-                    //{
-                    //    // this has to be set as this key, the loader looks for that name
-                    //    Session["kestrImagePath"] = templateImage;
-                    //    ((Image)Master.FindControl("imgImage")).ImageUrl = "noFront/imageLoad.aspx";
-                    //    pathTXT.Text = templateImage;
-                    //}
+                    templateImage = dt.Rows[0]["fstrTemplate6Image"].ToString();                   
                     if (dt.Rows[0]["fstrFormType"].ToString() == "R")
                     {
                         ViewState["isRepeater"] = int.Parse(dt.Rows[0]["flngRepeat6Offset"].ToString());
@@ -953,13 +903,6 @@ namespace GenKFI.utils.formBuilder
                 if (numRows > 0)
                 {
                     templateImage = dt.Rows[0]["fstrTemplate7Image"].ToString();
-                    //if (templateImage != null)
-                    //{
-                    //    // this has to be set as this key, the loader looks for that name
-                    //    Session["kestrImagePath"] = templateImage;
-                    //    ((Image)Master.FindControl("imgImage")).ImageUrl = "noFront/imageLoad.aspx";
-                    //    pathTXT.Text = templateImage;
-                    //}
                     if (dt.Rows[0]["fstrFormType"].ToString() == "R")
                     {
                         ViewState["isRepeater"] = int.Parse(dt.Rows[0]["flngRepeat7Offset"].ToString());
@@ -1005,73 +948,6 @@ namespace GenKFI.utils.formBuilder
             LoadControls();
 
         }
-//        protected void OnClick_loadTemplateBTN(object sender, EventArgs e)
-//        {
-//            // put the path in the hidden field, it will get loaded on the postback
-//            templateImgPath.Value = pathTXT.Text;
-//            Session["kestrImagePath"] = pathTXT.Text;
-//            ((Image)Master.FindControl("imgImage")).ImageUrl = "noFront/imageLoad.aspx";
-
-//            // also save the image on the header row for this block
-//            GoodConn gc = new GoodConn();
-//            try
-//            {
-//#if DEBUG
-//                gc.Connect(Resources.connString);
-//#else
-//				gc.Connect( Resources.prodConnString );
-//#endif
-//                // update the header row, not the block rows
-
-//                string statement = "UPDATE rfrControlHeaders ";
-//                if (taxProgTXT.Text == "OGD")
-//                {
-//                    if (((HiddenField)Master.FindControl("hidOgdForm")).Value == "0")
-//                    {
-//                        statement += "SET fstrTemplateImage = '" + pathTXT.Text + "' ";
-//                    }
-//                    if (((HiddenField)Master.FindControl("hidOgdForm")).Value == "2")
-//                    {
-//                        statement += "SET fstrTemplate2Image = '" + pathTXT.Text + "' ";
-//                    }
-//                    if (((HiddenField)Master.FindControl("hidOgdForm")).Value == "3")
-//                    {
-//                        statement += "SET fstrTemplate3Image = '" + pathTXT.Text + "' ";
-//                    }
-//                    if (((HiddenField)Master.FindControl("hidOgdForm")).Value == "4")
-//                    {
-//                        statement += "SET fstrTemplate4Image = '" + pathTXT.Text + "' ";
-//                    }
-//                    if (((HiddenField)Master.FindControl("hidOgdForm")).Value == "5")
-//                    {
-//                        statement += "SET fstrTemplate5Image = '" + pathTXT.Text + "' ";
-//                    }
-//                    if (((HiddenField)Master.FindControl("hidOgdForm")).Value == "6")
-//                    {
-//                        statement += "SET fstrTemplate6Image = '" + pathTXT.Text + "' ";
-//                    }
-//                    if (((HiddenField)Master.FindControl("hidOgdForm")).Value == "7")
-//                    {
-//                        statement += "SET fstrTemplate7Image = '" + pathTXT.Text + "' ";
-//                    }
-//                }
-//                else
-//                {
-//                    statement += "SET fstrTemplateImage = '" + pathTXT.Text + "' ";
-//                }
-//                statement += "WHERE idControlHeaders = " + Request.QueryString["topHeaderID"].ToString() + ";";
-
-//                gc.DoExecute(statement);
-//                gc.Disconnect();
-//            }
-//            catch (Exception ex)
-//            {
-//                UtilClass.RecordError(gc, ex);
-//                gc.Disconnect();
-//            }
-
-//            LoadControls();
-//        }
 
         // load up any existing controls and plot them plus a checkbox for selection
         private void LoadControls()

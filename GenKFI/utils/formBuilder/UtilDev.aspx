@@ -157,33 +157,16 @@
 				</tbody>
 			</table>
 		</div>
-		<div 
-			 id="divImage"
-			 style="float:left;
-					overflow:hidden;        
-					position:absolute;
-                    -webkit-transform: translateZ(0);
-                    top:73px;
-					left:0px;
-					height:50%;
-					width:50%;
-                    border:solid 1px black;">
-
-			<div id="divImageDrag" style="top:0px; left:0px;" >
-				<asp:Image runat="server" ID="UdImage" Width="100%" />
-			</div>
-
-		</div>
 		<div id="divControls"  
 			 style="position:absolute; 
 					overflow-x:hidden;
 					overflow-y:scroll; 
                     -webkit-transform: translateZ(0);
 					border:1px solid #ccc;
-					top:73px;
-					left:50%;
-					height:50%;
-					width:50%;
+					top:75px;
+					left:25%;
+					height:90%;
+					width:70%;
                     border:solid 1px black;" >
 
 			<asp:HiddenField runat="server" ID="maxScrl" Value="0" />
@@ -195,64 +178,55 @@
 		</div>
         <div id="divleftEntry"
             style="position:absolute;
-                   top:60%;
-                   left:0%;
+                   top:75px;
+                   left:2%;
                    height:20%;
-                   width:20%;
+                   width:22%;
                    border:solid 1px black;" >
-            <table>
-        		<tr><td class="input_txt"><asp:TextBox runat="server" ID="Line1" MaxLength="50" TabIndex="21" Text="" ></asp:TextBox></td></tr>
-        		<tr><td class="input_txt"><asp:TextBox runat="server" ID="Line2" MaxLength="50" TabIndex="22" Text="" ></asp:TextBox></td></tr>
-        		<tr><td class="input_txt"><asp:TextBox runat="server" ID="Line3" MaxLength="50" TabIndex="23" Text="" ></asp:TextBox></td></tr>
-        		<tr><td class="input_txt"><asp:TextBox runat="server" ID="Line4" MaxLength="50" TabIndex="24" Text="" ></asp:TextBox></td></tr>
-        		<tr><td class="input_txt"><asp:TextBox runat="server" ID="Line5" MaxLength="50" TabIndex="25" Text="" ></asp:TextBox></td></tr>
-        		<tr><td class="input_txt"><asp:TextBox runat="server" ID="Line6" MaxLength="50" TabIndex="26" Text="" ></asp:TextBox></td></tr>
-        		<tr><td class="input_txt"><asp:TextBox runat="server" ID="Line7" MaxLength="50" TabIndex="27" Text="" ></asp:TextBox></td></tr>
+            <table width =" 100%">
+				<tr><td>Developer enter SQL Script here</td></tr>
+        		<tr><td class="input_txt"><asp:TextBox runat="server" ID="Line1" MaxLength="50" TabIndex="21" Text="" Width="98%" ></asp:TextBox></td></tr>
+        		<tr><td class="input_txt"><asp:TextBox runat="server" ID="Line2" MaxLength="50" TabIndex="22" Text="" Width="98%" ></asp:TextBox></td></tr>
+        		<tr><td class="input_txt"><asp:TextBox runat="server" ID="Line3" MaxLength="50" TabIndex="23" Text="" Width="98%" ></asp:TextBox></td></tr>
+        		<tr><td class="input_txt"><asp:TextBox runat="server" ID="Line4" MaxLength="50" TabIndex="24" Text="" Width="98%" ></asp:TextBox></td></tr>
+        		<tr><td class="input_txt"><asp:TextBox runat="server" ID="Line5" MaxLength="50" TabIndex="25" Text="" Width="98%" ></asp:TextBox></td></tr>
+        		<tr><td class="input_txt"><asp:TextBox runat="server" ID="Line6" MaxLength="50" TabIndex="26" Text="" Width="98%" ></asp:TextBox></td></tr>
+        		<tr><td class="input_txt"><asp:TextBox runat="server" ID="Line7" MaxLength="50" TabIndex="27" Text="" Width="98%" ></asp:TextBox></td></tr>
             </table>
         </div>
 
         <div  id="divBotEntry"
 			style="position:absolute;
-				   top:60%;
-				   left:40%;
-				   height:20%;
-				   width:20%;
+				   top:30%;
+				   left:2%;
+				   height:30%;
+				   width:22%;
 				   border:solid 1px black;" > 
-        	<table>
-        		
+        	<table width="100%">
+        		<tr><td colspan="2">Developer enter Tax Program, other details here to get or update record</td></tr>
 		        	<tr><td class="input_lbl">Tax Pgm: </td>
-        			<td class="input_cmb"><asp:DropDownList runat="server" ID="DdTaxPgm" TabIndex="11" ></asp:DropDownList></td></tr>
+        			<td class="input_cmb"><asp:DropDownList runat="server" ID="DdTaxPgm" TabIndex="11" Width="100px"></asp:DropDownList></td></tr>
 		        	<tr><td class="input_lbl">Batch: </td>
-        			<td class="input_txt"><asp:TextBox runat="server" ID="BatchId" MaxLength="10" TabIndex="12" Text="" ></asp:TextBox></td></tr>	
+        			<td class="input_txt"><asp:TextBox runat="server" ID="BatchId" MaxLength="10" TabIndex="12" Text="" Width="98%" ></asp:TextBox></td></tr>	
 		        	<tr><td class="input_lbl">BatchDate: </td>
-        			<td class="input_txt"><asp:TextBox runat="server" ID="BatchDate" MaxLength="10" TabIndex="13" Text="" ></asp:TextBox></td></tr>	
+        			<td class="input_txt"><asp:TextBox runat="server" ID="BatchDate" MaxLength="10" TabIndex="13" Text=""  Width="98%"></asp:TextBox></td></tr>	
 		        	<tr><td class="input_lbl">Sequence: </td>
-        			<td class="input_txt"><asp:TextBox runat="server" ID="SeqNbr" MaxLength="4" TabIndex="14" Text="" ></asp:TextBox></td></tr>
+        			<td class="input_txt"><asp:TextBox runat="server" ID="SeqNbr" MaxLength="4" TabIndex="14" Text=""  Width="98%"></asp:TextBox></td></tr>
 		        	<tr><td class="input_lbl">Img Table: </td>
-        			<td class="input_txt"><asp:TextBox runat="server" ID="ImgTable" MaxLength="30" TabIndex="15" Text="" ></asp:TextBox></td></tr>
+        			<td class="input_txt"><asp:TextBox runat="server" ID="ImgTable" MaxLength="30" TabIndex="15" Text=""  Width="98%"></asp:TextBox></td></tr>
 		        	<tr><td class="input_lbl">Rec Table: </td>
-        			<td class="input_txt"><asp:TextBox runat="server" ID="RecTable" MaxLength="30" TabIndex="16" Text="" ></asp:TextBox></td></tr>
+        			<td class="input_txt"><asp:TextBox runat="server" ID="RecTable" MaxLength="30" TabIndex="16" Text=""  Width="98%"></asp:TextBox></td></tr>
 		        	<tr><td class="input_lbl">Tax Year: </td>
-        			<td class="input_txt"><asp:TextBox runat="server" ID="TaxYear" MaxLength="15" TabIndex="17" Text="" ></asp:TextBox></td></tr>
+        			<td class="input_txt"><asp:TextBox runat="server" ID="TaxYear" MaxLength="15" TabIndex="17" Text=""  Width="98%"></asp:TextBox></td></tr>
                 <tr></tr>
-
+				<tr>
+ 			<td class="input_lbl">Status: </td>
+	<td><asp:TextBox runat="server" ID="OpStatus" ReadOnly="true" Text=""  Width="98%"></asp:TextBox></td>	
+</tr>
                 
             </table>
         </div>
-        <div id="divBotStatus"
-				style="position:absolute;
-					   top:82%;
-					   left:40%;
-					   height:6%;
-					   width:20%;
-					   border:solid 1px black;" > 
-        	<table>
-		        <tr>
-        			<td class="input_lbl">Status: </td>
-		        	<td><asp:TextBox runat="server" ID="OpStatus" ReadOnly="true" Text="" ></asp:TextBox></td>	
-                </tr>
-            </table>
-        </div>
+      
    		<!-- ************************************************** -->
 		<!-- Hidden Inputs -->
 		<!-- ************************************************** -->

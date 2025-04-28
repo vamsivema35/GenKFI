@@ -123,12 +123,6 @@ namespace GenKFI
                 
                 keFocusHID.Value = hidSaveFocus.Value;
 
-
-                // register a startup script to change all the 'Touched' elements to value of '1'
-                //                string touchedReset = "$(document).ready(function(){$('[id$=\"Touched\"]').each(function(){$(this).val(\"1\");});});";
-                //                if (!Page.ClientScript.IsStartupScriptRegistered("touchedReset"))
-                //                    ScriptManager.RegisterStartupScript(Page, Page.GetType(), "touchedReset", touchedReset, true);
-
                 gc.Disconnect();
             }
             catch (Exception ex)
