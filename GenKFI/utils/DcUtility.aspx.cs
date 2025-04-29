@@ -235,7 +235,7 @@ namespace GenKFI.utils
                 strFormPick = "<table id=\"tableCtrl\" cellspacing=\"0\" cellpadding=\"0\" style=\"margin: auto; width: 90%;\">";
                 strFormPick += "</table>";
                 controlsLIT.Text = strFormPick;
-                DcImage.ImageUrl = "";
+                //DcImage.ImageUrl = "";
                 
             }
             catch (Exception ex)
@@ -844,14 +844,14 @@ namespace GenKFI.utils
                         reader.Close();
                         //				fs.Close();
                         Session["kestrImagePath"] = strImgPath.ToString();
-                        DcImage.ImageUrl = "DcimgLoad.aspx"; 
+                        //DcImage.ImageUrl = "DcimgLoad.aspx"; 
                        
 
                     }
                     catch (Exception ex)
                     {
                         object kkex = ex;
-                        DcImage.ImageUrl = "~/images/imgError.jpg";
+                       // DcImage.ImageUrl = "~/images/imgError.jpg";
                     }
 
                 }

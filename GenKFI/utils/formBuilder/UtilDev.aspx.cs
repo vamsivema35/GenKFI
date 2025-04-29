@@ -141,7 +141,7 @@ namespace GenKFI.utils.formBuilder
                 strFormPick = "<table id=\"tableCtrl\" cellspacing=\"0\" cellpadding=\"0\" style=\"margin: auto; width: 90%;\">";
                 strFormPick += "</table>";
                 controlsLIT.Text = strFormPick;
-                UdImage.ImageUrl = "";
+                //UdImage.ImageUrl = "";
 
             }
             catch (Exception ex)
@@ -641,14 +641,14 @@ namespace GenKFI.utils.formBuilder
                         reader.Close();
                         //				fs.Close();
                         Session["kestrImagePath"] = strImgPath.ToString();
-                        UdImage.ImageUrl = "UdimgLoad.aspx";
+                        //UdImage.ImageUrl = "UdimgLoad.aspx";
 
 
                     }
                     catch (Exception ex)
                     {
                         object kkex = ex;
-                        UdImage.ImageUrl = "~/images/imgError.jpg";
+                        //UdImage.ImageUrl = "~/images/imgError.jpg";
                     }
 
                 }

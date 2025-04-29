@@ -1000,15 +1000,6 @@
             To modify move field declaration from designer file to code-behind file.
             </remarks>
         </member>
-        <member name="F:GenKFI.utils.DcUtility.DcImage">
-            <summary>
-            DcImage control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
         <member name="F:GenKFI.utils.DcUtility.maxScrl">
             <summary>
             maxScrl control.
@@ -1984,15 +1975,6 @@
         <member name="F:GenKFI.utils.formBuilder.UtilDev.formListLIT">
             <summary>
             formListLIT control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.formBuilder.UtilDev.UdImage">
-            <summary>
-            UdImage control.
             </summary>
             <remarks>
             Auto-generated field.
@@ -3784,15 +3766,6 @@
         <member name="F:GenKFI.utils.entry.KeyEntry.TimelyBTN">
             <summary>
             TimelyBTN control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.entry.KeyEntry.btnMavImg">
-            <summary>
-            btnMavImg control.
             </summary>
             <remarks>
             Auto-generated field.
