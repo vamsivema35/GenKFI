@@ -91,6 +91,7 @@
     <Content Include="css\smoothness\jquery-ui-1.10.3.custom.css" />
     <Content Include="css\smoothness\jquery-ui-1.10.3.custom.min.css" />
     <Content Include="css\ui.dropdownchecklist.themeroller.css" />
+    <Content Include="Test.aspx" />
     <Content Include="Global.asax" />
     <Content Include="images\Blank.png" />
     <Content Include="images\dev.png" />
@@ -147,6 +148,13 @@
       <DependentUpon>BreadCrumb.ascx</DependentUpon>
     </Compile>
     <Compile Include="BreadCrumbNode.cs" />
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
     <Compile Include="forms.Master.cs">
       <DependentUpon>forms.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
