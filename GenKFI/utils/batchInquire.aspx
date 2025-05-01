@@ -41,6 +41,7 @@
 				<asp:TextBox runat="server" ID="openedDateTXT" CssClass="txt" MaxLength="10"></asp:TextBox>
 			</td>
 		</tr>
+		<tr><td></td></tr>
 		<tr>
 			<td colspan="8">
 				<asp:Button runat="server" ID="subBTN" CssClass="btn" Text="Inquire Batch"  OnClick="OnClick_subBTN" />

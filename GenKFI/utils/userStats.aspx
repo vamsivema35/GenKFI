@@ -83,7 +83,7 @@
 
 	<asp:Panel runat="server" ID="noUserPNL" Visible="false">
 		<table style="width:50%;">
-			<tr style="background-color: yellow;">
+			<tr style="background-color: #e3f5f7;">
 				<td>
 					<asp:Label runat="server" ID="noBatchLBL" ></asp:Label>
 				</td>

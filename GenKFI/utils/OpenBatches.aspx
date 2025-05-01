@@ -79,7 +79,7 @@
 	</asp:Repeater>
 
 	<asp:Table runat="server" ID="noBatchesTBL" Visible="false" >
-		<asp:TableRow runat="server" ID="noneTR" BackColor="Yellow">
+		<asp:TableRow runat="server" ID="noneTR" BackColor="#e3f5f7">
 			<asp:TableCell runat="server" ID="noneTD"></asp:TableCell>
 		</asp:TableRow>
 	</asp:Table>

@@ -72,7 +72,7 @@
 	</asp:Panel>
 	<asp:Panel runat="server" ID="noBatchPNL">
 		<table>
-			<tr style="background-color: yellow;">
+			<tr style="background-color: #e3f5f7;">
 				<td>
 					<asp:Literal runat="server" ID="noBatchLIT"></asp:Literal>
 				</td>
