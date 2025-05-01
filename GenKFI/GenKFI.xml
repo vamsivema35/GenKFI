@@ -910,18 +910,18 @@
             To modify move field declaration from designer file to code-behind file.
             </remarks>
         </member>
-        <member name="F:GenKFI.utils.DcUtility.ShowImg">
+        <member name="F:GenKFI.utils.DcUtility.divbuttons">
             <summary>
-            ShowImg control.
+            divbuttons control.
             </summary>
             <remarks>
             Auto-generated field.
             To modify move field declaration from designer file to code-behind file.
             </remarks>
         </member>
-        <member name="F:GenKFI.utils.DcUtility.PickForm">
+        <member name="F:GenKFI.utils.DcUtility.ShowForms">
             <summary>
-            PickForm control.
+            ShowForms control.
             </summary>
             <remarks>
             Auto-generated field.
@@ -955,27 +955,9 @@
             To modify move field declaration from designer file to code-behind file.
             </remarks>
         </member>
-        <member name="F:GenKFI.utils.DcUtility.ClearForm">
+        <member name="F:GenKFI.utils.DcUtility.GetFormBTN">
             <summary>
-            ClearForm control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.DcUtility.BlankSheet">
-            <summary>
-            BlankSheet control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.DcUtility.MavroBTN">
-            <summary>
-            MavroBTN control.
+            GetFormBTN control.
             </summary>
             <remarks>
             Auto-generated field.
@@ -1039,24 +1021,6 @@
         <member name="F:GenKFI.utils.DcUtility.SeqNbr">
             <summary>
             SeqNbr control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.DcUtility.MavFile">
-            <summary>
-            MavFile control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.DcUtility.MavPrev">
-            <summary>
-            MavPrev control.
             </summary>
             <remarks>
             Auto-generated field.
@@ -1900,27 +1864,9 @@
             To modify move field declaration from designer file to code-behind file.
             </remarks>
         </member>
-        <member name="F:GenKFI.utils.formBuilder.UtilDev.ShowImg">
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.divbuttons">
             <summary>
-            ShowImg control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.formBuilder.UtilDev.PickForm">
-            <summary>
-            PickForm control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.formBuilder.UtilDev.ClearTxtBTN">
-            <summary>
-            ClearTxtBTN control.
+            divbuttons control.
             </summary>
             <remarks>
             Auto-generated field.
@@ -1945,9 +1891,27 @@
             To modify move field declaration from designer file to code-behind file.
             </remarks>
         </member>
-        <member name="F:GenKFI.utils.formBuilder.UtilDev.ClearForm">
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.DeleteBatchBTN">
             <summary>
-            ClearForm control.
+            DeleteBatchBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.UnDel">
+            <summary>
+            UnDel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.formBuilder.UtilDev.ClearTxtBTN">
+            <summary>
+            ClearTxtBTN control.
             </summary>
             <remarks>
             Auto-generated field.
@@ -2128,69 +2092,6 @@
         <member name="F:GenKFI.utils.formBuilder.UtilDev.OpStatus">
             <summary>
             OpStatus control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.formBuilder.UtilDev.formPickClick">
-            <summary>
-            formPickClick control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.formBuilder.UtilDev.hidFormName">
-            <summary>
-            hidFormName control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.formBuilder.UtilDev.hidYYear">
-            <summary>
-            hidYYear control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.formBuilder.UtilDev.hidPosition">
-            <summary>
-            hidPosition control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.formBuilder.UtilDev.hidCamera">
-            <summary>
-            hidCamera control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.formBuilder.UtilDev.hidFormType">
-            <summary>
-            hidFormType control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.formBuilder.UtilDev.hidPick">
-            <summary>
-            hidPick control.
             </summary>
             <remarks>
             Auto-generated field.

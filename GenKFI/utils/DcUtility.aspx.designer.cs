@@ -141,22 +141,22 @@ namespace GenKFI.utils
         protected global::System.Web.UI.WebControls.Label Sizetxt;
 
         /// <summary>
-        /// ShowImg control.
+        /// divbuttons control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ShowImg;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divbuttons;
 
         /// <summary>
-        /// PickForm control.
+        /// ShowForms control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button PickForm;
+        protected global::System.Web.UI.WebControls.Button ShowForms;
 
         /// <summary>
         /// ClearTxtBTN control.
@@ -186,31 +186,13 @@ namespace GenKFI.utils
         protected global::System.Web.UI.WebControls.Button UnDel;
 
         /// <summary>
-        /// ClearForm control.
+        /// GetFormBTN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ClearForm;
-
-        /// <summary>
-        /// BlankSheet control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BlankSheet;
-
-        /// <summary>
-        /// MavroBTN control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button MavroBTN;
+        protected global::System.Web.UI.WebControls.Button GetFormBTN;
 
         /// <summary>
         /// homeBTN control.
@@ -274,24 +256,6 @@ namespace GenKFI.utils
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox SeqNbr;
-
-        /// <summary>
-        /// MavFile control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox MavFile;
-
-        /// <summary>
-        /// MavPrev control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox MavPrev;
 
         /// <summary>
         /// OpStatus control.

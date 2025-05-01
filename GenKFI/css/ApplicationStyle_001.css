@@ -22,18 +22,19 @@ table {
 }
 
 tr {
-	border: 0px;
+	border: 0px;	
 }
 
-#first td 
-{
-color:#000000;
-background-color:#EAF2D3;
-}	
+#first td {
+	color: #000000;
+	/*background-color:#EAF2D3;*/
+	background-color: #e3f5f7;
+}
 
 th {
 	border: 0px;
-	color: #ff6347;
+	/*color: #ff6347;*/
+	color: #242687;
 }
 
 td {

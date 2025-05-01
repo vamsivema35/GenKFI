@@ -1,58 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GenKFI.Master" AutoEventWireup="true" CodeBehind="BatchModify.aspx.cs" Inherits="GenKFI.utils.BatchModify" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="headHolder" runat="server">
-
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$(document).ready(function () {
-				//$("tr#first").attr('style', "text-align: left;");
-//				$("tr#next").hide();
-//				$("tr#other").hide();
-//				$("tr#blank").hide();
-				$('img#popup').css('display', 'none'); // hides the popup image
-//				$('div#snippet').css('display', 'none'); // hides the snippet image
-			});
-//			$("#<-%= toggleBTN.ClientID %>").click(function () {
-//				$("tr#next").toggle(); return false;
-//			});
-//			$("#<-%= otherBTN.ClientID %>").click(function () {
-//				$("tr#other").toggle(); return false;
-//			});
-//			$("#<-%= blankBTN.ClientID %>").click(function () {
-//				$("tr#blank").toggle(); return false;
-//			});
-
-			$('span#popup').mouseover(function () {
-//				var offset = $(this).offset();
-//				var leftOff = " left: " + (offset.left + 50) + "px;";
-//				var topOff = " top: " + (offset.top - 400) + "px;";
-				$('img#popup').attr('src', this.title);
-//				$('img#popup').attr('style', $(this).data('caption') + leftOff + topOff);
-				$('img#popup').css('display', 'block'); // brings the popup back in to view        
-			})
-			$('span#popup').mouseout(function () {
-				$('img#popup').css('display', 'none'); // hides the popup image        
-			})
-
-//			$('span#snippet').focusin(function () {
-//				$('input#quickID').focusin(function () {
-//					$(this).css('background-color', '#66FF99');
-//				})
-//				var offset = $(this).offset();
-//				var leftOff = " left: " + (offset.left + 175) + "px;";
-//				var topOff = " top: " + (offset.top - 125) + "px;";
-//				$('img#snippet').attr('src', this.title);
-//				$('img#snippet').attr('style', $(this).data('caption'));
-//				$('div#snippet').attr('style', leftOff + topOff);
-//				$('div#snippet').css('display', 'block'); // brings the snippet back in to view        
-//			})
-//			$('span#snippet').focusout(function () {
-//				$('input#quickID').focusout(function () {
-//					$(this).css('background-color', '#FFFFFF');
-//				})
-//				$('div#snippet').css('display', 'none'); // hides the snippet image        
-//			})
-		});
-	</script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="bodyHolder" runat="server">
 
@@ -158,18 +105,6 @@
 	</asp:Panel>
 
 	<asp:Literal runat="server" ID="infoLIT" Mode="PassThrough"></asp:Literal>
-
-	<%--<table>
-		<tr>
-			<!--<td><asp:Literal runat="server" ID="ShowMavroImageLIT" Mode="PassThrough"></asp:Literal></td>
-			<td colspan="3"><asp:Button runat="server" ID="toggleBTN" Text="Toggle Other Forms"></asp:Button></td>
-			<td colspan="3"><asp:Button runat="server" ID="otherBTN" Text="Toggle Other Images"></asp:Button></td>
-			<td colspan="3"><asp:Button runat="server" ID="blankBTN" Text="Toggle Blank Images"></asp:Button></td>   -->
-		</tr>
-	</table>--%>
-
-
-
 	<asp:Repeater runat="server" ID="batchRPT" Visible="true" OnItemDataBound="BatchRPT_ItemDataBound" >
 
 		<HeaderTemplate>
@@ -193,10 +128,7 @@
 					<td><%#Eval( "TotalDue" ).ToString() %></td>
 					<td><%#Eval( "PaymentAmount" ).ToString() %></td>
 					<td><%#Eval( "DLN" ).ToString() %></td>
-					<td><%#Eval( "fstrFormName" ).ToString() %>
-						<%--<span id="popup" title="<%= ResolveClientUrl("~/noFront/imageLoad.aspx") %>?fName=<%#Eval( "popupImage" ).ToString() %>" >
-							<img id="thumbnail" alt="" width="15" height="15" src="<%= ResolveClientUrl("~/images/MagnifyingGlass.png") %>">
-						</span>--%></td>
+					<td><%#Eval( "fstrFormName" ).ToString() %></td>
 					<td><%#Eval( "lastWho" ).ToString() %></td>
 					<td><%#Eval( "BatchStatus" ).ToString() %></td>
 				</tr>
@@ -209,16 +141,10 @@
 
 	<asp:Panel runat="server" ID="noItemsPNL" Visible="false" >
 		<table>
-			<tr style="background: yellow">
+			<tr style="background: #e3f5f7">
 				<td>No Items in the Batch!!</td>
 			</tr>
 		</table>
 	</asp:Panel>
-
 	<img id="popup" src="/images/Blank.png" alt="" />
-<!--
-	<div id="snippet1">
-		<img id="snippet2" src="/images/Blank.png" alt="" />
-	</div>
--->
 </asp:Content>

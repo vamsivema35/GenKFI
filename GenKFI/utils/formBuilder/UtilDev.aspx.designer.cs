@@ -141,31 +141,13 @@ namespace GenKFI.utils.formBuilder
         protected global::System.Web.UI.WebControls.Label Sizetxt;
 
         /// <summary>
-        /// ShowImg control.
+        /// divbuttons control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ShowImg;
-
-        /// <summary>
-        /// PickForm control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button PickForm;
-
-        /// <summary>
-        /// ClearTxtBTN control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ClearTxtBTN;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divbuttons;
 
         /// <summary>
         /// GetRecBTN control.
@@ -186,13 +168,31 @@ namespace GenKFI.utils.formBuilder
         protected global::System.Web.UI.WebControls.Button UpdRecBTN;
 
         /// <summary>
-        /// ClearForm control.
+        /// DeleteBatchBTN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ClearForm;
+        protected global::System.Web.UI.WebControls.Button DeleteBatchBTN;
+
+        /// <summary>
+        /// UnDel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button UnDel;
+
+        /// <summary>
+        /// ClearTxtBTN control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ClearTxtBTN;
 
         /// <summary>
         /// SqlBTN control.
@@ -373,68 +373,5 @@ namespace GenKFI.utils.formBuilder
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox OpStatus;
-
-        /// <summary>
-        /// formPickClick control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField formPickClick;
-
-        /// <summary>
-        /// hidFormName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hidFormName;
-
-        /// <summary>
-        /// hidYYear control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hidYYear;
-
-        /// <summary>
-        /// hidPosition control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hidPosition;
-
-        /// <summary>
-        /// hidCamera control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hidCamera;
-
-        /// <summary>
-        /// hidFormType control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hidFormType;
-
-        /// <summary>
-        /// hidPick control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hidPick;
     }
 }

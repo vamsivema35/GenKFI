@@ -49,16 +49,16 @@
         <asp:Label runat="server" ID="Timelylbl" Width="75" Style="left: 800px; top: 50px; font-size:14px; color: black; position: absolute;" Text="Timely:"></asp:Label>
         <asp:Label runat="server" ID="Timelytxt" Width="75" Style="left: 875px; top: 50px; font-size:14px; color: black; position: absolute;" Text=""></asp:Label>
 
-        <asp:Button runat="server" ID="CountryChk" TabIndex="1" Text="Country" Visible="false" Style="left: 5%; top: 43px; position: absolute; height: 30px; width: 120px; font-size: 14px; font-weight: bold;" OnClick="CallLoadCountryName" />
+        <asp:Button runat="server" ID="CountryChk" TabIndex="1" Text="Country" Visible="false" Style="left: 5%; top: 38px; position: absolute; height: 30px; width: 120px; font-size: 14px; font-weight: bold;" OnClick="CallLoadCountryName" />
 
-        <asp:Button runat="server" ID="btnSub" TabIndex="81" Text="Submit" Style="left: 950px; top: 3px; position: absolute; height: 30px; font-size: 14px; font-weight: bold;" OnClientClick="if(!checkRequired()) return false;" OnClick="OnClick_btnSub" />
+        <asp:Button runat="server" ID="btnSub" TabIndex="81" Text="Submit" Style="left: 950px; top: 10px; position: absolute; height: 30px; font-size: 14px; font-weight: bold;" OnClientClick="if(!checkRequired()) return false;" OnClick="OnClick_btnSub" />
 
-        <asp:Button runat="server" ID="homeBTN" TabIndex="82" Text="Home" Style="left: 1050px; top: 3px; position: absolute; height: 30px; font-size:14px; font-weight: bold;" OnClick="OnClick_homeBTN" />
+        <asp:Button runat="server" ID="homeBTN" TabIndex="82" Text="Home" Style="left: 1050px; top: 10px; position: absolute; height: 30px; font-size:14px; font-weight: bold;" OnClick="OnClick_homeBTN" />
 
-        <asp:Button runat="server" ID="TimelyBTN" TabIndex="83" Text="Timely" Style="left: 1130px; top: 3px; position: absolute; height: 30px; font-size:14px; font-weight: bold;" OnClick="OnClick_TimelyBTN" />
+        <asp:Button runat="server" ID="TimelyBTN" TabIndex="83" Text="Timely" Style="left: 1130px; top: 10px; position: absolute; height: 30px; font-size:14px; font-weight: bold;" OnClick="OnClick_TimelyBTN" />
 
-        <input id="BtnPick" tabindex="85" type="button" name="btnPick" value="Form"
-            style="left: 1220px; top: 3px; position: absolute; height: 30px; font-size:14px; font-weight: bold;"
+        <input id="BtnPick" tabindex="85" type="button" name="btnPick" value="Show Forms"
+            style="left: 1220px; top: 10px; position: absolute; height: 30px; font-size:14px; font-weight: bold;"
             onclick="ShowFormPick(this)" />
 
         <asp:Button runat="server" ID="OgdBtn" TabIndex="91" Text="41374" Visible="false" Style="left: 1320px; top: 8px; position: absolute; height: 17px; font-size:14px; font-weight: bold;" OnClick="OnClick_OgdBtn" />
@@ -381,13 +381,12 @@
     <div id="greyMe" style="height: 100%; width: 100%; top: 0px; left: 0px; position: fixed; display: none; background-color: black; opacity: 0.5;">
     </div>
 
-    <div id="FormPick"
-        style="position: absolute; background-color: aqua; overflow: auto; visibility: hidden; z-index: 5; top: 100px; width: 500px; left: 875px;">
+    <div id="FormPick" style="position: absolute; background-color: aqua; overflow: auto; visibility: hidden; z-index: 5; top: 10px; width: 500px; left: 1400px;">
 
         <table id="tablePick" border="1" style="border-collapse: separate; border-spacing: 1px; padding: 1px; width: 480px; margin: 0 auto;">
             <thead>
                 <tr>
-                    <th colspan="5">Pick Form</th>
+                    <th colspan="7">Pick Form</th>
                 </tr>
                 <tr>
                     <th>Form</th>

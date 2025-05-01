@@ -45,25 +45,25 @@
         function ShowFormPick(curObj) {
 
             if ($("#<%=hidPick.ClientID %>").val() == "N") {
-                    $("#greyMe").css("display", "block");
-                    $("#greyMe").css("z-index", "99");
-                    $("#FormPick").css("z-index", "100");
-                    $("#greyMe").on("click", function () {
-                        $("#greyMe").css("display", "none");
-                        $("#greyMe").css("z-index", "-1");
-                        $("#FormPick").css("z-index", "-1");
-                        FormPick.style.visibility = "hidden";
-                        $("#<%=hidPick.ClientID %>").val("N");
-                    });
-                    FormPick.style.visibility = "visible";
-                    $("#<%=hidPick.ClientID %>").val("Y");
-                }
-                else {
+                $("#greyMe").css("display", "block");
+                $("#greyMe").css("z-index", "99");
+                $("#FormPick").css("z-index", "100");
+                $("#greyMe").on("click", function () {
                     $("#greyMe").css("display", "none");
                     $("#greyMe").css("z-index", "-1");
                     $("#FormPick").css("z-index", "-1");
                     FormPick.style.visibility = "hidden";
                     $("#<%=hidPick.ClientID %>").val("N");
+                    });
+                FormPick.style.visibility = "visible";
+                $("#<%=hidPick.ClientID %>").val("Y");
+            }
+            else {
+                $("#greyMe").css("display", "none");
+                $("#greyMe").css("z-index", "-1");
+                $("#FormPick").css("z-index", "-1");
+                FormPick.style.visibility = "hidden";
+                $("#<%=hidPick.ClientID %>").val("N");
             }
             return;
         }
@@ -73,13 +73,12 @@
             FormPick.style.visibility = "hidden";
             $("#<%=hidPick.ClientID %>").val("N");
             $("#<%=formPickClick.ClientID %>").val("Y");
-            document.getElementById("<%=PickForm.ClientID %>").click();
+            document.getElementById("<%=ShowForms.ClientID %>").click();
         }
         function RegImg(strFormname, strPosInBatch, strCamera) {
             $('#<%=hidFormName.ClientID %>').val(strFormname);
             $('#<%=hidPosition.ClientID %>').val(strPosInBatch);
-            $('#<%=hidCamera.ClientID %>').val(strCamera);
-            document.getElementById("<%=ShowImg.ClientID %>").click();
+            $('#<%=hidCamera.ClientID %>').val(strCamera);         
         }
 
         function ChgColor(tableRow, highlight) {
@@ -98,7 +97,7 @@
 <body>
     <form id="form1" runat="server">
         <div id="divHeaderBackground" runat="server"
-            style="position: absolute; top: 0px; left: 0px; height: 72px; width: 100%; background-color: #F0E7BB; border: solid 1px black;">
+            style="position: absolute; top: 0px; left: 0px; height: 100px; width: 100%; background-color: #e3f5f7; border: solid 1px black;">
             <asp:Label runat="server" TabIndex="92" Text="Utility" Style="left: 60px; top: 24px; position: absolute; height: 45px; font-size: 20px; font-weight: bold;" />
             <asp:Label runat="server" ID="Formnamelbl" Width="75" Style="left: 170px; top: 8px; font-size: 13px; color: black; position: absolute;" Text="Form Name:"></asp:Label>
             <asp:Label runat="server" ID="Formnametxt" Width="75" Style="left: 245px; top: 8px; font-size: 13px; color: black; position: absolute;" Text=""></asp:Label>
@@ -112,29 +111,28 @@
             <asp:Label runat="server" ID="Offsettxt" Width="75" Style="left: 400px; top: 29px; font-size: 13px; color: black; position: absolute;" Text=""></asp:Label>
             <asp:Label runat="server" ID="Sizelbl" Width="75" Style="left: 325px; top: 50px; font-size: 13px; color: black; position: absolute;" Text="Size:"></asp:Label>
             <asp:Label runat="server" ID="Sizetxt" Width="75" Style="left: 400px; top: 50px; font-size: 13px; color: black; position: absolute;" Text=""></asp:Label>
-            <asp:Button runat="server" ID="ShowImg" Text="SI" Style="left: 450px; top: 13px; position: absolute; height: 30px; font-size:14px; font-weight: bold; visibility: hidden;" OnClick="OnClick_showImg" />
-            <asp:Button runat="server" ID="PickForm" Text="PF" Style="left: 500px; top: 13px; position: absolute; height: 30px; font-size:14px; font-weight: bold; visibility: hidden;" OnClick="OnClick_pickForm" />
-            <asp:Button runat="server" ID="ClearTxtBTN" Text="Clear Choices" Style="left: 548px; top: 13px; position: absolute; height: 30px; font-size:14px; font-weight: bold;" OnClick="OnClick_ClearChoice" />
-            <asp:Button runat="server" ID="DeleteBatchBTN" Text="Delete Batch" Style="left: 715px; top: 13px; position: absolute; height: 30px; font-size:14px; font-weight: bold;" OnClick="OnClick_DeleteBatch" />
-            <asp:Button runat="server" ID="UnDel" Text="Un-Delete" Style="left: 860px; top: 13px; position: absolute; height: 30px; font-size:14px; font-weight: bold;" OnClick="OnClick_UnDelete" />
-            <asp:Button runat="server" ID="ClearForm" Text="Clear Form" Style="left: 1122px; top: 13px; position: absolute; height: 30px; font-size:14px; font-weight: bold;" OnClick="OnClick_ClearForm" />
-            <asp:Button runat="server" ID="BlankSheet" Text="Blank" Style="left: 1253px; top: 13px; position: absolute; height: 30px; font-size:14px; font-weight: bold;" OnClick="OnClick_BlankForm" />
-            <input id="BtnPick" tabindex="95" type="button" name="btnPick" value="Pick Form"
-                style="left: 1332px; top: 13px; position: absolute; height: 30px; font-size:14px; font-weight: bold;"
-                onclick="ShowFormPick(this)" />
-            <asp:Button runat="server" ID="MavroBTN" TabIndex="92" Text="Mavro" Style="left: 1454px; top: 13px; position: absolute; height: 30px; font-size:14px; font-weight: bold;" OnClick="OnClick_Mavro" />
-            <asp:Button runat="server" ID="homeBTN" TabIndex="92" Text="Home" Style="left: 1600px; top: 13px; position: absolute; height: 30px; font-size:14px; font-weight: bold;" OnClick="OnClick_homeBTN" />
+
+            <div id="divbuttons" runat="server"
+                style="position: absolute; top: 5px; left: 50%; height: 40px; width: 100%; padding: 5px">               
+                <asp:Button runat="server" ID="ShowForms" Text="SF" Style="height: 30px; font-size: 14px; font-weight: bold; visibility: hidden;" OnClick="OnClick_ShowForms" />
+                <asp:Button runat="server" ID="ClearTxtBTN" Text="Clear Choices" Style="height: 30px; font-size: 14px; font-weight: bold;" OnClick="OnClick_ClearChoice" />
+                <asp:Button runat="server" ID="DeleteBatchBTN" Text="Delete Batch" Style="height: 30px; font-size: 14px; font-weight: bold; right: 684px;" OnClick="OnClick_DeleteBatch" />
+                <asp:Button runat="server" ID="UnDel" Text="Un-Delete" Style="height: 30px; font-size: 14px; font-weight: bold;" OnClick="OnClick_UnDelete" />
+                <asp:Button runat="server" ID="GetFormBTN" Text="Get Forms" Style="height: 30px; font-size: 14px; font-weight: bold;" OnClick="OnClick_GetForms" />               
+                <input id="BtnShowForms" tabindex="95" type="button" name="btnShowForms" value="Show All Forms"
+                    style="height: 30px; font-size: 14px; font-weight: bold;"
+                    onclick="ShowFormPick(this)" />               
+                <asp:Button runat="server" ID="homeBTN" TabIndex="92" Text="Home" Style="height: 30px; font-size: 14px; font-weight: bold;" OnClick="OnClick_homeBTN" />
+            </div>
         </div>
+
         <div id="FormPick"
-            style="position: absolute; background-color: aqua; overflow: auto; visibility: hidden; z-index: 5; top: 200px; width: 500px; left: 875px;">
+            style="position: absolute; background-color: aqua; overflow: auto; visibility: hidden; z-index: 5; top: 180px; width: 300px; left: 26%;">
 
             <table id="tablePick" border="1" style="border-collapse: separate; border-spacing: 1px; padding: 1px; width: 240px; margin: 0 auto;">
                 <thead>
                     <tr>
-                        <th colspan="5">Pick Form</th>
-                    </tr>
-                    <tr>
-                        <th>FormName</th>
+                        <th colspan="5">All Form Names of Selected Tax Program, Batch and Sequence</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -143,7 +141,7 @@
             </table>
         </div>
         <div id="divControls"
-            style="position: absolute; overflow-x: hidden; overflow-y: scroll; -webkit-transform: translateZ(0); border: 1px solid #ccc; top: 75px; left: 23%; height: 90%; width: 90%; border: solid 1px black;">
+            style="position: absolute; overflow-x: hidden; overflow-y: scroll; -webkit-transform: translateZ(0); border: 1px solid #ccc; top: 105px; left: 22%; height: 90%; width: 75%; border: solid 1px black;">
 
             <asp:HiddenField runat="server" ID="maxScrl" Value="0" />
             <div id="ctrlSizer">
@@ -153,7 +151,7 @@
 
         </div>
         <div id="divBotEntry"
-            style="position: absolute; top: 75px; left: 2%; height: 20%; width: 20%; border: solid 1px black;">
+            style="position: absolute; top: 105px; left: 1%; height: 20%; width: 20%; border: solid 1px black;">
             <table width="100%">
                 <tr>
                     <td colspan="2"><b>Select the Tax Program, Batch, Sequence</b></td>
@@ -161,7 +159,7 @@
                 <tr>
                     <td class="input_lbl">Tax Pgm: </td>
                     <td class="input_cmb">
-                        <asp:DropDownList runat="server" ID="DdTaxPgm" TabIndex="11" Width="100px"></asp:DropDownList></td>
+                        <asp:DropDownList runat="server" ID="DdTaxPgm" TabIndex="11" Width="98%"></asp:DropDownList></td>
                 </tr>
                 <tr>
                     <td class="input_lbl">Batch: </td>
@@ -173,7 +171,7 @@
                     <td class="input_txt">
                         <asp:TextBox runat="server" ID="SeqNbr" MaxLength="4" TabIndex="13" Text="" Width="98%"></asp:TextBox></td>
                 </tr>
-                <tr>
+               <%-- <tr>
                     <td class="input_lbl">Mavro File: </td>
                     <td class="input_txt">
                         <asp:TextBox runat="server" ID="MavFile" MaxLength="15" TabIndex="14" Text="" Width="98%"></asp:TextBox></td>
@@ -182,7 +180,7 @@
                     <td class="input_lbl">Mavro Prev: </td>
                     <td class="input_txt">
                         <asp:TextBox runat="server" ID="MavPrev" MaxLength="15" TabIndex="15" Text="" Width="98%"></asp:TextBox></td>
-                </tr>
+                </tr>--%>
                 <tr></tr>
                 <tr>
                     <td class="input_lbl">Status: </td>
@@ -202,10 +200,8 @@
         <asp:HiddenField runat="server" ID="hidYYear" Value="" />
         <asp:HiddenField runat="server" ID="hidPosition" Value="" />
         <asp:HiddenField runat="server" ID="hidCamera" Value="" />
-
         <asp:HiddenField runat="server" ID="hidFormType" Value="" />
         <asp:HiddenField runat="server" ID="hidPick" Value="N" />
-
         <input type="hidden" id="imageOffsetHID" />
         <input type="hidden" id="divOffsetHID" />
         <input type="hidden" id="divRepTopBot" name="divRepTopBot" value="0" />
