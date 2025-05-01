@@ -82,17 +82,6 @@
 			</td>
 		</tr>	
 	</table>
-
-	<asp:HiddenField runat="server" ID="LastOwner" Value="" />
-	<asp:HiddenField runat="server" ID="BatchID" Value="" />
-	<asp:HiddenField runat="server" ID="BatchDate" Value="" />
-	<asp:HiddenField runat="server" ID="ImageSource" Value="" />
-	<asp:HiddenField runat="server" ID="ProgCode" Value="" /> 
-	<asp:HiddenField runat="server" ID="ReadStatus" Value="" />
-	<asp:HiddenField runat="server" ID="BatchInfo" Value="" />
-	<asp:HiddenField runat="server" ID="WhereFrom" Value="" />
-	<asp:HiddenField runat="server" ID="BatchNext" Value="" />
-
 	<asp:Panel runat="server" ID="batchModPNL" Visible="true">
 		<table>
 			<tr>
@@ -146,5 +135,15 @@
 			</tr>
 		</table>
 	</asp:Panel>
-	<img id="popup" src="/images/Blank.png" alt="" />
+	<%--Hidden Fields--%>
+	<asp:HiddenField runat="server" ID="LastOwner" Value="" />
+	<asp:HiddenField runat="server" ID="BatchID" Value="" />
+	<asp:HiddenField runat="server" ID="BatchDate" Value="" />
+	<asp:HiddenField runat="server" ID="ImageSource" Value="" />
+	<asp:HiddenField runat="server" ID="ProgCode" Value="" /> 
+	<asp:HiddenField runat="server" ID="ReadStatus" Value="" />
+	<asp:HiddenField runat="server" ID="BatchInfo" Value="" />
+	<asp:HiddenField runat="server" ID="WhereFrom" Value="" />
+	<asp:HiddenField runat="server" ID="BatchNext" Value="" />
+	<%--Hidden Fields--%>
 </asp:Content>
