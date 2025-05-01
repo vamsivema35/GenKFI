@@ -17,57 +17,57 @@
         <table style="left: 325px; position: relative;">
             <tr>
                 <td>
-                    <asp:Label runat="server" ID="fileTypeLBL" CssClass="headerInput" Width="75" Text="File Type:"></asp:Label></td>
+                    <asp:Label runat="server" ID="fileTypeLBL"  Width="75" Text="File Type:"></asp:Label></td>
                 <td>
-                    <asp:Label runat="server" ID="fileTypeTXT" CssClass="headerInput" Width="75"></asp:Label></td>
+                    <asp:Label runat="server" ID="fileTypeTXT"  Width="75"></asp:Label></td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label runat="server" ID="taxYearLBL" CssClass="headerInput" Width="75" Text="Tax Year:"></asp:Label></td>
+                    <asp:Label runat="server" ID="taxYearLBL"  Width="75" Text="Tax Year:"></asp:Label></td>
                 <td>
-                    <asp:Label runat="server" ID="taxYearTXT" CssClass="headerInput" Width="75"></asp:Label></td>
+                    <asp:Label runat="server" ID="taxYearTXT"  Width="75"></asp:Label></td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label runat="server" ID="taxProgLBL" CssClass="headerInput" Width="75" Text="Tax Program:"></asp:Label></td>
+                    <asp:Label runat="server" ID="taxProgLBL"  Width="75" Text="Tax Program:"></asp:Label></td>
                 <td>
-                    <asp:Label runat="server" ID="taxProgTXT" CssClass="headerInput" Width="75"></asp:Label></td>
+                    <asp:Label runat="server" ID="taxProgTXT"  Width="75"></asp:Label></td>
             </tr>
         </table>
 
         <table style="top: 0px; left: 475px; height: 72px; position: absolute;">
             <tr>
                 <td>
-                    <asp:Label runat="server" ID="BatchLbl" CssClass="headerInput" Width="75" Text="Batch:"></asp:Label></td>
+                    <asp:Label runat="server" ID="BatchLbl"  Width="75" Text="Batch:"></asp:Label></td>
                 <td>
-                    <asp:Label runat="server" ID="BatchTxt" CssClass="headerInput" Width="75"></asp:Label></td>
+                    <asp:Label runat="server" ID="BatchTxt"  Width="75"></asp:Label></td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label runat="server" ID="SequenceLbl" CssClass="headerInput" Width="75" Text="Sequence:"></asp:Label></td>
+                    <asp:Label runat="server" ID="SequenceLbl"  Width="75" Text="Sequence:"></asp:Label></td>
                 <td>
-                    <asp:Label runat="server" ID="SequenceTxt" CssClass="headerInput" Width="75"></asp:Label></td>
+                    <asp:Label runat="server" ID="SequenceTxt"  Width="75"></asp:Label></td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label runat="server" ID="FormLbl" CssClass="headerInput" Width="75" Text="Tax Form:"></asp:Label></td>
+                    <asp:Label runat="server" ID="FormLbl"  Width="75" Text="Tax Form:"></asp:Label></td>
                 <td>
-                    <asp:Label runat="server" ID="FormTxt" CssClass="headerInput" Width="125"></asp:Label></td>
+                    <asp:Label runat="server" ID="FormTxt"  Width="125"></asp:Label></td>
             </tr>
         </table>
 
         <table style="top: 0px; left: 700px; height: 72px; position: absolute;">
             <tr>
                 <td>
-                    <asp:Label runat="server" ID="BlkLbl" CssClass="headerInput" Width="75" Text="Blk:"></asp:Label></td>
+                    <asp:Label runat="server" ID="BlkLbl"  Width="75" Text="Blk:"></asp:Label></td>
                 <td>
-                    <asp:Label runat="server" ID="BlkTxt" CssClass="headerInput" Width="75"></asp:Label></td>
+                    <asp:Label runat="server" ID="BlkTxt"  Width="75"></asp:Label></td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label runat="server" ID="TableLbl" CssClass="headerInput" Width="75" Text="Table:"></asp:Label></td>
+                    <asp:Label runat="server" ID="TableLbl"  Width="75" Text="Table:"></asp:Label></td>
                 <td>
-                    <asp:Label runat="server" ID="TableTxt" CssClass="headerInput" Width="75"></asp:Label></td>
+                    <asp:Label runat="server" ID="TableTxt"  Width="75"></asp:Label></td>
             </tr>
         </table>
 

@@ -4249,6 +4249,60 @@
             To modify move field declaration from designer file to code-behind file.
             </remarks>
         </member>
+        <member name="F:GenKFI.utils.BatchModify.batchModPNL">
+            <summary>
+            batchModPNL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.subBTN">
+            <summary>
+            subBTN control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.valSumm">
+            <summary>
+            valSumm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.infoLIT">
+            <summary>
+            infoLIT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.batchRPT">
+            <summary>
+            batchRPT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:GenKFI.utils.BatchModify.noItemsPNL">
+            <summary>
+            noItemsPNL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
         <member name="F:GenKFI.utils.BatchModify.LastOwner">
             <summary>
             LastOwner control.
@@ -4324,60 +4378,6 @@
         <member name="F:GenKFI.utils.BatchModify.BatchNext">
             <summary>
             BatchNext control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.BatchModify.batchModPNL">
-            <summary>
-            batchModPNL control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.BatchModify.subBTN">
-            <summary>
-            subBTN control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.BatchModify.valSumm">
-            <summary>
-            valSumm control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.BatchModify.infoLIT">
-            <summary>
-            infoLIT control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.BatchModify.batchRPT">
-            <summary>
-            batchRPT control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:GenKFI.utils.BatchModify.noItemsPNL">
-            <summary>
-            noItemsPNL control.
             </summary>
             <remarks>
             Auto-generated field.

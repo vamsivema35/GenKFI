@@ -5,62 +5,42 @@
     <!--  Header Controls -->
     <!-- ************************************************** -->
 
-    <div id="divHeader" style="position: absolute; top: 0px; left: 0px; height: 72px; width: 100%;" runat="server">
-
-        <table style="left: 325px; position: relative;">
-            <tr>
-                <td>
-                    <asp:Label runat="server" ID="batchIDLBL" CssClass="headerInput" Width="75" Text="Batch ID:"></asp:Label></td>
-                <td>
-                    <asp:Label runat="server" ID="batchIDTXT" CssClass="headerInput" Width="75"></asp:Label></td>
-            </tr>
-            <tr>
-                <td>
-                    <asp:Label runat="server" ID="batchDateLBL" CssClass="headerInput" Width="75" Text="Batch Date:"></asp:Label></td>
-                <td>
-                    <asp:Label runat="server" ID="batchDateTXT" CssClass="headerInput" Width="75"></asp:Label></td>
-            </tr>
-            <tr>
-                <td>
-                    <asp:Label runat="server" ID="itemNoLBL" CssClass="headerInput" Width="75" Text="Item No:"></asp:Label></td>
-                <td>
-                    <asp:Label runat="server" ID="itemNoTXT" CssClass="headerInput" Width="75"></asp:Label></td>
-            </tr>
-        </table>
-
+    <div id="divHeader" style="position: absolute; top: 0px; left: 0px; height: 72px; width: 100%; background-color: #e3f5f7;" runat="server">
+        <asp:Label runat="server" ID="batchIDLBL"  Width="75" Style="left: 280px; top: 8px; font-size:14px; color: black; position: absolute;" Text="Batch ID:"></asp:Label>
+        <asp:Label runat="server" ID="batchIDTXT" Style="left: 340px; top: 8px; font-size:14px; color: black; position: absolute;" Width="75"></asp:Label>
+        <asp:Label runat="server" ID="batchDateLBL"  Width="75" Style="left: 280px; top: 30px; font-size:14px; color: black; position: absolute;" Text="Batch Date:"></asp:Label>
+        <asp:Label runat="server" ID="batchDateTXT"  Width="75" Style="left: 350px; top: 30px; font-size:14px; color: black; position: absolute;" ></asp:Label>
+        <asp:Label runat="server" ID="itemNoLBL"  Width="75" Style="left: 280px; top: 50px; font-size:14px; color: black; position: absolute;" Text="Item No:"></asp:Label>
+        <asp:Label runat="server" ID="itemNoTXT"  Width="75" Style="left: 340px; top: 50px; font-size:14px; color: black; position: absolute;"></asp:Label>
         <asp:Label runat="server" ID="ImgSrclbl" Width="75" Style="left: 480px; top: 8px; font-size:14px; color: black; position: absolute;" Text="Image Src:"></asp:Label>
         <asp:Label runat="server" ID="ImgSrctxt" Width="75" Style="left: 555px; top: 8px; font-size:14px; color: black; position: absolute;" Text=""></asp:Label>
-        <asp:Label runat="server" ID="Titlelbl" Width="75" Style="left: 480px; top: 29px; font-size:14px; color: black; position: absolute;" Text="Title:"></asp:Label>
-        <asp:Label runat="server" ID="Titletxt" Width="75" Style="left: 555px; top: 29px; font-size:14px; color: black; position: absolute;" Text=""></asp:Label>
+        <asp:Label runat="server" ID="Titlelbl" Width="75" Style="left: 480px; top: 30px; font-size:14px; color: black; position: absolute;" Text="Title:"></asp:Label>
+        <asp:Label runat="server" ID="Titletxt" Width="75" Style="left: 555px; top: 30px; font-size:14px; color: black; position: absolute;" Text=""></asp:Label>
         <asp:Label runat="server" ID="Blocklbl" Width="75" Style="left: 480px; top: 50px; font-size:14px; color: black; position: absolute;" Text="Blk:"></asp:Label>
         <asp:Label runat="server" ID="Blocktxt" Width="75" Style="left: 555px; top: 50px; font-size:14px; color: black; position: absolute;" Text=""></asp:Label>
-
         <asp:Label runat="server" ID="DocNbrlbl" Width="75" Style="left: 640px; top: 8px; font-size:14px; color: black; position: absolute;" Text="Doc No."></asp:Label>
         <asp:Label runat="server" ID="DocNbrtxt" Width="75" Style="left: 715px; top: 8px; font-size:14px; color: black; position: absolute;" Text=""></asp:Label>
         <asp:Label runat="server" ID="Offsetlbl" Width="75" Style="left: 640px; top: 29px; font-size:14px; color: black; position: absolute;" Text="Offset:"></asp:Label>
         <asp:Label runat="server" ID="Offsettxt" Width="75" Style="left: 715px; top: 29px; font-size:14px; color: black; position: absolute;" Text=""></asp:Label>
         <asp:Label runat="server" ID="Sizelbl" Width="75" Style="left: 640px; top: 50px; font-size:14px; color: black; position: absolute;" Text="Size:"></asp:Label>
         <asp:Label runat="server" ID="Sizetxt" Width="75" Style="left: 715px; top: 50px; font-size:14px; color: black; position: absolute;" Text=""></asp:Label>
-
         <asp:Label runat="server" ID="TaxPgmlbl" Width="75" Style="left: 800px; top: 8px; font-size:14px; color: black; position: absolute;" Text="Tax Pgm:"></asp:Label>
         <asp:Label runat="server" ID="TaxPgmtxt" Width="75" Style="left: 875px; top: 8px; font-size:14px; color: black; position: absolute;" Text=""></asp:Label>
         <asp:Label runat="server" ID="PymTypelbl" Width="75" Style="left: 800px; top: 29px; font-size:14px; color: black; position: absolute;" Text="Pym Type:"></asp:Label>
         <asp:Label runat="server" ID="PymTypetxt" Width="75" Style="left: 875px; top: 29px; font-size:14px; color: black; position: absolute;" Text=""></asp:Label>
         <asp:Label runat="server" ID="Timelylbl" Width="75" Style="left: 800px; top: 50px; font-size:14px; color: black; position: absolute;" Text="Timely:"></asp:Label>
         <asp:Label runat="server" ID="Timelytxt" Width="75" Style="left: 875px; top: 50px; font-size:14px; color: black; position: absolute;" Text=""></asp:Label>
-
-        <asp:Button runat="server" ID="CountryChk" TabIndex="1" Text="Country" Visible="false" Style="left: 5%; top: 38px; position: absolute; height: 30px; width: 120px; font-size: 14px; font-weight: bold;" OnClick="CallLoadCountryName" />
-
+        <!--  Header Controls -->
+        <%--Buttons--%>
+        <%--Country Button--%>
+        <asp:Button runat="server" ID="CountryChk" TabIndex="1" Text="Country" Visible="false" Style="left: 5%; top: 40px; position: absolute; height: 30px; width: 120px; font-size: 14px; font-weight: bold;" OnClick="CallLoadCountryName" />
+        <%--Country Button--%>
         <asp:Button runat="server" ID="btnSub" TabIndex="81" Text="Submit" Style="left: 950px; top: 10px; position: absolute; height: 30px; font-size: 14px; font-weight: bold;" OnClientClick="if(!checkRequired()) return false;" OnClick="OnClick_btnSub" />
-
         <asp:Button runat="server" ID="homeBTN" TabIndex="82" Text="Home" Style="left: 1050px; top: 10px; position: absolute; height: 30px; font-size:14px; font-weight: bold;" OnClick="OnClick_homeBTN" />
-
         <asp:Button runat="server" ID="TimelyBTN" TabIndex="83" Text="Timely" Style="left: 1130px; top: 10px; position: absolute; height: 30px; font-size:14px; font-weight: bold;" OnClick="OnClick_TimelyBTN" />
-
         <input id="BtnPick" tabindex="85" type="button" name="btnPick" value="Show Forms"
             style="left: 1220px; top: 10px; position: absolute; height: 30px; font-size:14px; font-weight: bold;"
             onclick="ShowFormPick(this)" />
-
         <asp:Button runat="server" ID="OgdBtn" TabIndex="91" Text="41374" Visible="false" Style="left: 1320px; top: 8px; position: absolute; height: 17px; font-size:14px; font-weight: bold;" OnClick="OnClick_OgdBtn" />
         <asp:Button runat="server" ID="O85Btn" TabIndex="92" Text="41285" Visible="false" Style="left: 1320px; top: 29px; position: absolute; height: 17px; font-size:14px; font-weight: bold;" OnClick="OnClick_O85Btn" />
         <asp:Button runat="server" ID="O99Btn" TabIndex="93" Text="1099  " Visible="false" Style="left: 1320px; top: 50px; position: absolute; height: 17px; font-size:14px; font-weight: bold;" OnClick="OnClick_O99Btn" />
@@ -68,17 +48,14 @@
         <asp:Button runat="server" ID="OsfBtn" TabIndex="95" Text="SubFrm" Visible="false" Style="left: 1420px; top: 29px; position: absolute; height: 17px; font-size:14px; font-weight: bold;" OnClick="OnClick_OsfBtn" />
         <asp:Button runat="server" ID="OsrBtn" TabIndex="96" Text="StmRec" Visible="false" Style="left: 1420px; top: 50px; position: absolute; height: 17px; font-size:14px; font-weight: bold;" OnClick="OnClick_OsrBtn" />
         <asp:Button runat="server" ID="OasBtn" TabIndex="97" Text="AnnSum" Visible="false" Style="left: 1520px; top: 8px; position: absolute; height: 17px; font-size:14px; font-weight: bold;" OnClick="OnClick_OasBtn" />
-
         <asp:Label runat="server" ID="adminKeyModeLBL" Text="Key Mode<br />Click HOME To Return" Visible="false" Style="left: 1620px; top: 12px; position: absolute; height: 30px; font-size: 16px; font-weight: bold; color: red;"></asp:Label>
-
+          <%--Buttons--%>
     </div>
 </asp:Content>
 
 <asp:Content runat="server" ID="scriptingContent" ContentPlaceHolderID="scriptingHolder">
     <script type="text/javascript" src="<%= ResolveClientUrl( "~/scripts/jquery-1.8.2.min.js" ) %>"></script>
     <script type="text/javascript" src="<%= ResolveClientUrl( "~/scripts/jquery-ui.min.js" ) %>"></script>
-
-
     <script type="text/javascript">
         // check for enter key - use as tab unless it is the submit button
         // the space bar for checkbox (to stop checking next checkbox and fire the onclick event)

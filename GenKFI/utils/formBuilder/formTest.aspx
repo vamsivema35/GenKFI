@@ -8,16 +8,16 @@
 
 			<table style="left: 325px;position: relative;">
 				<tr>
-					<td><asp:Label runat="server" ID="fileTypeLBL" CssClass="headerInput" Width="75" Text="File Type:" ></asp:Label></td>
-					<td><asp:Label runat="server" ID="fileTypeTXT" CssClass="headerInput" Width="75" ></asp:Label></td>
+					<td><asp:Label runat="server" ID="fileTypeLBL"  Width="75" Text="File Type:" ></asp:Label></td>
+					<td><asp:Label runat="server" ID="fileTypeTXT"  Width="75" ></asp:Label></td>
 				</tr>
 				<tr>
-					<td><asp:Label runat="server" ID="taxYearLBL" CssClass="headerInput" Width="75" Text="Tax Year:" ></asp:Label></td>
-					<td><asp:Label runat="server" ID="taxYearTXT" CssClass="headerInput" Width="75" ></asp:Label></td>
+					<td><asp:Label runat="server" ID="taxYearLBL"  Width="75" Text="Tax Year:" ></asp:Label></td>
+					<td><asp:Label runat="server" ID="taxYearTXT"  Width="75" ></asp:Label></td>
 				</tr>
 				<tr>
-					<td><asp:Label runat="server" ID="taxProgLBL" CssClass="headerInput" Width="75" Text="Tax Program:" ></asp:Label></td>
-					<td><asp:Label runat="server" ID="taxProgTXT" CssClass="headerInput" Width="75" ></asp:Label></td>
+					<td><asp:Label runat="server" ID="taxProgLBL"  Width="75" Text="Tax Program:" ></asp:Label></td>
+					<td><asp:Label runat="server" ID="taxProgTXT"  Width="75" ></asp:Label></td>
 				</tr>
 			</table>
 
