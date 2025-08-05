@@ -330,7 +330,7 @@ namespace GenKFI.utils
 					strSQL += "i.fstrBatchID = b.fstrBatchID AND ";
 					strSQL += "i.fstrTaxProgram = b.fstrTaxProgram AND ";
 					strSQL += "CONVERT( VARCHAR(10), i.fdtmScanDate, 101 ) = CONVERT( VARCHAR(10), b.fdtmBatchDate, 101 ) AND ";
-					strSQL += "RIGHT( i.fstrDLN, 2 ) = '01' AND ";
+					//strSQL += "RIGHT( i.fstrDLN, 2 ) = '01' AND ";
 					strSQL += "b.fstrDLN = i.fstrDLN AND ";
 					strSQL += "i.fstrFormName = ch.fstrTaxForm AND ";
 					strSQL += "i.fstrTaxProgram = rh.fstrTaxProgram AND ";

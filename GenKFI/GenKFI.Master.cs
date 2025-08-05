@@ -204,7 +204,7 @@ namespace GenKFI
                             else
                                 newQS += "&Sequence=" + SeqNum2;
 
-                            newQS += "&DLN=" + dt.Rows[ 0 ][ 5 ].ToString();
+                            newQS += "&0DLN=" + dt.Rows[ 0 ][ 5 ].ToString();
 							// store that we redirected
 							Session[ "userRedir" ] = true;
 							Session[ "noticeText" ] = "";

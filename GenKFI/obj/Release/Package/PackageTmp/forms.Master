@@ -1,0 +1,244 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="forms.master.cs" Inherits="GenKFI.Forms" %>
+
+
+<!DOCTYPE html>
+
+<head runat="server">
+    <title><%= GenKFI.UtilClass.NormalizeUN( HttpContext.Current.User.Identity.Name ) %> : Key Entry - <% if (Request.QueryString["TP"] != null) { Response.Write(Request.QueryString["TP"].ToString() + " : "); } %><% Roles.GetRolesForUser(GenKFI.UtilClass.NormalizeUN(HttpContext.Current.User.Identity.Name)).ToString(); %></title>
+
+    <script type="text/javascript" src="<%= ResolveClientUrl( "~/scripts/jquery-1.8.2.min.js" ) %>"></script>
+    <script type="text/javascript" src="<%= ResolveClientUrl( "~/scripts/jquery-ui.min.js" ) %>"></script>
+    <script type="text/javascript" src="<%= ResolveClientUrl( "~/scripts/moment.min.js" ) %>"></script>
+    <script type="text/javascript" src="<%= ResolveClientUrl( "~/scripts/formattingDB.js" ) %>"></script>
+    <script type="text/javascript" src="<%= ResolveClientUrl( "~/scripts/divMove.js" ) %>"></script>
+    <link rel="stylesheet" href="<%= ResolveClientUrl( "~/css/smoothness/jquery-ui-1.10.3.custom.css" ) %>" />
+    <link rel="Stylesheet" type="text/css" href="<%= ResolveClientUrl( "~/css/footer.css" ) %>" />
+    <script type="text/javascript">
+
+        $(window).load(function () {
+            if (document.getElementById(document.getElementById("<%= keFocusHID.ClientID %>").value) != null) {
+                document.getElementById(document.getElementById("<%= keFocusHID.ClientID %>").value).select();
+                document.getElementById(document.getElementById("<%= keFocusHID.ClientID %>").value).focus();
+            }
+            // if there is a footer, we need to move the controls table up a bit
+            if ( "<%= Session["impersonating"].ToString() %>" != "")
+                $("#tableCtrl").css("padding-bottom", "80px");
+            // Drop Down Pick of Country
+            if (document.getElementById("<%= hidCCode.ClientID %>").value > "  ") {
+                document.getElementById(document.getElementById("<%= keCountryHID.ClientID %>").value).value = document.getElementById("<%= hidCCode.ClientID %>").value;
+                document.getElementById(document.getElementById("<%= keCountryHID.ClientID %>").value).focus();
+                document.getElementById("<%= hidCCode.ClientID %>").value = null;
+                var names = document.getElementById("<%= hidTouchName.ClientID %>").value.split(';');
+                if (names.length > 1) {
+                    for (var i = 0; i < names.length - 1; i++) {
+                        $.trim($('#' + names[i]).val('1'));
+                    }
+                }
+            }
+        });
+
+        intZoom = 0;
+        foomZactor = 1;
+        origFoomZactor = -1;
+        function startZoom(dir) {
+            intZoom = setInterval("doZoom('" + dir + "')", 10);
+        }
+        function stopZoom() {
+            window.clearInterval(intZoom);
+        }
+        // get and put for dummy placeholders
+        function d_GET(num) {
+            // this is hacky, but it works
+            if (num == 0)
+                return $("#<%= dummy0HID.ClientID %>").val();
+            else if (num == 1)
+                return $("#<%= dummy1HID.ClientID %>").val();
+            else if (num == 2)
+                return $("#<%= dummy2HID.ClientID %>").val();
+            else if (num == 3)
+                return $("#<%= dummy3HID.ClientID %>").val();
+            else if (num == 4)
+                return $("#<%= dummy4HID.ClientID %>").val();
+            else if (num == 5)
+                return $("#<%= dummy5HID.ClientID %>").val();
+            else if (num == 6)
+                return $("#<%= dummy6HID.ClientID %>").val();
+            else if (num == 7)
+                return $("#<%= dummy7HID.ClientID %>").val();
+            else if (num == 8)
+                return $("#<%= dummy8HID.ClientID %>").val();
+            else if (num == 9)
+                return $("#<%= dummy9HID.ClientID %>").val();
+        }
+        function d_PUT(value, num) {
+            // if negative, also store in mine
+            if (num < 0)
+                $("#<%= dummyMineHID.ClientID %>").val(value.replace(/,/g, ''));
+            // this is for the repeater forms (pit dependents)
+            // the pit dependents also needs the filing status, see PutValInfo.xlsx in the notes folder for the dummy HID control where this is stored
+            // don't change that value!
+
+            if (Math.abs(num) == 0)
+                $("#<%= dummy0HID.ClientID %>").val(value.replace(/,/g, ''));
+            else if (Math.abs(num) == 1)
+                $("#<%= dummy1HID.ClientID %>").val(value.replace(/,/g, ''));
+            else if (Math.abs(num) == 2)
+                $("#<%= dummy2HID.ClientID %>").val(value.replace(/,/g, ''));
+            else if (Math.abs(num) == 3)
+                $("#<%= dummy3HID.ClientID %>").val(value.replace(/,/g, ''));
+            else if (Math.abs(num) == 4)
+                $("#<%= dummy4HID.ClientID %>").val(value.replace(/,/g, ''));
+            else if (Math.abs(num) == 5)
+                $("#<%= dummy5HID.ClientID %>").val(value.replace(/,/g, ''));
+            else if (Math.abs(num) == 6)
+                $("#<%= dummy6HID.ClientID %>").val(value.replace(/,/g, ''));
+            else if (Math.abs(num) == 7)
+                $("#<%= dummy7HID.ClientID %>").val(value.replace(/,/g, ''));
+            else if (Math.abs(num) == 8)
+                $("#<%= dummy8HID.ClientID %>").val(value.replace(/,/g, ''));
+            else if (Math.abs(num) == 9)
+                $("#<%= dummy9HID.ClientID %>").val(value.replace(/,/g, ''));
+            return value;
+        }
+
+        function myParseFloat(val) {
+            return parseFloat((val == "" ? 0 : val));
+        }
+
+        function isKey() {
+            return $('#<%=typeHID.ClientID %>').val() == "key";
+        }
+    </script>
+
+    <style type="text/css">
+        .headerInput {
+            font-size: 13px;
+            color: Black;
+            background-color: #F0E7BB;
+            position: relative;
+        }
+
+        body {
+            overflow: hidden;
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="content">
+            <!-- ************************************************** -->
+            <!-- Header Background -->
+            <!-- ************************************************** -->
+
+            <div id="divHeaderBackground" runat="server"
+                style="position: absolute; top: 0px; left: 0px; height: 72px; width: 100%; background-color: #F0E7BB; border: solid 1px black;">
+            </div>
+            <asp:ContentPlaceHolder runat="server" ID="headerHolder">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder runat="server" ID="scriptingHolder">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder runat="server" ID="rightHolder">
+            </asp:ContentPlaceHolder>
+
+            <!-- ************************************************** -->
+            <!-- Control Marker -->
+            <!-- ************************************************** -->
+
+            <table>
+                <tr>
+                    <td>
+                        <asp:DropDownList runat="server" ID="CountryDDL" Width="20%" Visible="false"
+                            Style="left: 5%; top: 80px; height: 40px; position: absolute;"
+                            AutoPostBack="true" OnSelectedIndexChanged="OnSelectedIndexChanged_CountryDDL">
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+            </table>
+
+            <asp:ContentPlaceHolder runat="server" ID="controlsHolder">
+            </asp:ContentPlaceHolder>
+
+            <!-- ************************************************** -->
+            <!-- Controls 
+						overflow-x:hidden;
+						overflow-y:scroll; 
+                -->
+            <!-- ************************************************** -->
+
+            <div id="divControls"
+                style="position: absolute; overflow-x: hidden; overflow-y: scroll; visibility: visible; -webkit-transform: translateZ(0); border: 1px solid #ccc; top: 73px; left: 30%; height: 92%; width: 50%;">
+
+                <asp:HiddenField runat="server" ID="maxScrl" Value="0" />
+                <div id="ctrlSizer">
+                    <asp:Literal runat="server" ID="controlsLIT" Mode="PassThrough"></asp:Literal>
+                    <asp:Panel runat="server" ID="repeaterPNL">Press Tab to Select 'Submit' button.</asp:Panel>
+                </div>
+                <!--	Table is Placed here for Controls / Entry  -->
+
+
+            </div>
+
+
+            <!-- ************************************************** -->
+            <!-- Hidden Inputs -->
+            <!-- ************************************************** -->
+
+            <asp:ContentPlaceHolder runat="server" ID="hiddenHolder">
+            </asp:ContentPlaceHolder>
+
+            <input type="hidden" id="hidLeft" value="0" />
+            <input type="hidden" id="hidTop" value="0" />
+            <input type="hidden" id="hidRotate" value="0" />
+
+            <asp:HiddenField runat="server" ID="hidTouchName" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="hidSavFoc" />
+            <asp:HiddenField runat="server" ID="keFocusHID" />
+            <asp:HiddenField runat="server" ID="keCountryHID" />
+            <asp:HiddenField runat="server" ID="hidCCode" />
+
+            <input type="hidden" id="imgWHID" value="0" />
+            <input type="hidden" id="imgHHID" value="0" />
+            <input type="hidden" id="dragTHID" value="0" />
+            <input type="hidden" id="dragLHID" value="0" />
+            <input type="hidden" id="dragToffsetHID" value="0" />
+            <input type="hidden" id="dragLoffsetHID" value="0" />
+            <asp:HiddenField runat="server" ID="typeHID" EnableViewState="true" />
+
+            <asp:HiddenField runat="server" ID="hidLand" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="hidZoom" EnableViewState="true" />
+
+            <asp:HiddenField runat="server" ID="dummy0HID" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="dummy1HID" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="dummy2HID" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="dummy3HID" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="dummy4HID" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="dummy5HID" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="dummy6HID" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="dummy7HID" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="dummy8HID" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="dummy9HID" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="dummyMineHID" EnableViewState="true" />
+
+            <asp:HiddenField runat="server" ID="hidmvBatchId" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="hidmvBatchDate" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="hidmvSequence" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="hidmvTaxPgm" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="hidmvImgSrc" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="hidmvDocNbr" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="hidmvOffset" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="hidmvSize" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="hidMavKey" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="hidSaveFocus" EnableViewState="true" />
+            <asp:HiddenField runat="server" ID="hidOgdForm" EnableViewState="true" />
+
+        </div>
+        <asp:Panel runat="server" ID="footerPNL" Visible="false">
+            <div id="footer">
+            </div>
+        </asp:Panel>
+    </form>
+</body>
+

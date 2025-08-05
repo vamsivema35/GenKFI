@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\GenKFI Test\test</_PublishTargetUrl>
+    <History>True|2025-07-24T22:30:16.0880660Z||;True|2025-07-24T14:55:54.7894866-06:00||;True|2025-07-23T15:11:52.5513109-06:00||;True|2025-06-09T17:06:31.6483810-06:00||;False|2025-06-09T16:36:44.9389389-06:00||;True|2025-06-09T16:35:56.2208904-06:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/GenKFI.dll">
+      <publishTime>07/24/2025 16:30:06</publishTime>
+    </File>
+    <File Include="bin/GenKFI.pdb">
+      <publishTime>07/24/2025 16:30:06</publishTime>
+    </File>
+    <File Include="bin/GenKFI.xml">
+      <publishTime>07/24/2025 16:30:06</publishTime>
+    </File>
+    <File Include="BreadCrumb.ascx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="css/ApplicationStyle_001.css">
+      <publishTime>06/02/2025 15:21:22</publishTime>
+    </File>
+    <File Include="css/footer.css">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="css/smoothness/images/animated-overlay.gif">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="css/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="css/smoothness/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="css/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="css/smoothness/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="css/smoothness/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="css/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="css/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="css/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="css/smoothness/images/ui-icons_222222_256x240.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="css/smoothness/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="css/smoothness/images/ui-icons_454545_256x240.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="css/smoothness/images/ui-icons_888888_256x240.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="css/smoothness/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="css/smoothness/jquery-ui-1.10.3.custom.css">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="css/smoothness/jquery-ui-1.10.3.custom.min.css">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="css/ui.dropdownchecklist.themeroller.css">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="error.aspx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="forms.Master">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="GenKFI.Master">
+      <publishTime>06/02/2025 15:21:22</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="images/Blank.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="images/dev.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="images/imgError.jpg">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="images/ImgScroll.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="images/landscape.jpg">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="images/MagnifyingBlank.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="images/MagnifyingGlass.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="images/MagnifyingOther.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="images/nmsign.gif">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="images/NM_Logo2.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="images/portrait.jpg">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="images/Warning.png">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="noFront/CMPRateLookup.ashx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="noFront/CountryLookUp.ashx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="noFront/CRSLocationLookup.ashx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="noFront/CRSRateLookup.ashx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="noFront/DoLookup.ashx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="noFront/GRTRateLookup.ashx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="noFront/LowIncTableLookup.ashx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="noFront/newBlock.ashx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="noFront/RateTableLookup.ashx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="noFront/remBlock.ashx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="noFront/STPRateLookup.ashx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="noFront/WDTRateLookup.ashx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="scripts/divMove.js">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="scripts/formattingDB.js">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="scripts/jquery-1.8.2.js">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="scripts/jquery-1.8.2.min.js">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="scripts/jquery-ui-1.10.3.custom.min.js">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="scripts/jquery-ui.js">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="scripts/jquery-ui.min.js">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="scripts/jQueryRotate.2.2.js">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="scripts/moment.min.js">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="scripts/ui.dropdownchecklist.js">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="utils/batchInquire.aspx">
+      <publishTime>06/02/2025 15:21:22</publishTime>
+    </File>
+    <File Include="utils/BatchModify.aspx">
+      <publishTime>06/02/2025 15:21:22</publishTime>
+    </File>
+    <File Include="utils/closedBatches.aspx">
+      <publishTime>06/02/2025 15:21:22</publishTime>
+    </File>
+    <File Include="utils/DcImgLoad.aspx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="utils/DcUtility.aspx">
+      <publishTime>06/02/2025 15:21:22</publishTime>
+    </File>
+    <File Include="utils/editPCodes.aspx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="utils/entry/KeyEntry.aspx">
+      <publishTime>06/02/2025 15:21:22</publishTime>
+    </File>
+    <File Include="utils/errView.aspx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="utils/formBuilder/blockBatch.aspx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="utils/formBuilder/editJSauto.aspx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="utils/formBuilder/existForms.aspx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="utils/formBuilder/formBuild.aspx">
+      <publishTime>06/02/2025 15:21:22</publishTime>
+    </File>
+    <File Include="utils/formBuilder/formTest.aspx">
+      <publishTime>06/02/2025 15:21:22</publishTime>
+    </File>
+    <File Include="utils/formBuilder/GkInstall.aspx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="utils/formBuilder/needSql.aspx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="utils/formBuilder/NewTaxYear.aspx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="utils/formBuilder/TestingUtil.aspx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="utils/formBuilder/UdImgLoad.aspx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="utils/formBuilder/UtilDev.aspx">
+      <publishTime>06/02/2025 15:21:22</publishTime>
+    </File>
+    <File Include="utils/manageUserRoles2.aspx">
+      <publishTime>04/29/2025 12:06:34</publishTime>
+    </File>
+    <File Include="utils/OpenBatches.aspx">
+      <publishTime>06/02/2025 15:21:22</publishTime>
+    </File>
+    <File Include="utils/reassignBatches.aspx">
+      <publishTime>06/02/2025 15:21:22</publishTime>
+    </File>
+    <File Include="utils/unassignedBatches.aspx">
+      <publishTime>06/02/2025 15:21:22</publishTime>
+    </File>
+    <File Include="utils/userStats.aspx">
+      <publishTime>06/02/2025 15:21:22</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/23/2025 15:11:52</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

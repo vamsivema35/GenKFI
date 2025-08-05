@@ -1,0 +1,2 @@
+﻿C:\GenKFI Test\GenKFI\Src-GenKfi\GenKFI\GenKFI.csproj : error  : The project file could not be loaded. Could not find file 'C:\GenKFI Test\GenKFI\Src-GenKfi\GenKFI\GenKFI.csproj'.  C:\GenKFI Test\GenKFI\Src-GenKfi\GenKFI\GenKFI.csproj
+

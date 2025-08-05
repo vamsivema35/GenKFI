@@ -1,0 +1,10 @@
+C:\Users\Vamsiv\source\repos\GenKFI\GenKFI\bin\GenKFI.dll.config
+C:\Users\Vamsiv\source\repos\GenKFI\GenKFI\bin\GenKFI.dll
+C:\Users\Vamsiv\source\repos\GenKFI\GenKFI\bin\GenKFI.pdb
+C:\Users\Vamsiv\source\repos\GenKFI\GenKFI\bin\GenKFI.xml
+C:\Users\Vamsiv\source\repos\GenKFI\GenKFI\obj\Release\GenKFI.csproj.AssemblyReference.cache
+C:\Users\Vamsiv\source\repos\GenKFI\GenKFI\obj\Release\GenKFI.Properties.Resources.resources
+C:\Users\Vamsiv\source\repos\GenKFI\GenKFI\obj\Release\GenKFI.csproj.GenerateResource.cache
+C:\Users\Vamsiv\source\repos\GenKFI\GenKFI\obj\Release\GenKFI.csproj.CoreCompileInputs.cache
+C:\Users\Vamsiv\source\repos\GenKFI\GenKFI\obj\Release\GenKFI.dll
+C:\Users\Vamsiv\source\repos\GenKFI\GenKFI\obj\Release\GenKFI.pdb
