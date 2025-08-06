@@ -94,14 +94,7 @@
 			</asp:TableRow>		
 
 
-			<%--Test--%>
-			<asp:TableRow ID="Test">
-			<asp:TableCell>
-				<asp:LinkButton runat="server" ID="LnkTest1" >Test</asp:LinkButton>
-			</asp:TableCell>
-			</asp:TableRow>
-			<%--Test End--%>
-
+		
 		</asp:Table>
 		
 	</div>
