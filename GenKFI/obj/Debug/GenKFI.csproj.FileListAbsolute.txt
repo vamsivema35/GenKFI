@@ -8,3 +8,13 @@ C:\Users\Vamsiv\Source\Repos\GenKFI\GenKFI\obj\Debug\GenKFI.csproj.GenerateResou
 C:\Users\Vamsiv\Source\Repos\GenKFI\GenKFI\obj\Debug\GenKFI.csproj.CoreCompileInputs.cache
 C:\Users\Vamsiv\Source\Repos\GenKFI\GenKFI\obj\Debug\GenKFI.dll
 C:\Users\Vamsiv\Source\Repos\GenKFI\GenKFI\obj\Debug\GenKFI.pdb
+C:\Users\prasanthik\Source\Repos\GenKFI\GenKFI\bin\GenKFI.dll.config
+C:\Users\prasanthik\Source\Repos\GenKFI\GenKFI\bin\GenKFI.dll
+C:\Users\prasanthik\Source\Repos\GenKFI\GenKFI\bin\GenKFI.pdb
+C:\Users\prasanthik\Source\Repos\GenKFI\GenKFI\bin\GenKFI.xml
+C:\Users\prasanthik\Source\Repos\GenKFI\GenKFI\obj\Debug\GenKFI.csproj.AssemblyReference.cache
+C:\Users\prasanthik\Source\Repos\GenKFI\GenKFI\obj\Debug\GenKFI.Properties.Resources.resources
+C:\Users\prasanthik\Source\Repos\GenKFI\GenKFI\obj\Debug\GenKFI.csproj.GenerateResource.cache
+C:\Users\prasanthik\Source\Repos\GenKFI\GenKFI\obj\Debug\GenKFI.csproj.CoreCompileInputs.cache
+C:\Users\prasanthik\Source\Repos\GenKFI\GenKFI\obj\Debug\GenKFI.dll
+C:\Users\prasanthik\Source\Repos\GenKFI\GenKFI\obj\Debug\GenKFI.pdb

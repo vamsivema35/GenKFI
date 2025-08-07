@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Vamsiv\\source\\repos\\GenKFI\\",
+  "WorkspaceRootPath": "C:\\Users\\prasanthik\\source\\repos\\GenKFI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D011E9A2-6C38-4B2C-B848-6CB0FEE4AAF2}|GenKFI\\GenKFI.csproj|c:\\users\\vamsiv\\source\\repos\\genkfi\\genkfi\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{D011E9A2-6C38-4B2C-B848-6CB0FEE4AAF2}|GenKFI\\GenKFI.csproj|c:\\users\\prasanthik\\source\\repos\\genkfi\\genkfi\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{D011E9A2-6C38-4B2C-B848-6CB0FEE4AAF2}|GenKFI\\GenKFI.csproj|solutionrelative:genkfi\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D011E9A2-6C38-4B2C-B848-6CB0FEE4AAF2}|GenKFI\\GenKFI.csproj|c:\\users\\prasanthik\\source\\repos\\genkfi\\genkfi\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D011E9A2-6C38-4B2C-B848-6CB0FEE4AAF2}|GenKFI\\GenKFI.csproj|solutionrelative:genkfi\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +18,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{2d60f238-6388-4577-9ed1-34779f8947eb}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\prasanthik\\source\\repos\\GenKFI\\GenKFI\\Global.asax.cs",
+              "RelativeDocumentMoniker": "GenKFI\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\prasanthik\\source\\repos\\GenKFI\\GenKFI\\Global.asax.cs",
+              "RelativeToolTip": "GenKFI\\Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T15:01:13.9Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -27,19 +48,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Default.aspx",
-              "DocumentMoniker": "C:\\Users\\Vamsiv\\source\\repos\\GenKFI\\GenKFI\\Default.aspx",
-              "RelativeDocumentMoniker": "GenKFI\\Default.aspx",
-              "ToolTip": "C:\\Users\\Vamsiv\\source\\repos\\GenKFI\\GenKFI\\Default.aspx",
-              "RelativeToolTip": "GenKFI\\Default.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-08-06T17:37:08.189Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -51,11 +59,20 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "C:\\Users\\prasanthik\\source\\repos\\GenKFI\\GenKFI\\Default.aspx",
+              "RelativeDocumentMoniker": "GenKFI\\Default.aspx",
+              "ToolTip": "C:\\Users\\prasanthik\\source\\repos\\GenKFI\\GenKFI\\Default.aspx",
+              "RelativeToolTip": "GenKFI\\Default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-08-06T17:37:08.189Z",
+              "EditorCaption": ""
             }
           ]
         }
